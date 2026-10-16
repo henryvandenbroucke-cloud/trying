@@ -30,7 +30,9 @@
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
     "check:contact": "esbuild src/checks/contact.ts --bundle --platform=node --format=esm --outfile=out/checks/contact.mjs --log-level=warning && node out/checks/contact.mjs",
-    "render:prototype": "remotion render Prototype-01A-02A out/prototype.mp4"
+    "timeline": "python3 scripts/build_timeline.py && python3 scripts/peaks.py",
+    "render:excerpt": "remotion render Film-Excerpt-Monday public/renders/excerpt-monday.mp4",
+    "render:tutorial": "remotion render Tutorial out/tutorial.mp4"
   },
   "allowScripts": {
     "esbuild": false

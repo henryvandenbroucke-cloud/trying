@@ -1,0 +1,1184 @@
+1
+00:00:00,400 --> 00:00:01,800
+Your name is Noah.
+
+2
+00:00:02,100 --> 00:00:03,400
+And you remember...
+
+3
+00:00:03,767 --> 00:00:05,067
+every single day.
+
+4
+00:00:06,300 --> 00:00:07,800
+You close your eyes...
+
+5
+00:00:08,200 --> 00:00:09,600
+and you are there.
+
+6
+00:00:11,300 --> 00:00:13,767
+Everything you just watched started as a
+
+7
+00:00:13,767 --> 00:00:14,700
+plain script.
+
+8
+00:00:14,933 --> 00:00:15,967
+In this video,
+
+9
+00:00:16,000 --> 00:00:17,867
+we'll take one original idea,
+
+10
+00:00:17,900 --> 00:00:19,800
+shape it into a story with one
+
+11
+00:00:19,800 --> 00:00:20,633
+clear rule,
+
+12
+00:00:20,667 --> 00:00:23,133
+turn that story into scenes that actually
+
+13
+00:00:23,133 --> 00:00:23,967
+make sense,
+
+14
+00:00:24,000 --> 00:00:26,233
+and finish with a real video file.
+
+15
+00:00:26,500 --> 00:00:27,633
+Stay to the end,
+
+16
+00:00:27,667 --> 00:00:29,867
+and you'll see the finished scene.
+
+17
+00:00:30,633 --> 00:00:31,200
+First,
+
+18
+00:00:31,200 --> 00:00:32,300
+the inspiration:
+
+19
+00:00:32,333 --> 00:00:34,333
+three channels that make short,
+
+20
+00:00:34,367 --> 00:00:36,033
+narrated animated stories.
+
+21
+00:00:36,300 --> 00:00:38,233
+Ifverse is our main reference.
+
+22
+00:00:38,467 --> 00:00:39,667
+Every video asks:
+
+23
+00:00:39,700 --> 00:00:41,500
+what if your own body or mind
+
+24
+00:00:41,500 --> 00:00:42,767
+worked differently?
+
+25
+00:00:43,033 --> 00:00:44,867
+Day One Films tells compact,
+
+26
+00:00:44,900 --> 00:00:46,100
+emotional stories,
+
+27
+00:00:46,133 --> 00:00:47,633
+and so does Last Soul.
+
+28
+00:00:47,900 --> 00:00:49,800
+We can see what they publish,
+
+29
+00:00:49,833 --> 00:00:51,267
+not how they make it,
+
+30
+00:00:51,300 --> 00:00:53,233
+so we borrow the format only.
+
+31
+00:00:53,467 --> 00:00:54,267
+Our story,
+
+32
+00:00:54,267 --> 00:00:55,333
+our characters,
+
+33
+00:00:55,367 --> 00:00:57,500
+and our visuals are all original.
+
+34
+00:00:58,267 --> 00:01:00,367
+This format has four ingredients.
+
+35
+00:01:00,633 --> 00:01:01,900
+One clear question:
+
+36
+00:01:01,933 --> 00:01:04,500
+what if you remembered every single day?
+
+37
+00:01:04,733 --> 00:01:06,500
+A consequence you can see:
+
+38
+00:01:06,533 --> 00:01:08,900
+Noah's memories keep pulling him out of
+
+39
+00:01:08,900 --> 00:01:09,767
+the present.
+
+40
+00:01:10,033 --> 00:01:11,367
+An emotional choice,
+
+41
+00:01:11,400 --> 00:01:13,500
+between the past and the friend in
+
+42
+00:01:13,500 --> 00:01:14,467
+front of him.
+
+43
+00:01:14,700 --> 00:01:16,667
+And a payoff that calls back to
+
+44
+00:01:16,667 --> 00:01:17,467
+the start:
+
+45
+00:01:17,467 --> 00:01:18,767
+this blue notebook.
+
+46
+00:01:19,000 --> 00:01:20,533
+Here's the whole route.
+
+47
+00:01:20,800 --> 00:01:21,767
+Pick a topic,
+
+48
+00:01:21,800 --> 00:01:23,000
+write the script,
+
+49
+00:01:23,033 --> 00:01:24,400
+and check the facts.
+
+50
+00:01:24,633 --> 00:01:26,133
+Then record the voice,
+
+51
+00:01:26,167 --> 00:01:27,767
+and plan scenes from it.
+
+52
+00:01:28,033 --> 00:01:28,533
+Next:
+
+53
+00:01:28,533 --> 00:01:29,333
+characters,
+
+54
+00:01:29,333 --> 00:01:29,967
+motion,
+
+55
+00:01:29,967 --> 00:01:30,767
+and sound.
+
+56
+00:01:30,967 --> 00:01:31,633
+Finally,
+
+57
+00:01:31,633 --> 00:01:32,867
+review and export.
+
+58
+00:01:33,133 --> 00:01:35,500
+The story and voice are finished before
+
+59
+00:01:35,500 --> 00:01:36,333
+we animate.
+
+60
+00:01:37,100 --> 00:01:38,000
+Three tools,
+
+61
+00:01:38,033 --> 00:01:38,833
+three jobs.
+
+62
+00:01:39,100 --> 00:01:40,633
+Claude writes the code,
+
+63
+00:01:40,667 --> 00:01:42,533
+Remotion turns it into video,
+
+64
+00:01:42,567 --> 00:01:44,567
+and ElevenLabs makes the voice.
+
+65
+00:01:44,833 --> 00:01:47,500
+Remotion's official guide covers the setup.
+
+66
+00:01:47,767 --> 00:01:50,200
+These commands create a blank project,
+
+67
+00:01:50,233 --> 00:01:52,733
+add Remotion's skills for coding agents,
+
+68
+00:01:52,767 --> 00:01:54,267
+and start the preview.
+
+69
+00:01:56,700 --> 00:01:58,167
+In a second terminal,
+
+70
+00:01:58,200 --> 00:02:00,633
+open Claude Code inside the same project
+
+71
+00:02:00,633 --> 00:02:01,433
+folder.
+
+72
+00:02:01,467 --> 00:02:03,233
+Now Claude edits the files,
+
+73
+00:02:03,267 --> 00:02:05,333
+and you watch every change here.
+
+74
+00:02:07,333 --> 00:02:09,033
+Let's start with the idea.
+
+75
+00:02:09,300 --> 00:02:11,700
+I paste the topic prompt into Claude.
+
+76
+00:02:11,967 --> 00:02:12,900
+Its key rule:
+
+77
+00:02:12,933 --> 00:02:15,367
+change exactly one thing about your body
+
+78
+00:02:15,367 --> 00:02:16,067
+or mind,
+
+79
+00:02:16,067 --> 00:02:17,800
+and push it to an extreme.
+
+80
+00:02:18,067 --> 00:02:19,700
+Claude sends back titles.
+
+81
+00:02:19,967 --> 00:02:22,033
+Pick one that could carry a whole
+
+82
+00:02:22,033 --> 00:02:22,833
+story.
+
+83
+00:02:23,800 --> 00:02:25,033
+Inspired by these,
+
+84
+00:02:25,067 --> 00:02:25,833
+I picked:
+
+85
+00:02:25,833 --> 00:02:28,367
+what if you remembered every single day?
+
+86
+00:02:28,633 --> 00:02:30,233
+It has real consequences,
+
+87
+00:02:30,267 --> 00:02:32,033
+and it can hang on one small
+
+88
+00:02:32,033 --> 00:02:33,300
+relationship detail.
+
+89
+00:02:34,100 --> 00:02:34,600
+Next,
+
+90
+00:02:34,600 --> 00:02:35,833
+the script prompt.
+
+91
+00:02:36,067 --> 00:02:38,300
+I add the topic and three anchors:
+
+92
+00:02:38,367 --> 00:02:38,867
+Noah,
+
+93
+00:02:38,867 --> 00:02:39,367
+Mila,
+
+94
+00:02:39,367 --> 00:02:40,733
+and a blue notebook.
+
+95
+00:02:41,000 --> 00:02:43,300
+Claude writes the full example film;
+
+96
+00:02:43,333 --> 00:02:45,167
+we'll only show pieces here.
+
+97
+00:02:46,200 --> 00:02:46,767
+First,
+
+98
+00:02:46,767 --> 00:02:47,767
+find the rule.
+
+99
+00:02:48,033 --> 00:02:49,700
+Noah can relive the past,
+
+100
+00:02:49,733 --> 00:02:51,833
+but he can never predict or change
+
+101
+00:02:51,833 --> 00:02:52,433
+it.
+
+102
+00:02:52,433 --> 00:02:53,867
+Then find the choice:
+
+103
+00:02:53,900 --> 00:02:54,633
+the past,
+
+104
+00:02:54,633 --> 00:02:56,567
+or the friend right in front of
+
+105
+00:02:56,567 --> 00:02:57,233
+him.
+
+106
+00:02:57,233 --> 00:02:57,733
+Hook,
+
+107
+00:02:57,733 --> 00:02:58,233
+rule,
+
+108
+00:02:58,233 --> 00:02:59,100
+consequences,
+
+109
+00:02:59,133 --> 00:02:59,767
+choice,
+
+110
+00:02:59,767 --> 00:03:00,567
+callback.
+
+111
+00:03:00,700 --> 00:03:02,333
+That's the story's spine.
+
+112
+00:03:04,300 --> 00:03:05,467
+Before recording,
+
+113
+00:03:05,500 --> 00:03:06,633
+check the facts.
+
+114
+00:03:06,867 --> 00:03:08,300
+The power is fiction,
+
+115
+00:03:08,333 --> 00:03:10,033
+so we label it as the story
+
+116
+00:03:10,033 --> 00:03:10,833
+premise.
+
+117
+00:03:10,933 --> 00:03:13,200
+But the script also makes real claims
+
+118
+00:03:13,200 --> 00:03:14,733
+about how memory works,
+
+119
+00:03:14,767 --> 00:03:16,933
+and my first draft overstated one.
+
+120
+00:03:17,800 --> 00:03:19,533
+So find a reliable source,
+
+121
+00:03:19,567 --> 00:03:21,500
+ideally the original research,
+
+122
+00:03:22,333 --> 00:03:24,533
+and change the wording until it says
+
+123
+00:03:24,533 --> 00:03:26,533
+only what that source supports.
+
+124
+00:03:27,600 --> 00:03:28,633
+Claims checked,
+
+125
+00:03:28,667 --> 00:03:29,833
+premise labelled.
+
+126
+00:03:30,067 --> 00:03:31,933
+Now the script is ready for a
+
+127
+00:03:31,933 --> 00:03:32,733
+voice.
+
+128
+00:03:33,233 --> 00:03:34,200
+In ElevenLabs,
+
+129
+00:03:34,233 --> 00:03:36,067
+paste only the spoken words.
+
+130
+00:03:36,333 --> 00:03:37,200
+No headings,
+
+131
+00:03:37,233 --> 00:03:38,033
+no notes.
+
+132
+00:03:38,700 --> 00:03:40,733
+Choose one voice and one model,
+
+133
+00:03:40,767 --> 00:03:42,900
+and keep them for the whole film.
+
+134
+00:03:43,167 --> 00:03:45,233
+Listen to a short sample first.
+
+135
+00:03:45,533 --> 00:03:47,433
+This little film started as a plain
+
+136
+00:03:47,433 --> 00:03:48,233
+script.
+
+137
+00:03:49,500 --> 00:03:50,900
+When it sounds right,
+
+138
+00:03:50,933 --> 00:03:53,367
+generate the narration and save the real
+
+139
+00:03:53,367 --> 00:03:54,200
+audio file.
+
+140
+00:03:55,067 --> 00:03:57,133
+Those pauses now set the rhythm.
+
+141
+00:03:57,367 --> 00:03:59,467
+Every cut we plan will follow this
+
+142
+00:03:59,467 --> 00:04:00,267
+recording.
+
+143
+00:04:01,000 --> 00:04:03,133
+The script is one long paragraph,
+
+144
+00:04:03,167 --> 00:04:05,233
+but animation needs short beats.
+
+145
+00:04:05,467 --> 00:04:08,033
+So split it wherever the action changes.
+
+146
+00:04:08,267 --> 00:04:09,867
+Each beat gets a start,
+
+147
+00:04:09,900 --> 00:04:10,533
+an end,
+
+148
+00:04:10,533 --> 00:04:11,333
+its words,
+
+149
+00:04:11,333 --> 00:04:12,400
+and one action.
+
+150
+00:04:12,633 --> 00:04:14,467
+When the narration moves on,
+
+151
+00:04:14,500 --> 00:04:16,167
+the picture moves on too.
+
+152
+00:04:16,433 --> 00:04:18,567
+Every beat links one spoken line to
+
+153
+00:04:18,567 --> 00:04:20,033
+one thing we can see.
+
+154
+00:04:20,267 --> 00:04:22,133
+Line them up over the audio,
+
+155
+00:04:22,167 --> 00:04:23,800
+and you have a timeline.
+
+156
+00:04:24,067 --> 00:04:26,000
+Sentences can run across cuts.
+
+157
+00:04:26,800 --> 00:04:27,233
+Now,
+
+158
+00:04:27,233 --> 00:04:28,267
+the characters.
+
+159
+00:04:28,533 --> 00:04:29,467
+This is Noah.
+
+160
+00:04:29,733 --> 00:04:31,433
+Three things never change:
+
+161
+00:04:31,467 --> 00:04:32,933
+his terracotta jacket,
+
+162
+00:04:32,967 --> 00:04:34,033
+his proportions,
+
+163
+00:04:34,067 --> 00:04:35,567
+and his blue notebook.
+
+164
+00:04:35,800 --> 00:04:38,233
+Claude builds him from reusable parts,
+
+165
+00:04:38,267 --> 00:04:39,867
+so a new pose is the same
+
+166
+00:04:39,867 --> 00:04:41,533
+Noah doing something new.
+
+167
+00:04:41,767 --> 00:04:43,467
+His expression can change.
+
+168
+00:04:43,733 --> 00:04:44,900
+His design can't.
+
+169
+00:04:45,167 --> 00:04:47,000
+Mila follows the same rules,
+
+170
+00:04:47,033 --> 00:04:48,900
+so both stay in scale in every
+
+171
+00:04:48,900 --> 00:04:49,667
+scene.
+
+172
+00:04:49,667 --> 00:04:50,167
+Next,
+
+173
+00:04:50,167 --> 00:04:50,967
+the place.
+
+174
+00:04:51,200 --> 00:04:53,233
+Every scene is built in layers.
+
+175
+00:04:53,467 --> 00:04:54,367
+At the back:
+
+176
+00:04:54,400 --> 00:04:55,267
+the windows,
+
+177
+00:04:55,300 --> 00:04:56,067
+the wall,
+
+178
+00:04:56,067 --> 00:04:57,167
+and a slow sky.
+
+179
+00:04:57,433 --> 00:04:58,433
+In the middle:
+
+180
+00:04:58,467 --> 00:04:59,667
+the action layer,
+
+181
+00:04:59,700 --> 00:05:01,867
+where the characters sit and move.
+
+182
+00:05:02,133 --> 00:05:03,067
+And in front,
+
+183
+00:05:03,100 --> 00:05:04,167
+the foreground.
+
+184
+00:05:04,400 --> 00:05:05,900
+When the camera moves,
+
+185
+00:05:05,933 --> 00:05:08,300
+near things shift more than far ones.
+
+186
+00:05:08,567 --> 00:05:09,833
+That creates depth.
+
+187
+00:05:10,100 --> 00:05:11,967
+Put the layers back together,
+
+188
+00:05:12,000 --> 00:05:14,067
+and the same style works inside a
+
+189
+00:05:14,067 --> 00:05:14,900
+memory too.
+
+190
+00:05:15,700 --> 00:05:16,133
+Now,
+
+191
+00:05:16,133 --> 00:05:17,633
+motion with a purpose.
+
+192
+00:05:17,900 --> 00:05:20,167
+Noah is about to open his notebook.
+
+193
+00:05:20,400 --> 00:05:21,833
+Watch for five beats:
+
+194
+00:05:21,867 --> 00:05:22,467
+notice,
+
+195
+00:05:22,467 --> 00:05:23,033
+reach,
+
+196
+00:05:23,033 --> 00:05:23,567
+touch,
+
+197
+00:05:23,567 --> 00:05:24,067
+open,
+
+198
+00:05:24,067 --> 00:05:24,867
+react.
+
+199
+00:05:30,333 --> 00:05:32,867
+The hand stays attached and really touches
+
+200
+00:05:32,867 --> 00:05:33,667
+the cover.
+
+201
+00:05:33,900 --> 00:05:34,933
+Nothing floats.
+
+202
+00:05:35,800 --> 00:05:37,600
+Anticipation before the move,
+
+203
+00:05:37,633 --> 00:05:39,133
+contact in the middle,
+
+204
+00:05:39,167 --> 00:05:41,167
+and a small settle at the end.
+
+205
+00:05:42,100 --> 00:05:43,000
+That night,
+
+206
+00:05:43,067 --> 00:05:45,633
+you open the notebook one last time.
+
+207
+00:05:46,467 --> 00:05:48,800
+And every movement belongs to the line
+
+208
+00:05:48,800 --> 00:05:49,800
+it sits under.
+
+209
+00:05:50,600 --> 00:05:52,200
+Here's a timing mistake.
+
+210
+00:05:52,467 --> 00:05:53,733
+Watch the notebook.
+
+211
+00:05:54,067 --> 00:05:54,967
+That night,
+
+212
+00:05:55,033 --> 00:05:57,600
+you open the notebook one last time.
+
+213
+00:05:58,733 --> 00:06:01,300
+It opens before the words describing it.
+
+214
+00:06:01,533 --> 00:06:03,667
+Find that phrase in the waveform.
+
+215
+00:06:03,933 --> 00:06:06,033
+Ask Claude to move the action onto
+
+216
+00:06:06,033 --> 00:06:06,833
+that cue.
+
+217
+00:06:07,000 --> 00:06:09,033
+The audio itself doesn't change.
+
+218
+00:06:09,300 --> 00:06:10,567
+Now play it again.
+
+219
+00:06:10,900 --> 00:06:11,800
+That night,
+
+220
+00:06:11,833 --> 00:06:14,433
+you open the notebook one last time.
+
+221
+00:06:15,567 --> 00:06:16,367
+Same voice,
+
+222
+00:06:16,400 --> 00:06:17,333
+same drawing.
+
+223
+00:06:17,600 --> 00:06:19,200
+Only the timing changed,
+
+224
+00:06:19,233 --> 00:06:20,767
+and now it feels right.
+
+225
+00:06:22,367 --> 00:06:22,867
+Next,
+
+226
+00:06:22,867 --> 00:06:23,633
+sound.
+
+227
+00:06:23,633 --> 00:06:25,500
+Here's the voice on its own.
+
+228
+00:06:25,767 --> 00:06:27,667
+This little film started as a plain
+
+229
+00:06:27,667 --> 00:06:28,467
+script.
+
+230
+00:06:29,600 --> 00:06:31,200
+Add quiet café ambience,
+
+231
+00:06:31,233 --> 00:06:32,833
+and the room feels real.
+
+232
+00:06:33,100 --> 00:06:34,533
+Then one paper sound,
+
+233
+00:06:34,567 --> 00:06:36,433
+exactly when the cover opens.
+
+234
+00:06:36,700 --> 00:06:38,600
+And a soft music bed that dips
+
+235
+00:06:38,600 --> 00:06:40,167
+whenever someone speaks.
+
+236
+00:06:40,400 --> 00:06:41,767
+Here's the full mix.
+
+237
+00:06:42,033 --> 00:06:43,500
+The voice still leads.
+
+238
+00:06:43,800 --> 00:06:45,700
+This little film started as a plain
+
+239
+00:06:45,700 --> 00:06:46,500
+script.
+
+240
+00:06:47,833 --> 00:06:50,200
+Now review the draft at normal speed,
+
+241
+00:06:50,233 --> 00:06:51,733
+and look for problems.
+
+242
+00:06:51,967 --> 00:06:54,333
+Here's a real one from this project:
+
+243
+00:06:54,367 --> 00:06:56,467
+Noah's legs were drawn in front of
+
+244
+00:06:56,467 --> 00:06:57,267
+the table,
+
+245
+00:06:57,267 --> 00:06:58,633
+instead of under it.
+
+246
+00:06:59,667 --> 00:07:01,433
+Describe the fix precisely:
+
+247
+00:07:01,467 --> 00:07:02,400
+what's wrong,
+
+248
+00:07:02,433 --> 00:07:03,700
+what should happen,
+
+249
+00:07:03,733 --> 00:07:05,600
+and what must stay the same.
+
+250
+00:07:06,667 --> 00:07:08,400
+Claude edits the component,
+
+251
+00:07:08,433 --> 00:07:10,367
+and we render the shot again.
+
+252
+00:07:11,200 --> 00:07:12,000
+Same shot,
+
+253
+00:07:12,000 --> 00:07:12,867
+same timing.
+
+254
+00:07:13,133 --> 00:07:15,300
+Now his legs sit under the table.
+
+255
+00:07:16,133 --> 00:07:19,133
+Because we fixed the character component itself,
+
+256
+00:07:19,167 --> 00:07:21,633
+every shot that reuses it improves too.
+
+257
+00:07:22,433 --> 00:07:23,733
+When review passes,
+
+258
+00:07:23,767 --> 00:07:26,567
+check the render settings you actually chose.
+
+259
+00:07:27,433 --> 00:07:29,567
+Run the render and let it finish.
+
+260
+00:07:29,833 --> 00:07:31,000
+We'll skip ahead.
+
+261
+00:07:31,867 --> 00:07:33,567
+Then open the actual file.
+
+262
+00:07:34,633 --> 00:07:35,967
+Check the beginning,
+
+263
+00:07:36,000 --> 00:07:36,833
+the middle,
+
+264
+00:07:36,867 --> 00:07:37,767
+and the end:
+
+265
+00:07:37,800 --> 00:07:38,467
+picture,
+
+266
+00:07:38,467 --> 00:07:39,033
+voice,
+
+267
+00:07:39,033 --> 00:07:39,833
+and timing.
+
+268
+00:07:41,300 --> 00:07:42,367
+All three pass.
+
+269
+00:07:44,200 --> 00:07:45,900
+Here's the finished scene.
+
+270
+00:07:47,300 --> 00:07:48,133
+On Monday,
+
+271
+00:07:48,200 --> 00:07:49,967
+you're back at the café.
+
+272
+00:07:50,267 --> 00:07:52,800
+Mila is telling you about her week.
+
+273
+00:07:53,100 --> 00:07:55,000
+But you're somewhere else.
+
+274
+00:07:55,300 --> 00:07:56,167
+A Tuesday,
+
+275
+00:07:56,200 --> 00:07:57,567
+three summers ago...
+
+276
+00:07:57,967 --> 00:07:59,200
+this same table.
+
+277
+00:07:59,500 --> 00:08:00,400
+Same laugh.
+
+278
+00:08:00,700 --> 00:08:02,700
+Then two taps on the table.
+
+279
+00:08:03,000 --> 00:08:03,800
+Noah...
+
+280
+00:08:03,900 --> 00:08:05,300
+are you even here?
+
+281
+00:08:05,600 --> 00:08:07,433
+You look at the notebook.
+
+282
+00:08:07,733 --> 00:08:09,067
+And you close it.
+
+283
+00:08:09,367 --> 00:08:11,433
+For the first time in weeks...
+
+284
+00:08:11,833 --> 00:08:12,733
+you listen.
+
+285
+00:08:14,167 --> 00:08:15,000
+One script,
+
+286
+00:08:15,033 --> 00:08:15,833
+one voice,
+
+287
+00:08:15,833 --> 00:08:17,467
+and one consistent world.
+
+288
+00:08:17,700 --> 00:08:19,533
+That's one finished example.
+
+289
+00:08:20,667 --> 00:08:22,033
+For your next video,
+
+290
+00:08:22,067 --> 00:08:23,233
+change the topic,
+
+291
+00:08:23,267 --> 00:08:25,167
+rewrite and check the script,
+
+292
+00:08:25,200 --> 00:08:26,367
+record the voice,
+
+293
+00:08:26,400 --> 00:08:27,900
+and retime the scenes.
+
+294
+00:08:28,133 --> 00:08:30,467
+So which ability would you try next?
+
+295
+00:08:30,733 --> 00:08:32,333
+Tell me in the comments.
+
+296
+00:08:33,367 --> 00:08:34,733
+Thanks for watching.
+

@@ -1,0 +1,16 @@
+{
+ "recorded": "2026-10-16 17:46\u201317:47 UTC, this project (real run)",
+ "blocks": [
+  {
+   "cmd": "npx remotion render Film-Excerpt-Monday public/renders/excerpt-monday.mp4 --concurrency=4",
+   "elapsed_s": 35,
+   "out": [
+    "Rendering frames     \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 811/811",
+    "Rendered frames      \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 33957ms",
+    "Encoded video        \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 815ms",
+    "+  public/renders/excerpt-monday.mp4 3.1 MB"
+   ]
+  }
+ ],
+ "note": "--concurrency=4 was also passed; output lines copied from render.raw"
+}

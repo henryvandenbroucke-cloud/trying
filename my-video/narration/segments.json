@@ -1,0 +1,159 @@
+{
+ "voices": {
+  "A": {
+   "role": "Tutorial narrator",
+   "name": "Sami - Warm American Voice",
+   "voice_id": "IK4julLaNLG5omy7C1Q5",
+   "model": "eleven_multilingual_v2"
+  },
+  "B": {
+   "role": "Example-film narrator",
+   "name": "Chris - Warm, Thoughtful",
+   "voice_id": "vrZ1gMhrsD9LI0gRKrLh",
+   "model": "eleven_multilingual_v2"
+  }
+ },
+ "segments": [
+  {
+   "id": "EFN-01",
+   "voice": "B",
+   "text": "Your name is Noah. And you remember... every single day."
+  },
+  {
+   "id": "EFN-02",
+   "voice": "B",
+   "text": "You close your eyes... and you are there."
+  },
+  {
+   "id": "TUT-01",
+   "voice": "A",
+   "text": "Everything you just watched started as a plain script. In this video, we'll take one original idea, shape it into a story with one clear rule, turn that story into scenes that actually make sense, and finish with a real video file. Stay to the end, and you'll see the finished scene."
+  },
+  {
+   "id": "TUT-02",
+   "voice": "A",
+   "text": "First, the inspiration: three channels that make short, narrated animated stories. Ifverse is our main reference. Every video asks: what if your own body or mind worked differently? Day One Films tells compact, emotional stories, and so does Last Soul. We can see what they publish, not how they make it, so we borrow the format only. Our story, our characters, and our visuals are all original."
+  },
+  {
+   "id": "TUT-03",
+   "voice": "A",
+   "text": "This format has four ingredients. One clear question: what if you remembered every single day? A consequence you can see: Noah's memories keep pulling him out of the present. An emotional choice, between the past and the friend in front of him. And a payoff that calls back to the start: this blue notebook. Here's the whole route. Pick a topic, write the script, and check the facts. Then record the voice, and plan scenes from it. Next: characters, motion, and sound. Finally, review and export. The story and voice are finished before we animate."
+  },
+  {
+   "id": "TUT-04",
+   "voice": "A",
+   "text": "Three tools, three jobs. Claude writes the code, Remotion turns it into video, and ElevenLabs makes the voice. Remotion's official guide covers the setup. These commands create a blank project, add Remotion's skills for coding agents, and start the preview. In a second terminal, open Claude Code inside the same project folder. Now Claude edits the files, and you watch every change here."
+  },
+  {
+   "id": "TUT-05",
+   "voice": "A",
+   "text": "Let's start with the idea. I paste the topic prompt into Claude. Its key rule: change exactly one thing about your body or mind, and push it to an extreme. Claude sends back titles. Pick one that could carry a whole story. Inspired by these, I picked: what if you remembered every single day? It has real consequences, and it can hang on one small relationship detail."
+  },
+  {
+   "id": "TUT-06",
+   "voice": "A",
+   "text": "Next, the script prompt. I add the topic and three anchors: Noah, Mila, and a blue notebook. Claude writes the full example film; we'll only show pieces here. First, find the rule. Noah can relive the past, but he can never predict or change it. Then find the choice: the past, or the friend right in front of him. Hook, rule, consequences, choice, callback. That's the story's spine."
+  },
+  {
+   "id": "TUT-07",
+   "voice": "A",
+   "text": "Before recording, check the facts. The power is fiction, so we label it as the story premise. But the script also makes real claims about how memory works, and my first draft overstated one. So find a reliable source, ideally the original research, and change the wording until it says only what that source supports. Claims checked, premise labelled. Now the script is ready for a voice."
+  },
+  {
+   "id": "TUT-08a",
+   "voice": "A",
+   "text": "In ElevenLabs, paste only the spoken words. No headings, no notes. Choose one voice and one model, and keep them for the whole film. Listen to a short sample first."
+  },
+  {
+   "id": "EFN-03",
+   "voice": "B",
+   "text": "Not roughly. Not mostly. Every day, in perfect detail."
+  },
+  {
+   "id": "TEST",
+   "voice": "A",
+   "text": "This little film started as a plain script.",
+   "note": "Real ElevenLabs test take (Sami), generated 2026-10-16; used as the sample clip in Seq 10 and the voice layer in Seq 16."
+  },
+  {
+   "id": "TUT-08b",
+   "voice": "A",
+   "text": "When it sounds right, generate the narration and save the real audio file. Those pauses now set the rhythm. Every cut we plan will follow this recording."
+  },
+  {
+   "id": "TUT-09",
+   "voice": "A",
+   "text": "The script is one long paragraph, but animation needs short beats. So split it wherever the action changes. Each beat gets a start, an end, its words, and one action. When the narration moves on, the picture moves on too. Every beat links one spoken line to one thing we can see. Line them up over the audio, and you have a timeline. Sentences can run across cuts."
+  },
+  {
+   "id": "TUT-10",
+   "voice": "A",
+   "text": "Now, the characters. This is Noah. Three things never change: his terracotta jacket, his proportions, and his blue notebook. Claude builds him from reusable parts, so a new pose is the same Noah doing something new. His expression can change. His design can't. Mila follows the same rules, so both stay in scale in every scene. Next, the place. Every scene is built in layers. At the back: the windows, the wall, and a slow sky. In the middle: the action layer, where the characters sit and move. And in front, the foreground. When the camera moves, near things shift more than far ones. That creates depth. Put the layers back together, and the same style works inside a memory too."
+  },
+  {
+   "id": "TUT-11",
+   "voice": "A",
+   "text": "Now, motion with a purpose. Noah is about to open his notebook. Watch for five beats: notice, reach, touch, open, react."
+  },
+  {
+   "id": "TUT-11b",
+   "voice": "A",
+   "text": "The hand stays attached and really touches the cover. Nothing floats. Anticipation before the move, contact in the middle, and a small settle at the end."
+  },
+  {
+   "id": "EFN-04",
+   "voice": "B",
+   "text": "That night, you open the notebook one last time."
+  },
+  {
+   "id": "TUT-11c",
+   "voice": "A",
+   "text": "And every movement belongs to the line it sits under."
+  },
+  {
+   "id": "TUT-12a",
+   "voice": "A",
+   "text": "Here's a timing mistake. Watch the notebook."
+  },
+  {
+   "id": "TUT-12b",
+   "voice": "A",
+   "text": "It opens before the words describing it. Find that phrase in the waveform. Ask Claude to move the action onto that cue. The audio itself doesn't change. Now play it again."
+  },
+  {
+   "id": "TUT-12c",
+   "voice": "A",
+   "text": "Same voice, same drawing. Only the timing changed, and now it feels right."
+  },
+  {
+   "id": "TUT-13a",
+   "voice": "A",
+   "text": "Next, sound. Here's the voice on its own."
+  },
+  {
+   "id": "TUT-13b",
+   "voice": "A",
+   "text": "Add quiet café ambience, and the room feels real. Then one paper sound, exactly when the cover opens. And a soft music bed that dips whenever someone speaks. Here's the full mix. The voice still leads."
+  },
+  {
+   "id": "TUT-14",
+   "voice": "A",
+   "text": "Now review the draft at normal speed, and look for problems. Here's a real one from this project: Noah's legs were drawn in front of the table, instead of under it. Describe the fix precisely: what's wrong, what should happen, and what must stay the same. Claude edits the component, and we render the shot again. Same shot, same timing. Now his legs sit under the table. Because we fixed the character component itself, every shot that reuses it improves too."
+  },
+  {
+   "id": "TUT-15",
+   "voice": "A",
+   "text": "When review passes, check the render settings you actually chose. Run the render and let it finish. We'll skip ahead. Then open the actual file. Check the beginning, the middle, and the end: picture, voice, and timing. All three pass. Here's the finished scene."
+  },
+  {
+   "id": "EFN-05",
+   "voice": "B",
+   "text": "On Monday, you're back at the café. Mila is telling you about her week. But you're somewhere else. A Tuesday, three summers ago... this same table. Same laugh. Then two taps on the table. Noah... are you even here? You look at the notebook. And you close it. For the first time in weeks... you listen."
+  },
+  {
+   "id": "TUT-16",
+   "voice": "A",
+   "text": "One script, one voice, and one consistent world. That's one finished example. For your next video, change the topic, rewrite and check the script, record the voice, and retime the scenes. So which ability would you try next? Tell me in the comments. Thanks for watching."
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "recorded": "2026-10-16 17:27 UTC, inside the freshly created my-video folder (real run)",
+ "blocks": [
+  {
+   "cmd": "cd my-video",
+   "elapsed_s": 0,
+   "out": []
+  },
+  {
+   "cmd": "claude -p \"In two short sentences: what is in this project folder, and which file would I edit to change the video?\"",
+   "elapsed_s": 9,
+   "out": [
+    "This is a Remotion project (a React-based video framework) with the source in `src/`: `index.ts`, `Root.tsx` and `Composition.tsx`. To change the video's content, edit `src/Composition.tsx`. Duration, size and frame rate are set in `src/Root.tsx`."
+   ]
+  }
+ ]
+}

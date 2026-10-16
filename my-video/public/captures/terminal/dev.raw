@@ -1,0 +1,11 @@
+Script started on 2026-10-16 17:28:28+00:00 [COMMAND="npm run dev" <not executed on terminal>]
+
+> my-video@1.0.0 dev
+> remotion studio
+
+[1G[0KServer ready - Local: [4mhttp://localhost:3000[24m, Network: [4mhttp://192.0.2.2:3000[24m
+Building...
+[90m[s] Open Studio[39m
+Built in 1764ms
+
+Script done on 2026-10-16 17:28:50+00:00 [COMMAND_EXIT_CODE="0"]

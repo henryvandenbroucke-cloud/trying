@@ -1,0 +1,853 @@
+Script started on 2026-10-16 17:46:35+00:00 [COMMAND="npx remotion render Film-Excerpt-Monday public/renders/excerpt-monday.mp4 --concurrency=4" <not executed on terminal>]
+[1G[0K\[1G[0K[33mDetected differing memory amounts:[39m
+[33mMemory reported by CGroup: 8796093019981.11 MB[39m
+[33mMemory reported by /proc/meminfo MemAvailable: 14906.26 MB[39m
+[33mYou might have inadvertently set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.[39m
+[33mUsing the lower amount of memory for calculation.[39m
+Bundling code        [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m 8%[42DBundling code        [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 21%[43DBundling code        [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 60%[43DBundling code        [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 69%[43DBundling code        [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 75%[43DBundling code        [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 81%[43DBundling code        [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 87%[43DBundling code        [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 93%[43DBundling code        [34m━━━━━━━━━━━━━━━━━━[39m 100%[44DBundled code         [34m━━━━━━━━━━━━━━━━━━[39m [90m4607ms[39m
+[33mDetected differing memory amounts:[39m
+[33mMemory reported by CGroup: 8796093019437.59 MB[39m
+[33mMemory reported by /proc/meminfo MemAvailable: 14533.95 MB[39m
+[33mYou might have inadvertently set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.[39m
+[33mUsing the lower amount of memory for calculation.[39m
+[90mComposition          Film-Excerpt-Monday[39m
+[90mCodec                h264[39m
+[90mOutput               public/renders/excerpt-monday.mp4[39m
+[90mConcurrency          4x[39m
+Rendering frames     [2m━━━━━━━━━━━━━━━━━━[22m   0/811
+Encoding video       [2m━━━━━━━━━━━━━━━━━━[22m   0/811[33mDetected differing memory amounts:[39m
+[33mMemory reported by CGroup: 8796093019375.29 MB[39m
+[33mMemory reported by /proc/meminfo MemAvailable: 14499.93 MB[39m
+[33mYou might have inadvertently set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.[39m
+[33mUsing the lower amount of memory for calculation.[39m
+[33mDetected differing memory amounts:[39m
+[33mMemory reported by CGroup: 8796093019368.57 MB[39m
+[33mMemory reported by /proc/meminfo MemAvailable: 14493.11 MB[39m
+[33mYou might have inadvertently set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.[39m
+[33mUsing the lower amount of memory for calculation.[39m
+[33mDetected differing memory amounts:[39m
+[33mMemory reported by CGroup: 8796093019367.05 MB[39m
+[33mMemory reported by /proc/meminfo MemAvailable: 14492.61 MB[39m
+[33mYou might have inadvertently set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.[39m
+[33mUsing the lower amount of memory for calculation.[39m
+[33mDetected differing memory amounts:[39m
+[33mMemory reported by CGroup: 8796093019363.19 MB[39m
+[33mMemory reported by /proc/meminfo MemAvailable: 14487.91 MB[39m
+[33mYou might have inadvertently set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.[39m
+[33mUsing the lower amount of memory for calculation.[39m
+[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m   1/811 [90m30m 4s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m   2/811 [90m16m 9s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m   3/811 [90m10m 48s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m   4/811 [90m8m 8s remaining[39m[0K
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m   5/811 [90m7m 8s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m   6/811 [90m6m 29s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m   7/811 [90m5m 33s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m   8/811 [90m4m 52s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m   9/811 [90m4m 22s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  10/811 [90m4m 17s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  11/811 [90m3m 54s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  12/811 [90m3m 35s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  13/811 [90m3m 18s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  14/811 [90m3m 19s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  15/811 [90m3m 5s remaining[39m[0K
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  16/811 [90m3m 5s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  17/811 [90m2m 54s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  18/811 [90m2m 47s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  19/811 [90m2m 38s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  20/811 [90m2m 33s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  21/811 [90m2m 26s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  22/811 [90m2m 22s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  23/811 [90m2m 16s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  24/811 [90m2m 12s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  25/811 [90m2m 7s remaining[39m[0K
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  26/811 [90m2m 4s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  27/811 [90m2m 0s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  28/811 [90m1m 57s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  29/811 [90m1m 54s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  30/811 [90m1m 51s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  31/811 [90m1m 48s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  32/811 [90m1m 45s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  33/811 [90m1m 44s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  34/811 [90m1m 43s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  35/811 [90m1m 43s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  36/811 [90m1m 43s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  37/811 [90m1m 44s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  38/811 [90m1m 44s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  39/811 [90m1m 44s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  40/811 [90m1m 44s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  41/811 [90m1m 43s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  42/811 [90m1m 46s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  43/811 [90m1m 48s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  44/811 [90m1m 48s remaining[39m
+[47C[47D[1ARendering frames     [2m━━━━━━━━━━━━━━━━━━[22m  45/811 [90m1m 49s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  46/811 [90m1m 46s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  47/811 [90m1m 45s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  48/811 [90m1m 44s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  49/811 [90m1m 42s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  50/811 [90m1m 41s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  51/811 [90m1m 40s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  52/811 [90m1m 38s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  53/811 [90m1m 37s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  54/811 [90m1m 36s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  55/811 [90m1m 35s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  56/811 [90m1m 33s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  57/811 [90m1m 32s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  58/811 [90m1m 31s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  59/811 [90m1m 30s remaining[39m
+[47C[47DEncoding video       [2m━━━━━━━━━━━━━━━━━━[22m   4/811[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  60/811 [90m1m 29s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  61/811 [90m1m 27s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  62/811 [90m1m 26s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  63/811 [90m1m 25s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  64/811 [90m1m 24s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  65/811 [90m1m 23s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  66/811 [90m1m 23s remaining[39m
+[47C[47D[1ARendering frames     [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  67/811 [90m1m 22s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  68/811 [90m1m 21s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  69/811 [90m1m 20s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  70/811 [90m1m 19s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  71/811 [90m1m 18s remaining[39m
+[47C[47DEncoding video       [2m━━━━━━━━━━━━━━━━━━[22m  10/811[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  72/811 [90m1m 18s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  73/811 [90m1m 17s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  74/811 [90m1m 16s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  75/811 [90m1m 15s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  76/811 [90m1m 14s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  77/811 [90m1m 14s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  78/811 [90m1m 13s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  79/811 [90m1m 12s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  80/811 [90m1m 12s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  81/811 [90m1m 12s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  82/811 [90m1m 11s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  83/811 [90m1m 10s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  84/811 [90m1m 10s remaining[39m
+[47C[47DEncoding video       [2m━━━━━━━━━━━━━━━━━━[22m  26/811[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  85/811 [90m1m 9s remaining[39m[0K
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  86/811 [90m1m 9s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  87/811 [90m1m 8s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  88/811 [90m1m 8s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  89/811 [90m1m 7s remaining[39m
+[47C[47D[1ARendering frames     [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  90/811 [90m1m 7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m  91/811 [90m1m 6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m  92/811 [90m1m 5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m  93/811 [90m1m 5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m  94/811 [90m1m 5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m  95/811 [90m1m 4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m  96/811 [90m1m 3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m  97/811 [90m1m 3s remaining[39m
+[47C[47DEncoding video       [2m━━━━━━━━━━━━━━━━━━[22m  37/811[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m  98/811 [90m1m 3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m  99/811 [90m1m 2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m 100/811 [90m1m 2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m 101/811 [90m1m 1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m 102/811 [90m1m 1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m 103/811 [90m1m 0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m 104/811 [90m1m 0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m 105/811 [90m59s remaining[39m[0K
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m 106/811 [90m59s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m 107/811 [90m58s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m 108/811 [90m58s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m 109/811 [90m58s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m 110/811 [90m57s remaining[39m
+[47C[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m 111/811 [90m57s remaining[39m
+[47C[47DEncoding video       [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  49/811[47D[1ARendering frames     [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m 112/811 [90m57s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 113/811 [90m57s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 114/811 [90m57s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 115/811 [90m56s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 116/811 [90m56s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 117/811 [90m56s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 118/811 [90m55s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 119/811 [90m55s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 120/811 [90m55s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 121/811 [90m54s remaining[39m
+[47C[47DEncoding video       [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  56/811[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 122/811 [90m54s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 123/811 [90m54s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 124/811 [90m53s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 125/811 [90m53s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 126/811 [90m53s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 127/811 [90m53s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 128/811 [90m52s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 129/811 [90m52s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 130/811 [90m52s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 131/811 [90m52s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 132/811 [90m51s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 133/811 [90m51s remaining[39m
+[47C[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 134/811 [90m51s remaining[39m
+[47C[47DEncoding video       [34m━[39m[2m╺━━━━━━━━━━━━━━━━[22m  66/811[47D[1ARendering frames     [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 135/811 [90m51s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 136/811 [90m50s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 137/811 [90m50s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 138/811 [90m51s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 139/811 [90m50s remaining[39m
+[47C[47DEncoding video       [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  71/811[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 140/811 [90m51s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 141/811 [90m50s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 142/811 [90m50s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 143/811 [90m50s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 144/811 [90m49s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 145/811 [90m49s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 146/811 [90m49s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 147/811 [90m49s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 148/811 [90m48s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 149/811 [90m48s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 150/811 [90m48s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 151/811 [90m38s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 152/811 [90m38s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 153/811 [90m38s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 154/811 [90m38s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 155/811 [90m37s remaining[39m
+[47C[47DEncoding video       [34m━╸[39m[2m━━━━━━━━━━━━━━━━[22m  83/811[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 156/811 [90m36s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 157/811 [90m36s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 158/811 [90m36s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 159/811 [90m36s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 160/811 [90m35s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 161/811 [90m35s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 162/811 [90m35s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 163/811 [90m35s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 164/811 [90m34s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 165/811 [90m34s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 166/811 [90m33s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 167/811 [90m33s remaining[39m
+[47C[47DEncoding video       [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m  94/811[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 168/811 [90m33s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 169/811 [90m33s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 170/811 [90m33s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 171/811 [90m33s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 172/811 [90m33s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 173/811 [90m33s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 174/811 [90m33s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 175/811 [90m33s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 176/811 [90m33s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 177/811 [90m33s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 178/811 [90m33s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 179/811 [90m33s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 180/811 [90m33s remaining[39m
+[47C[47DEncoding video       [34m━━[39m[2m╺━━━━━━━━━━━━━━━[22m 104/811[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 181/811 [90m33s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 182/811 [90m33s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 183/811 [90m32s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 184/811 [90m32s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 185/811 [90m32s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 186/811 [90m31s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 187/811 [90m30s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 188/811 [90m30s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 189/811 [90m29s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 190/811 [90m29s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 191/811 [90m29s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 192/811 [90m27s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 193/811 [90m26s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 194/811 [90m26s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 195/811 [90m25s remaining[39m
+[47C[47DEncoding video       [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 115/811[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 196/811 [90m25s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 197/811 [90m25s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 198/811 [90m25s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 199/811 [90m25s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 200/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 201/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 202/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 203/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 204/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 205/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 206/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 207/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 208/811 [90m24s remaining[39m
+[47C[47DEncoding video       [34m━━╸[39m[2m━━━━━━━━━━━━━━━[22m 126/811[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 209/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 210/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 211/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 212/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 213/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 214/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 215/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 216/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 217/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 218/811 [90m23s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 219/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 220/811 [90m24s remaining[39m
+[47C[47DEncoding video       [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 136/811[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 221/811 [90m24s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 222/811 [90m23s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 223/811 [90m23s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 224/811 [90m23s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 225/811 [90m23s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 226/811 [90m23s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 227/811 [90m23s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 228/811 [90m23s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 229/811 [90m23s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 230/811 [90m23s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 231/811 [90m23s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 232/811 [90m23s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 233/811 [90m23s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 234/811 [90m23s remaining[39m
+[47C[47DEncoding video       [34m━━━[39m[2m╺━━━━━━━━━━━━━━[22m 146/811[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 235/811 [90m23s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 236/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 237/811 [90m23s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 238/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 239/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 240/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 241/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 242/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 243/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 244/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 245/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 246/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 247/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 248/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 249/811 [90m22s remaining[39m
+[47C[47DEncoding video       [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 159/811[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 250/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 251/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 252/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 253/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 254/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 255/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 256/811 [90m21s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 257/811 [90m22s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 258/811 [90m21s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 259/811 [90m21s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 260/811 [90m21s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 261/811 [90m21s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 262/811 [90m21s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 263/811 [90m21s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 264/811 [90m21s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 265/811 [90m20s remaining[39m
+[47C[47DEncoding video       [34m━━━╸[39m[2m━━━━━━━━━━━━━━[22m 170/811[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 266/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 267/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 268/811 [90m21s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 269/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 270/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 271/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 272/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 273/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 274/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 275/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 276/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 277/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 278/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 279/811 [90m20s remaining[39m
+[47C[47DEncoding video       [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 183/811[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 280/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 281/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 282/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 283/811 [90m20s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 284/811 [90m19s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 285/811 [90m19s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 286/811 [90m19s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 287/811 [90m19s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 288/811 [90m19s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 289/811 [90m19s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 290/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 291/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 292/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 293/811 [90m18s remaining[39m
+[47C[47DEncoding video       [34m━━━━[39m[2m╺━━━━━━━━━━━━━[22m 194/811[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 294/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 295/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 296/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 297/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 298/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 299/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 300/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 301/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 302/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 303/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 304/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 305/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 306/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 307/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 308/811 [90m18s remaining[39m
+[47C[47DEncoding video       [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 206/811[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 309/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 310/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 311/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 312/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 313/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 314/811 [90m18s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 315/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 316/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 317/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 318/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 319/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 320/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 321/811 [90m17s remaining[39m
+[47C[47DEncoding video       [34m━━━━╸[39m[2m━━━━━━━━━━━━━[22m 217/811[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 322/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 323/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 324/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 325/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 326/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 327/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 328/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 329/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 330/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 331/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 332/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 333/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 334/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 335/811 [90m16s remaining[39m
+[47C[47DEncoding video       [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 228/811[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 336/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 337/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 338/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 339/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 340/811 [90m17s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 341/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 342/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 343/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 344/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 345/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 346/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 347/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 348/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 349/811 [90m16s remaining[39m
+[47C[47DEncoding video       [34m━━━━━[39m[2m╺━━━━━━━━━━━━[22m 239/811[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 350/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 351/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 352/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 353/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 354/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 355/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 356/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 357/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 358/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 359/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 360/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 361/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 362/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 363/811 [90m16s remaining[39m
+[47C[47DEncoding video       [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 250/811[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 364/811 [90m16s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 365/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 366/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 367/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 368/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 369/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 370/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 371/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 372/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 373/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 374/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 375/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 376/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 377/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 378/811 [90m15s remaining[39m
+[47C[47DEncoding video       [34m━━━━━╸[39m[2m━━━━━━━━━━━━[22m 262/811[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 379/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 380/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 381/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 382/811 [90m15s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 383/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 384/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 385/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 386/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 387/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 388/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 389/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 390/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 391/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 392/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 393/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 394/811 [90m14s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 274/811[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 395/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 396/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 397/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 398/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 399/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 400/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 401/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 402/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 403/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 404/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 405/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 406/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 407/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 408/811 [90m14s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 409/811 [90m13s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━[39m[2m╺━━━━━━━━━━━[22m 287/811[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 410/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 411/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 412/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 413/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 414/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 415/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 416/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 417/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 418/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 419/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 420/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 421/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 422/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 423/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 424/811 [90m13s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 299/811[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 425/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 426/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 427/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 428/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 429/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 430/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 431/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 432/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 433/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 434/811 [90m13s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 435/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 436/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 437/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 438/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 439/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 440/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 441/811 [90m12s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━╸[39m[2m━━━━━━━━━━━[22m 313/811[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 442/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 443/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 444/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 445/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 446/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 447/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 448/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 449/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 450/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 451/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 452/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 453/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 454/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 455/811 [90m12s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 456/811 [90m11s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━[39m[2m╺━━━━━━━━━━[22m 325/811[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 457/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 458/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 459/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 460/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 461/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 462/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 463/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 464/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 465/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 466/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 467/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 468/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 469/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 470/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 471/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 472/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 473/811 [90m11s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 338/811[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 474/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 475/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 476/811 [90m11s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 477/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 478/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 479/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 480/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 481/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 482/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 483/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 484/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 485/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 486/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 487/811 [90m10s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━╸[39m[2m━━━━━━━━━━[22m 350/811[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 488/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 489/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 490/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 491/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 492/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 493/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 494/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 495/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 496/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 497/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 498/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 499/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 500/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 501/811 [90m10s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 502/811 [90m9s remaining[39m[0K
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 503/811 [90m9s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 362/811[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 504/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 505/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 506/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 507/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 508/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 509/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 510/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 511/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 512/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 513/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 514/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 515/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 516/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 517/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 518/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 519/811 [90m9s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━[39m[2m╺━━━━━━━━━[22m 375/811[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 520/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 521/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 522/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 523/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 524/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 525/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 526/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 527/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 528/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 529/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 530/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 531/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 532/811 [90m9s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 386/811[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 533/811 [90m9s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 534/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 535/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 536/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 537/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 538/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 539/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 540/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 541/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 542/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 543/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 544/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 545/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 546/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 547/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 548/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 549/811 [90m8s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━╸[39m[2m━━━━━━━━━[22m 399/811[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 550/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 551/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 552/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 553/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 554/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 555/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 556/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 557/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 558/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 559/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 560/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 561/811 [90m8s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 562/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 563/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 564/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 565/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 566/811 [90m7s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 411/811[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 567/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 568/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 569/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 570/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 571/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 572/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 573/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 574/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 575/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 576/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 577/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 578/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 579/811 [90m7s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━[39m[2m╺━━━━━━━━[22m 423/811[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 580/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 581/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 582/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 583/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 584/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 585/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 586/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 587/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 588/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 589/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 590/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 591/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 592/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 593/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 594/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 595/811 [90m7s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 436/811[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 596/811 [90m7s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 597/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 598/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 599/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 600/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 601/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 602/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 603/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 604/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 605/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 606/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 607/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 608/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 609/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 610/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 611/811 [90m6s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━╸[39m[2m━━━━━━━━[22m 449/811[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 612/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 613/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 614/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 615/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 616/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 617/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 618/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 619/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 620/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 621/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 622/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 623/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 624/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 625/811 [90m6s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 626/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 627/811 [90m5s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━━[39m[2m╺━━━━━━━[22m 462/811[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 628/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 629/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━╸[39m[2m━━━━[22m 630/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 631/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 632/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 633/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 634/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 635/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 636/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 637/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 638/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 639/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 640/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 641/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 642/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 643/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 644/811 [90m5s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 474/811[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 645/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 646/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 647/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 648/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 649/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 650/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 651/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 652/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 653/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 654/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 655/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 656/811 [90m5s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 657/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 658/811 [90m4s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━━╸[39m[2m━━━━━━━[22m 486/811[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 659/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 660/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 661/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 662/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 663/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 664/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 665/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 666/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 667/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 668/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 669/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 670/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 671/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 672/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 673/811 [90m4s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 498/811[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 674/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━╸[39m[2m━━━[22m 675/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 676/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 677/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 678/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 679/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 680/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 681/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 682/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 683/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 684/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 685/811 [90m4s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 508/811[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 686/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 687/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 688/811 [90m4s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 689/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 690/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 691/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 692/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 693/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 694/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 695/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 696/811 [90m3s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━━━[39m[2m╺━━━━━━[22m 517/811[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 697/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━[39m[2m╺━━[22m 698/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 699/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 700/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 701/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 702/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 703/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 704/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 705/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 706/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 707/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 708/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 709/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 710/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 711/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 712/811 [90m3s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━━━╸[39m[2m━━━━━━[22m 529/811[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 713/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 714/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 715/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 716/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 717/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 718/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 719/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━╸[39m[2m━━[22m 720/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 721/811 [90m3s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 722/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 723/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 724/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 725/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 726/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 727/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 728/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 729/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 730/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 731/811 [90m2s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 544/811[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 732/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 733/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 734/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 735/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 736/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 737/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 738/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 739/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 740/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 741/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 742/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━[39m[2m╺━[22m 743/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 744/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 745/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 746/811 [90m2s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━━━━[39m[2m╺━━━━━[22m 556/811[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 747/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 748/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 749/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 750/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 751/811 [90m2s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 752/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 753/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 754/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 755/811 [90m1s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 564/811[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 756/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 757/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 758/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 759/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 760/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 761/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 762/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 763/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 764/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━╸[39m[2m━[22m 765/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 766/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 767/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 768/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 769/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 770/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 771/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 772/811 [90m1s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━━━━╸[39m[2m━━━━━[22m 578/811[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 773/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 774/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 775/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 776/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 777/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 778/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 779/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 780/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 781/811 [90m1s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 782/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 783/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 784/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 785/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 786/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 787/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━[39m[2m╺[22m 788/811 [90m0s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 590/811[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 789/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 790/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 791/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 792/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 793/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 794/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 795/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 796/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 797/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 798/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 799/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 800/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 801/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 802/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 803/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 804/811 [90m0s remaining[39m
+[47C[47DEncoding video       [34m━━━━━━━━━━━━━[39m[2m╺━━━━[22m 603/811[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 805/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 806/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 807/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 808/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 809/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━╸[39m 810/811 [90m0s remaining[39m
+[47C[47D[1ARendering frames     [34m━━━━━━━━━━━━━━━━━━[39m 811/811[0K
+[47C[47DEncoding video       [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 642/811[47DEncoding video       [34m━━━━━━━━━━━━━━[39m[2m╺━━━[22m 649/811[47D[1ARendered frames      [34m━━━━━━━━━━━━━━━━━━[39m [90m33957ms[39m
+Encoded video        [34m━━━━━━━━━━━━━━━━━━[39m [90m815ms[39m[0K[45DEncoded video        [34m━━━━━━━━━━━━━━━━━━[39m [90m815ms[39m
+[34m+                    public/renders/excerpt-monday.mp4[39m [90m3.1 MB[39m
+[1G[0K\[1G[0K
+Script done on 2026-10-16 17:47:20+00:00 [COMMAND_EXIT_CODE="0"]

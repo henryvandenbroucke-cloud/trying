@@ -1,0 +1,30 @@
+{
+  "_doc": "Ordered blocks. 'fixed' shots have set durations; 'speech' blocks place a narration segment and start each shot at its cue phrase (first words the shot carries). 'play' inserts example-film audio inside the current shot. holdAfter adds a reading/action hold (s) after a shot's last word; the narration audio is split in that sentence pause.",
+  "blocks": [
+    { "type": "fixed", "shots": [["01A", 3.0], ["01B", 3.0], ["01C", 4.0]], "audio": [["EFN-01", 0.35], ["EFN-02", 6.25]] },
+    { "type": "speech", "seg": "TUT-01", "lead": 0.9, "first": "01D", "shots": [["01D", null], ["02A", "In this video"], ["02B", "shape it"], ["02C", "turn that story"], ["02D", "and finish"]], "marks": { "01D.cut": "started" } },
+    { "type": "speech", "seg": "TUT-02", "shots": [["03A", null], ["03B", "Ifverse is"], ["03C", "Day One Films"], ["03D", "and so does"], ["03E", "Our story"]] },
+    { "type": "speech", "seg": "TUT-03", "shots": [["04A", null], ["04B", "A consequence"], ["04C", "An emotional choice"], ["04D", "And a payoff"], ["05A", "Here's the whole"], ["05B", "Then record"], ["05C", "Next characters"], ["05D", "Finally review"]] },
+    { "type": "speech", "seg": "TUT-04", "shots": [["06A", null], ["06B", "Remotion's official"], ["06C", "These commands", 2.2], ["06D", "In a second"], ["06E", "Now Claude edits", 1.2]] },
+    { "type": "speech", "seg": "TUT-05", "shots": [["07A", null], ["07B", "Its key rule"], ["07C", "Claude sends back", 1.0], ["07D", "Inspired by these"], ["07E", "It has real"]] },
+    { "type": "speech", "seg": "TUT-06", "shots": [["08A", null], ["08B", "Claude writes the full", 0.8], ["08C", "First find the rule"], ["08D", "Then find the choice"], ["08E", "Hook rule", 1.2]] },
+    { "type": "speech", "seg": "TUT-07", "shots": [["09A", null], ["09B", "But the script", 0.6], ["09C", "So find a reliable", 0.8], ["09D", "and change the wording", 0.8], ["09E", "Claims checked"]] },
+    { "type": "speech", "seg": "TUT-08a", "shots": [["10A", null, 0.5], ["10B", "Choose one voice"], ["10C", "Listen to a short"]], "play": [["TEST", 0.35]] },
+    { "type": "speech", "seg": "TUT-08b", "gap": 0.5, "shots": [["10D", null, 0.6], ["10E", "Those pauses"]] },
+    { "type": "speech", "seg": "TUT-09", "shots": [["11A", null], ["11B", "So split it"], ["11C", "When the narration"], ["11D", "Every beat links"], ["11E", "Line them up"]] },
+    { "type": "speech", "seg": "TUT-10", "shots": [["12A", null], ["12B", "Three things"], ["12C", "Claude builds him"], ["12D", "His expression"], ["12E", "Mila follows"], ["13A", "Next the place"], ["13B", "At the back"], ["13C", "In the middle"], ["13D", "And in front"], ["13E", "Put the layers"]] },
+    { "type": "speech", "seg": "TUT-11", "shots": [["14A", null], ["14B", "Watch for five", 5.0]] },
+    { "type": "speech", "seg": "TUT-11b", "gap": 0.3, "shots": [["14C", null, 0.6], ["14D", "Anticipation before"]] },
+    { "type": "speech", "seg": "EFN-04", "lead": 0.4, "shots": [["14E", null]] },
+    { "type": "speech", "seg": "TUT-11c", "gap": 0.4, "continue": "14E", "shots": [] },
+    { "type": "speech", "seg": "TUT-12a", "shots": [["15A", null]], "play": [["EFN-04", 0.3]] },
+    { "type": "speech", "seg": "TUT-12b", "gap": 0.4, "shots": [["15B", null], ["15C", "Ask Claude"], ["15D", "Now play it"]], "play": [["EFN-04", 0.3]] },
+    { "type": "speech", "seg": "TUT-12c", "gap": 0.4, "shots": [["15E", null, 0.8]] },
+    { "type": "speech", "seg": "TUT-13a", "shots": [["16A", null]], "play": [["TEST", 0.3]] },
+    { "type": "speech", "seg": "TUT-13b", "gap": 0.4, "shots": [["16B", null], ["16C", "Then one paper"], ["16D", "And a soft music"], ["16E", "Here's the full mix"]], "play": [["TEST", 0.3]] },
+    { "type": "speech", "seg": "TUT-14", "gap": 0.6, "shots": [["17A", null], ["17B", "Here's a real one", 0.8], ["17C", "Describe the fix", 0.8], ["17D", "Claude edits the component", 0.6], ["17E", "Same shot", 0.6], ["17F", "Because we fixed"]] },
+    { "type": "speech", "seg": "TUT-15", "shots": [["18A", null, 0.6], ["18B", "Run the render", 0.6], ["18C", "Then open", 0.8], ["18D", "Check the beginning", 1.2], ["18E", "All three pass", 1.6], ["19A", "Here's the finished scene", 0.6]] },
+    { "type": "speech", "seg": "EFN-05", "gap": 0.2, "lead": 0.4, "shots": [["19B", null], ["19C", "But you're somewhere"], ["19D", "Then two taps"], ["19E", "You look at the notebook", 0.5]] },
+    { "type": "speech", "seg": "TUT-16", "gap": 0.5, "shots": [["19F", null], ["20A", "That's one finished", 0.9], ["20B", "For your next video"], ["20C", "So which ability", 0.8], ["20D", "Thanks for watching", 4.0]] }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+ "recorded": "2026-10-16 17:25\u201317:27 UTC, scratch folder /tmp/.../demo (real runs, output abridged where marked \u2026)",
+ "blocks": [
+  {
+   "cmd": "npx create-video --yes --blank my-video",
+   "elapsed_s": 33.5,
+   "out": [
+    "Welcome to Remotion!",
+    "Installing dependencies...",
+    "added 345 packages, and audited 346 packages in 29s",
+    "\u2026",
+    "found 0 vulnerabilities",
+    "Copied to my-video.",
+    "",
+    "Get started by running:",
+    " cd my-video",
+    " npm run dev"
+   ]
+  },
+  {
+   "cmd": "cd my-video",
+   "elapsed_s": 0,
+   "out": []
+  },
+  {
+   "cmd": "npx remotion skills add",
+   "elapsed_s": 12,
+   "out": [
+    "\u25cf  Agent detected \u2014 installing non-interactively",
+    "\u25c7  Source: https://github.com/remotion-dev/skills.git",
+    "\u2026",
+    "\u2514  Done!  Review skills before use; they run with full agent permissions."
+   ]
+  },
+  {
+   "cmd": "npm run dev",
+   "elapsed_s": 2,
+   "out": [
+    "> my-video@1.0.0 dev",
+    "> remotion studio",
+    "Server ready - Local: http://localhost:3000",
+    "Building...",
+    "Built in 1764ms"
+   ]
+  }
+ ],
+ "note": "All four commands were run for real in a scratch folder on 2026-10-16; output lines are copied from the recordings (*.raw), abridged where marked with \u2026"
+}

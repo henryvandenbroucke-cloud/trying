@@ -1,0 +1,11 @@
+{
+ "file": "excerpt-monday.mp4",
+ "duration_s": 27.051,
+ "width": 1920,
+ "height": 1080,
+ "fps": 30,
+ "codec": "H.264",
+ "audio": "AAC 48 kHz",
+ "size_mb": 3.1,
+ "measured_with": "ffprobe, 2026-10-16"
+}

@@ -43,7 +43,8 @@ export const noahRecallPose = (f: number): Pose => {
   return mixPose(eyesClosed, remember, prog(f, 70, 96, SETTLE));
 };
 
-export const Shot01C_MemoryReveal: React.FC<{ f: number }> = ({ f }) => {
+/** legacyLayering reproduces the prototype draft draw order (legs in front of the table) for the Seq 17 review demo. */
+export const Shot01C_MemoryReveal: React.FC<{ f: number; legacyLayering?: boolean }> = ({ f, legacyLayering }) => {
   const M = MEDIUM;
   const s = M.stroke;
   const contents = [<MemorySummer key="m1" />, <MemoryRain key="m2" />, <MemoryWriting key="m3" />];
@@ -68,11 +69,21 @@ export const Shot01C_MemoryReveal: React.FC<{ f: number }> = ({ f }) => {
           );
         })}
         <CafeChair x={M.noah.x + 0.03 * M.H} seatY={M.noah.y + 0.02 * M.H} floorY={1500} H={M.H} backSide={1} stroke={s} />
-        {/* Layering: body behind the table, near arm in front of it */}
-        <Stickman at={M.noah} pose={noahRecallPose(f)} outfit="noah" parts="body" />
-        <CafeTable {...M.table} floorY={1500} stroke={s} seed="t2" />
-        <Notebook cx={M.nb.cx} cy={M.nb.cy} H={M.H} k={M.nb.k} open={M.nb.open} stroke={s} />
-        <Stickman at={M.noah} pose={noahRecallPose(f)} outfit="noah" parts="nearArm" />
+        {legacyLayering ? (
+          <>
+            <CafeTable {...M.table} floorY={1500} stroke={s} seed="t2" />
+            <Notebook cx={M.nb.cx} cy={M.nb.cy} H={M.H} k={M.nb.k} open={M.nb.open} stroke={s} />
+            <Stickman at={M.noah} pose={noahRecallPose(f)} outfit="noah" />
+          </>
+        ) : (
+          <>
+            {/* Layering: body behind the table, near arm in front of it */}
+            <Stickman at={M.noah} pose={noahRecallPose(f)} outfit="noah" parts="body" />
+            <CafeTable {...M.table} floorY={1500} stroke={s} seed="t2" />
+            <Notebook cx={M.nb.cx} cy={M.nb.cy} H={M.H} k={M.nb.k} open={M.nb.open} stroke={s} />
+            <Stickman at={M.noah} pose={noahRecallPose(f)} outfit="noah" parts="nearArm" />
+          </>
+        )}
       </svg>
     </AbsoluteFill>
   );
