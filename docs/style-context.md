@@ -5,7 +5,7 @@ Use this file (plus REFERENCE_STYLE in `production-plan.md` §0.2) with every sh
 
 ## Canvas and timing
 1920 × 1080, 30 fps, safe margin 100 px, end frames exclusive. Every shot is a `<Sequence>` whose
-frames come from `src/tutorial/shots.ts`. All motion is a pure function of the frame (no CSS
+frames come from `src/tutorial/timeline.json` (built by `npm run timeline` from measured narration or, until it exists, text estimates). All motion is a pure function of the frame (no CSS
 animation, no wall-clock, no `Math.random()`; seeded `random()` only for static shapes).
 
 ## Palettes
@@ -45,3 +45,16 @@ Café: wall + floor, two arched windows with slow clouds (≤ 6 px/s, no wrap in
 4. **Washes:** flat fills + a static, seeded paper-grain PNG (opacity 0.2). Watercolour wash textures are not made yet.
 5. **Line weight in close-ups** follows the camera (character scale H = 3600 px in 01B), so ink lines are thicker there by design.
 6. **No music bed** in the prototype (no licensed track available yet).
+7. **Café room is drawn 800 px past each frame edge.** A camera truck (13D) then never shows an empty edge.
+8. **Caption-safe zone:** the bottom band from y 850 to 1080 is reserved for captions. Keywords are clamped to y ≤ 850, and tags sit at about y 880 or at the top.
+9. **Straight cuts never start from an empty frame:** `appear()` with `at ≤ 10` shows the element already on screen, with only a small settle.
+10. **Shared tutorial components** live in `src/shared/ui/kit.tsx`: Keyword, Underline, MarkerRing, Tag (real / illustration / missing / draft / done / fix / info), CaptureFrame, Terminal, DocCard, RouteNode, ProgressStrip, Waveform, CaptionPill, Thumb and CheckStrip.
+    - The Waveform draws real peaks only. With no audio file it draws a dashed "pending" lane.
+11. **No 18E→19A scale move:** it read as a back-and-forth resize. 18E is now a static player view, and the only film↔tutorial transitions are the irises.
+12. **Voices:** both are male, as the creator requested. Voice A is Sami (tutorial) and Voice B is Chris (film); see `narration-manifest.json`.
+13. **Labels over illustrated scenes use `Keyword plate`:** a paper card behind the text, placed in clear space (usually top-left at x 100, y 70–140), never over characters, props or the floor line.
+    - Found in the final review: 04B, 04C, 12E, 13D, 14A and 14C had labels on the table and legs; 17E had one over its capture.
+14. **Tutorial music bed (placeholder pad)** runs from the 01D pull-back to the end at 0.22.
+    - It ramps to silence over 12 f around every *measured* playback clip (a sample shown on screen is heard alone), the Seq 16 sound demo (16B–16E) and the film excerpt (19B–19E).
+    - Playback whose audio is still missing keeps the bed and room tone (15A/15D), so there is no dead air.
+    - The pad loops seamlessly: whole-cycle partials and wrapped chord envelopes. Looped audio uses `loopVolumeCurveBehavior="extend"`, so the volume curves follow the global timeline.

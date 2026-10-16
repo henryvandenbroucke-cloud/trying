@@ -37,12 +37,13 @@ const ShotSound: React.FC<{ p: ShotProps }> = ({ p }) => {
   if (id === "14B" || id === "14E") { room(0.7); items.push(<Sfx key="p" at={actionStart(p) + 60} file={PAPER} volume={0.28} />); }
   if (id === "14C") items.push(<Sfx key="p" at={70} file={PAPER} volume={0.28} />);
   if (id === "15A" || id === "15D") {
+    room(0.7);
     const st = p.cue("that", 1, 40);
     const early = id === "15A" ? DRAFT_EARLY : 0;
     items.push(<Sfx key="p" at={st + efnOpen - 4 - early} file={PAPER} volume={0.28} />);
   }
   if (["16B", "16C", "16D", "16E"].includes(id)) room(1.0);
-  if (["16C", "16D", "16E"].includes(id)) for (let k = 60; k < p.d; k += 140) items.push(<Sfx key={`p${k}`} at={k} file={PAPER} volume={0.28} />);
+  if (["16C", "16D", "16E"].includes(id)) items.push(<Sfx key="p" at={60} file={PAPER} volume={0.28} />);
   if (id === "16D" || id === "16E") items.push(<Bed key="pad" d={p.d} file={PAD} volume={0.5} trim={0} />);
   return <>{items}</>;
 };
@@ -62,12 +63,28 @@ const WorkedExampleTag: React.FC<{ g: number }> = ({ g }) => {
   );
 };
 
+const BED_LEVEL = 0.22;
+const BED_OFF_SHOTS = ["16B", "16C", "16D", "16E", "19B", "19C", "19D", "19E"];
+/** Muted ranges: the Seq 16 sound demo, the film excerpt, and every measured playback clip
+ *  (a sample played on screen is heard alone). Missing playback audio leaves the bed on. */
+const BED_OFF: [number, number][] = [
+  ...BED_OFF_SHOTS.map((id) => [shotById(id).from, shotById(id).to] as [number, number]),
+  ...TL.audio.filter((a) => a.play && a.src === "measured").map((a) => [a.from, a.from + Math.round(a.dur * 30)] as [number, number]),
+];
+/** Global-frame volume of the tutorial bed: 12-frame ramps around each muted range. */
+const bedVolume = (g: number) => {
+  let v = interpolate(g, [TL.marks["01D.cut"] ?? 0, (TL.marks["01D.cut"] ?? 0) + 30, TL.durationInFrames - 60, TL.durationInFrames], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  for (const [a, b] of BED_OFF) {
+    v = Math.min(v, interpolate(g, [a - 12, a, b, b + 12], [1, 0, 0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
+  }
+  return BED_LEVEL * v;
+};
+
 export const Tutorial: React.FC<{ captions?: boolean }> = ({ captions = true }) => {
   const g = useCurrentFrame();
   const cap = TL.captions.find((c) => g >= c.from && g < c.to);
   const d1 = shotById("01D");
   const cutG = TL.marks["01D.cut"] ?? d1.from + 60;
-  const endShot = shotById("19F");
   return (
     <AbsoluteFill style={{ backgroundColor: UI.paper }}>
       {TL.shots.map((s) => {
@@ -87,9 +104,10 @@ export const Tutorial: React.FC<{ captions?: boolean }> = ({ captions = true }) 
       <Grain opacity={0.2} />
       {/* Opening room tone: film excerpt → pull-back, fades as the tutorial voice begins */}
       <Audio src={staticFile(ROOM)} durationInFrames={cutG + 20} volume={(f) => interpolate(f, [0, 15, cutG - 20, cutG + 20], [0, 0.9, 0.9, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
-      {/* Closing music bed under the last line, fading to silence */}
-      <Sequence name="End bed" from={endShot.from} durationInFrames={TL.durationInFrames - endShot.from}>
-        <Audio src={staticFile(PAD)} loop volume={(f) => 0.45 * interpolate(f, [0, 30, TL.durationInFrames - endShot.from - 60, TL.durationInFrames - endShot.from], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
+      {/* Tutorial music bed (placeholder pad): from the pull-back to the end, silent wherever
+          example-film audio or the Seq 16 sound demo plays, faded to silence at the end */}
+      <Sequence name="Tutorial bed" from={cutG} durationInFrames={TL.durationInFrames - cutG}>
+        <Audio src={staticFile(PAD)} loop loopVolumeCurveBehavior="extend" volume={(f) => bedVolume(f + cutG)} />
       </Sequence>
       {/* Measured narration files only (estimated segments have no audio yet) */}
       {TL.audio.filter((a) => a.src === "measured").map((a, i) => (

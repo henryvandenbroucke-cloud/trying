@@ -16,6 +16,7 @@ export const Bed: React.FC<{ d: number; file: string; volume: number; trim?: num
     trimBefore={trim}
     durationInFrames={d}
     loop
+    loopVolumeCurveBehavior="extend"
     volume={(f) => volume * interpolate(f, [0, 6, d - 6, d], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}
   />
 );

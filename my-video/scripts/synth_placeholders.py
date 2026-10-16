@@ -10,16 +10,21 @@ def write(name, x):
     with wave.open(os.path.join(ROOT, "public", "sfx", name), "wb") as w:
         w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes(st.tobytes())
 
-# pad: C – Am – F – G, 8 s each, crossfaded, gentle detune, -24 dBFS-ish
+# pad: C – Am – F – G, 8 s each, crossfaded, gentle detune, -24 dBFS-ish.
+# Seamless loop: every partial is rounded to a whole number of cycles in 32 s and the chord
+# envelopes wrap around (G crossfades back into C at the loop point), so there is no dip or click.
 chords = [(261.6, 329.6, 392.0), (220.0, 261.6, 329.6), (174.6, 220.0, 261.6), (196.0, 246.9, 293.7)]
 dur = 32; t = np.arange(dur * SR) / SR; pad = np.zeros_like(t)
+cyc = lambda f: np.round(f * dur) / dur
 for i, ch in enumerate(chords):
-    env = np.clip(np.minimum((t - i * 8 + 1.5) / 1.5, (i * 8 + 9.5 - t) / 1.5), 0, 1)
+    env = np.zeros_like(t)
+    for k in (-dur, 0, dur):
+        tk = t + k
+        env = np.maximum(env, np.clip(np.minimum((tk - i * 8 + 1.5) / 1.5, (i * 8 + 9.5 - tk) / 1.5), 0, 1))
     for f in ch:
-        pad += env * (np.sin(2 * np.pi * f * t) + 0.5 * np.sin(2 * np.pi * f * 1.003 * t) + 0.2 * np.sin(2 * np.pi * 2 * f * t))
+        pad += env * (np.sin(2 * np.pi * cyc(f) * t) + 0.5 * np.sin(2 * np.pi * cyc(f * 1.003) * t) + 0.2 * np.sin(2 * np.pi * cyc(2 * f) * t))
 pad *= 0.06 / 1.7
-fade = np.minimum(1, np.minimum(t / 2, (dur - t) / 2))
-write("music_pad_placeholder.wav", pad * fade)
+write("music_pad_placeholder.wav", pad)
 
 # two soft knocks on wood, 0.23 s apart
 tt = np.arange(int(0.6 * SR)) / SR; taps = np.zeros_like(tt)

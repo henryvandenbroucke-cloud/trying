@@ -169,7 +169,7 @@ export const S12E: ShotComp = ({ l }) => {
           <text x={CAFE.noah.x + 130} y={CAFE.noah.y - 150} style={{ fontFamily: FONT.family, fontWeight: 900, fontSize: 30, fill: UI.cobalt }}>1 H</text>
         </g>
       } />
-      <Keyword l={l} at={40} text="Characters ready" y={940} size={46} underline={false} />
+      <Keyword l={l} at={40} text="Characters ready" x={100} y={70} center={false} size={40} underline={false} plate />
     </>
   );
 };
@@ -204,7 +204,7 @@ export const S13D: ShotComp = ({ l, d, cue }) => {
     <>
       <CafeScene f={l} cam={{ s: 1.15, cx: 760, cy: 560, truck: tr }} />
       <Abs x={100} y={70} style={appear(l, 6, 10)}><Tag kind="info" size={28}>Foreground · moves {Math.round(1.4 * 100)}% · background 20%</Tag></Abs>
-      <Keyword l={l} at={Math.min(d - 30, c + 66)} text="Near moves more than far" y={940} size={46} underline={false} />
+      <Keyword l={l} at={Math.min(d - 30, c + 66)} text="Near moves more than far" x={100} y={140} center={false} size={40} underline={false} plate />
     </>
   );
 };

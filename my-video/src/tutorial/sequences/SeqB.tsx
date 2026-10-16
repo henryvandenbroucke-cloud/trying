@@ -48,7 +48,7 @@ export const S06B: ShotComp = ({ l }) => {
       <CaptureFrame src="captures/remotion-docs_2026-10-16.png" imgW={IMG.w} imgH={IMG.h} box={DOCS_BOX} from={{ x: 420, y: 140, w: 1800, h: 900 }} to={DOCS_TO} l={l} t0={4} t1={26} caption="remotion.dev/docs/ai/coding-agents · real capture, 16 Oct 2026">
         <div style={{ position: "absolute", left: cmd.x - DOCS_BOX.x + 20, top: cmd.y - DOCS_BOX.y + cmd.h + 6, width: (cmd.w - 40) * u, height: 8, borderRadius: 4, background: UI.cobalt }} />
       </CaptureFrame>
-      <Abs x={1440} y={960}><Tag kind="real" size={26}>Official setup</Tag></Abs>
+      <Abs x={1440} y={880}><Tag kind="real" size={26}>Official setup</Tag></Abs>
     </Stage>
   );
 };
@@ -58,7 +58,6 @@ export const S06C: ShotComp = ({ l, d }) => {
   const starts = [4, Math.round(d * 0.36), Math.round(d * 0.46), Math.round(d * 0.7)];
   return (
     <Stage>
-      <ProgressStrip active={4} l={l} />
       <Terminal l={l} blocks={b} starts={starts} x={160} y={130} w={1600} h={760} size={36} title="Terminal · real run, recorded 16 Oct 2026" speedTag={{ at: 30, to: starts[1], text: "Sped up · install took 29 s" }} />
     </Stage>
   );
@@ -112,7 +111,7 @@ export const S07B: ShotComp = ({ l, cue }) => (
 const TITLES = ["1. What If Your Memory Was 100x Sharper?", "2. What If You Had Zero Sense of Pain?", "3. What If One Minute Felt Like a Year?", "4. What If Your Eyesight Was 10x Sharper?", "5. What If Your Sense of Smell Was 1,000x Stronger?", "6. What If You Had 300 Hours of Energy?", "7. What If One Night Felt Like a Week?", "8. What If Your Heart Rate Was 10x Slower?", "9. What If You Had Zero Need for Sleep?"];
 export const S07C: ShotComp = ({ l, d }) => (
   <Stage>
-    <DocCard l={l} x={360} y={110} w={1200} h={800} title="Claude's titles (9 of 35)" tag={<Tag kind="real" size={24}>Claude output · prompts/outputs/topic-titles.md</Tag>} size={38} scrollY={lerp(0, 120, prog(l, 30, d - 20, MOVE))} lines={TITLES.map((t, i) => ({ text: t, hl: i === 0 ? d - 40 : undefined }))} />
+    <DocCard l={l} x={360} y={110} w={1200} h={800} title="Claude's titles (9 of 35)" tag={<Tag kind="real" size={24}>Claude output · prompts/outputs/topic-titles.md</Tag>} size={38} lines={TITLES.map((t, i) => ({ text: t, hl: i === 0 ? d - 40 : undefined }))} />
   </Stage>
 );
 export const S07D: ShotComp = ({ l, cue }) => (
@@ -209,6 +208,7 @@ export const S08D: ShotComp = ({ l, cue }) => {
         { text: "The past will always be there.", hl: c + 12 },
         { text: "Sam might not.", hl: c + 18 },
       ]} />
+      <Abs x={1000} y={712} style={appear(l, 10, 10)}><Tag kind="info" size={26}>Context: Mila's little brother Sam is lost at the market</Tag></Abs>
       <Keyword l={l} at={c + 6} text="The emotional choice" y={830} size={52} underline={false} />
     </Stage>
   );
@@ -258,12 +258,12 @@ export const S09B: ShotComp = ({ l, cue }) => {
 const UVA_BOX = { x: 160, y: 120, w: 1600, h: 800 };
 const UVA_TO = { x: 560, y: 860, w: 1300, h: 650 };
 export const S09C: ShotComp = ({ l }) => {
-  const r = capRect(UVA_BOX, UVA_TO, { x: 636, y: 925, w: 1170, h: 40 });
+  const r = capRect(UVA_BOX, UVA_TO, { x: 630, y: 918, w: 1180, h: 38 });
   const u = prog(l, 34, 46, ENTER);
   return (
     <Stage>
       <CaptureFrame src="captures/uva-reconsolidation-review_2026-10-16.png" imgW={IMG.w} imgH={IMG.h} box={UVA_BOX} from={{ x: 200, y: 300, w: 1900, h: 950 }} to={UVA_TO} l={l} t0={6} t1={30} caption="Elsey, van Ast & Kindt (2018), Psychological Bulletin 144(8) · UvA-DARE · real capture, 16 Oct 2026">
-        <div style={{ position: "absolute", left: r.x - UVA_BOX.x, top: r.y - UVA_BOX.y + r.h + 4, width: r.w * u, height: 8, background: UI.cobalt, borderRadius: 4 }} />
+        <div style={{ position: "absolute", left: r.x - UVA_BOX.x, top: r.y - UVA_BOX.y, width: r.w * u, height: r.h, background: "rgba(69,92,245,0.2)", borderRadius: 6 }} />
       </CaptureFrame>
     </Stage>
   );
@@ -326,8 +326,8 @@ const ElRequest: React.FC<{ l: number; ring?: [number, number] }> = ({ l, ring }
     </div>
     {ring ? (
       <>
-        <MarkerRing l={l} at={ring[0]} x={252} y={533} w={680} h={80} seed="v" />
-        <MarkerRing l={l} at={ring[1]} x={972} y={533} w={680} h={80} seed="m" />
+        <MarkerRing l={l} at={ring[0]} x={252} y={468} w={680} h={72} seed="v" />
+        <MarkerRing l={l} at={ring[1]} x={972} y={468} w={680} h={72} seed="m" />
       </>
     ) : null}
   </>
@@ -366,8 +366,8 @@ export const S10C: ShotComp = ({ l, shot }) => {
             <div style={{ ...font(FONT.body, 32, UI.muted) }}>Sami – Warm American Voice · 2.69 s</div>
           </div>
         </div>
-        <Waveform peaks={PEAKS.TEST} x={250} y={420} w={1420} h={140} frames={(PEAKS.TEST ?? []).length || 80} playhead={Math.min(head, (PEAKS.TEST ?? []).length)} />
       </div>
+      <Waveform peaks={PEAKS.TEST} x={250} y={430} w={1420} h={140} frames={(PEAKS.TEST ?? []).length || 80} playhead={Math.min(head, (PEAKS.TEST ?? []).length)} />
       <Keyword l={l} at={10} text="Listen first" y={760} size={54} />
     </Stage>
   );

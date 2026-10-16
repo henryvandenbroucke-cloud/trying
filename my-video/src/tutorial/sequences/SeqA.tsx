@@ -69,15 +69,15 @@ export const S01D: ShotComp = ({ l, d, shot }) => {
         <div style={{ ...font(FONT.title, 88), letterSpacing: -1 }}>SCRIPT <span style={{ color: UI.cobalt }}>→</span> VIDEO</div>
         <div style={{ ...font(FONT.body, 38, UI.muted), marginTop: 18, ...appear(k, 18, 10) }}>The scene plan behind the excerpt</div>
       </div>
-      <div style={{ position: "absolute", left: 120, top: 735, display: "flex", gap: 40 }}>
+      <div style={{ position: "absolute", left: 1060, top: 480, display: "flex", gap: 26 }}>
         {[
           { label: "Scene 1 · Notice", el: <Shot01A_CafeWide f={60} /> },
           { label: "Scene 2 · Touch", el: <Shot01B_NotebookClose f={60} /> },
           { label: "Scene 3 · Remember", el: <Shot01C_MemoryReveal f={100} /> },
         ].map((t, i) => (
           <div key={i} style={{ ...appear(k, 24 + i * 3, 12) }}>
-            <Thumb w={330}>{t.el}</Thumb>
-            <div style={{ ...font(FONT.body, 30), marginTop: 14 }}>{t.label}</div>
+            <Thumb w={232}>{t.el}</Thumb>
+            <div style={{ ...font(FONT.body, 24), marginTop: 10, whiteSpace: "nowrap" }}>{t.label}</div>
           </div>
         ))}
       </div>
@@ -205,7 +205,7 @@ const RefFocus: React.FC<{ i: number; l: number; ringAt: number; note?: React.Re
   return (
     <Stage>
       <div style={{ position: "absolute", left: 460, top: 230, ...settleIn(l) }}><RefCard r={r} w={1000} big /></div>
-      <MarkerRing l={l} at={ringAt} x={516} y={352} w={(r.handle.length * 46 * 0.5) | 0} h={56} seed={`ref${i}`} />
+      <MarkerRing l={l} at={ringAt} x={516} y={378} w={(r.handle.length * 46 * 0.5) | 0} h={46} seed={`ref${i}`} />
       {note ? <Abs x={0} y={800} w={1920} style={{ display: "flex", justifyContent: "center", ...appear(l, ringAt + 20, 10) }}>{note}</Abs> : null}
     </Stage>
   );
@@ -218,8 +218,8 @@ export const S03E: ShotComp = ({ l }) => {
   return (
     <Stage>
       <svg style={{ position: "absolute", left: 0, top: 0, ...appear(l, 4, 12, 16) }} width={1920} height={1080}>
-        <Stickman at={{ x: 330, y: 610, H: 520, facing: 1 }} pose={noah} outfit="noah" legs="standing" />
-        <Stickman at={{ x: 600, y: 630, H: 499, facing: -1 }} pose={{ ...noah, gazeX: 0.3 }} outfit="mila" legs="standing" />
+        <Stickman at={{ x: 330, y: 520, H: 520, facing: 1 }} pose={noah} outfit="noah" legs="standing" />
+        <Stickman at={{ x: 600, y: 541, H: 499, facing: -1 }} pose={{ ...noah, gazeX: 0.3 }} outfit="mila" legs="standing" />
       </svg>
       <div style={{ position: "absolute", left: 860, top: 300, width: 900, padding: "48px 56px", boxSizing: "border-box", ...cardStyle(28), ...appear(l, 8, 12, 20) }}>
         <Tag kind="real" size={24}>Our project</Tag>
@@ -264,7 +264,7 @@ export const S04B: ShotComp = ({ l, cue }) => {
           <path d="M 1360 330 C 1320 360, 1300 380, 1290 410" fill="none" stroke={UI.cobalt} strokeWidth={9} strokeLinecap="round" strokeDasharray={140} strokeDashoffset={140 * (1 - arrow)} />
         </g>
       } />
-      <Abs x={0} y={0} w={1920} h={1080}><Keyword l={l} at={at + 4} text="A visible consequence" y={930} size={52} underline={false} /></Abs>
+      <Abs x={0} y={0} w={1920} h={1080}><Keyword l={l} at={at + 4} text="A visible consequence" x={100} y={70} center={false} size={44} underline={false} plate /></Abs>
     </AbsoluteFill>
   );
 };
@@ -276,7 +276,7 @@ export const S04C: ShotComp = ({ l, cue }) => {
   return (
     <AbsoluteFill>
       <CafeScene f={l} cam={{ s: 1.35, cx: 960, cy: 560 }} wallFade={1} showPlant={false} noah={noah} mila={{ ...milaDefault(), smile: 0.35, gazeX: 0.7 }} />
-      <Keyword l={l} at={at + 4} text="An emotional choice" y={930} size={52} underline={false} />
+      <Keyword l={l} at={at + 4} text="An emotional choice" x={100} y={70} center={false} size={44} underline={false} plate />
     </AbsoluteFill>
   );
 };

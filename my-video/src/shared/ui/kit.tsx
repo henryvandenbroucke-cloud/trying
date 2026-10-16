@@ -9,6 +9,11 @@ export const MONO = "JetBrains Mono";
 
 /** Opacity is linear; position/scale use ENTER (motion research: ease-out in, ease-in out, exits ≈ 75 % of entrances). */
 export const appear = (l: number, at: number, dur = 10, rise = 14): React.CSSProperties => {
+  // Content that belongs to the cut frame is present at the cut and only settles (no flash of empty paper).
+  if (at <= 10) {
+    const t = prog(l, 0, dur, ENTER);
+    return { opacity: 1, translate: `0px ${(1 - t) * rise * 0.5}px` };
+  }
   const o = interpolate(l, [at, at + dur * 0.8], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const t = prog(l, at, at + dur, ENTER);
   return { opacity: o, translate: `0px ${(1 - t) * rise}px` };
@@ -32,9 +37,10 @@ export const Abs: React.FC<{ x: number; y: number; w?: number; h?: number; style
 );
 
 /** Big emphasis text (2–6 words) with an optional hand-drawn underline. */
-export const Keyword: React.FC<{ l: number; at: number; text: string; x?: number; y: number; size?: number; underline?: boolean; color?: string; center?: boolean; w?: number }> = ({ l, at, text, x = 0, y, size = 56, underline = true, color = UI.charcoal, center = true, w = 1920 }) => (
-  <div style={{ position: "absolute", left: x, top: y, width: center ? w : undefined, display: "flex", flexDirection: "column", alignItems: center ? "center" : "flex-start", ...appear(l, at, 12) }}>
-    <div style={{ ...font(FONT.title, size, color), letterSpacing: -0.5, whiteSpace: "nowrap" }}>{text}</div>
+/** Emphasis label. Over an illustrated scene pass `plate` (paper card behind the text) and place it in clear space — never over characters or props. */
+export const Keyword: React.FC<{ l: number; at: number; text: string; x?: number; y: number; size?: number; underline?: boolean; color?: string; center?: boolean; w?: number; plate?: boolean }> = ({ l, at, text, x = 0, y, size = 56, underline = true, color = UI.charcoal, center = true, w = 1920, plate = false }) => (
+  <div style={{ position: "absolute", left: x, top: Math.min(y, 850), width: center ? w : undefined, display: "flex", flexDirection: "column", alignItems: center ? "center" : "flex-start", ...appear(l, at, 12) }}>
+    <div style={{ ...font(FONT.title, size, color), letterSpacing: -0.5, whiteSpace: "nowrap", ...(plate ? { background: UI.card, padding: `${size * 0.22}px ${size * 0.5}px`, borderRadius: size * 0.4, boxShadow: "0 8px 24px rgba(22,32,42,0.14)", border: "2px solid rgba(22,32,42,0.12)" } : {}) }}>{text}</div>
     {underline ? <Underline l={l} at={at + 6} width={Math.min(text.length * size * 0.52, 900)} /> : null}
   </div>
 );

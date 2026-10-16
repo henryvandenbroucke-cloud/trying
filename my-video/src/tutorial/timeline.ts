@@ -39,7 +39,13 @@ export const cueIn = (shot: TShot, prefix: string, n = 1, fallback = 0) => {
 
 /** Words of one segment as {f, fe} relative to that segment's first word (for estimated lanes). */
 export const segWords = (seg: string) => {
-  const ws = TL.words.filter((w) => w.seg === seg);
+  // first occurrence only (a line can be played several times, e.g. EFN-04 in 14E/15A/15D)
+  const all = TL.words.filter((w) => w.seg === seg);
+  const ws: TWord[] = [];
+  for (const w of all) {
+    if (ws.length && w.f - ws[ws.length - 1].fe > 45) break;
+    ws.push(w);
+  }
   const f0 = ws.length ? ws[0].f : 0;
   return ws.map((w) => ({ w: w.w, f: w.f - f0, fe: w.fe - f0 }));
 };

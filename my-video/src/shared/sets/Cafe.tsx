@@ -57,10 +57,10 @@ export const CafeWindow: React.FC<{ x: number; y: number; w: number; h: number; 
 /** Wall + floor background for the café (L1 + floor), full frame. */
 export const CafeRoom: React.FC<{ width: number; height: number; floorY: number; stroke: number }> = ({ width, height, floorY, stroke }) => (
   <g>
-    <rect x={0} y={-200} width={width} height={height + 200} fill={FILM.wall} />
-    <rect x={0} y={floorY} width={width} height={height - floorY} fill={FILM.floor} />
-    <line x1={0} y1={floorY} x2={width} y2={floorY} stroke={ink} strokeWidth={stroke * 0.8} />
-    <line x1={0} y1={floorY - stroke * 4} x2={width} y2={floorY - stroke * 4} stroke={ink} strokeWidth={stroke * 0.4} opacity={0.35} />
+    <rect x={-800} y={-200} width={width + 1600} height={height + 400} fill={FILM.wall} />
+    <rect x={-800} y={floorY} width={width + 1600} height={height - floorY + 200} fill={FILM.floor} />
+    <line x1={-800} y1={floorY} x2={width + 800} y2={floorY} stroke={ink} strokeWidth={stroke * 0.8} />
+    <line x1={-800} y1={floorY - stroke * 4} x2={width + 800} y2={floorY - stroke * 4} stroke={ink} strokeWidth={stroke * 0.4} opacity={0.35} />
   </g>
 );
 

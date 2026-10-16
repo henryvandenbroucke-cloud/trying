@@ -40,7 +40,7 @@ export const S14A: ShotComp = ({ l }) => (
   <Stage bg={FILM.wall}>
     <ReachClip f={0} cam={{ s: 1.25, cx: 1060, cy: 560 }} start={9999} />
     <ProgressStrip active={6} l={l} />
-    <Keyword l={l} at={10} text="Notice → Reach → Open" y={920} size={46} underline={false} />
+    <Keyword l={l} at={10} text="Notice → Reach → Open" x={100} y={90} center={false} size={40} underline={false} plate />
   </Stage>
 );
 export const S14B: ShotComp = (p) => {
@@ -65,7 +65,7 @@ export const S14C: ShotComp = ({ l }) => {
     <Stage bg={FILM.wall}>
       <ReachClip f={f} start={0} cam={CLOSE_CAM} />
       {l >= 40 ? <MarkerRing l={l} at={40} x={sx - 50} y={sy - 50} w={100} h={100} seed="contact" /> : null}
-      <Keyword l={l} at={44} text="Contact matters" y={920} size={50} underline={false} />
+      <Keyword l={l} at={44} text="Contact matters" x={100} y={90} center={false} size={44} underline={false} plate />
     </Stage>
   );
 };
@@ -140,14 +140,18 @@ export const S15A: ShotComp = (p) => {
   const st = playAt(p);
   return (<Stage><Preview l={p.l} start={st} early={DRAFT_EARLY} label={<Tag kind="fix" size={24}>DRAFT · timing demo</Tag>} /><Lanes l={p.l} start={st} early={DRAFT_EARLY} /></Stage>);
 };
-export const S15B: ShotComp = ({ l }) => (
-  <Stage>
-    <div style={{ position: "absolute", left: 0, top: -500, width: 1920, height: 1580, scale: "1.35", transformOrigin: "960px 1300px" }}>
-      <Lanes l={l} start={-9999} early={DRAFT_EARLY} zoom />
-    </div>
-    <Keyword l={l} at={10} text="Find the spoken cue" y={160} size={56} />
-  </Stage>
-);
+export const S15B: ShotComp = ({ l }) => {
+  const w = EFN4();
+  const total = (w[w.length - 1]?.fe ?? 80) + 30;
+  const cx = 260 + (efn4Open() / total) * 1400;
+  return (
+    <Stage>
+      <Lanes l={l} start={-9999} early={DRAFT_EARLY} />
+      <MarkerRing l={l} at={16} x={cx - 60} y={640} w={120} h={300} seed="cue" />
+      <Keyword l={l} at={10} text="Find the spoken cue" y={260} size={64} />
+    </Stage>
+  );
+};
 export const S15C: ShotComp = ({ l }) => (
   <Stage>
     <div style={{ position: "absolute", left: 200, top: 170, width: 1520, padding: "40px 48px", boxSizing: "border-box", background: "#141A21", borderRadius: 20, ...settleIn(l) }}>
@@ -184,7 +188,7 @@ export const S15E: ShotComp = ({ l }) => {
 const LANES = ["Voice", "Ambience", "Effects", "Music"];
 const Mixer: React.FC<{ l: number; active: number[]; duck?: boolean; playAtL?: number }> = ({ l, active, duck, playAtL }) => (
   <>
-    <Abs x={560} y={60}><Thumb w={800}><ReachClip f={((l % 140) + 140) % 140} start={0} cam={{ s: 1.3, cx: 1060, cy: 570 }} /></Thumb></Abs>
+    <Abs x={560} y={60}><Thumb w={800}><ReachClip f={Math.min(l, 130)} start={0} cam={{ s: 1.3, cx: 1060, cy: 570 }} /></Thumb></Abs>
     {LANES.map((n, i) => {
       const on = active.includes(i);
       return (
@@ -206,12 +210,12 @@ export const S16A: ShotComp = (p) => (<Stage><ProgressStrip active={7} l={p.l} /
 export const S16B: ShotComp = ({ l }) => (<Stage><Mixer l={l} active={[0, 1]} /></Stage>);
 export const S16C: ShotComp = ({ l }) => (<Stage><Mixer l={l} active={[0, 1, 2]} /></Stage>);
 export const S16D: ShotComp = ({ l }) => (<Stage><Mixer l={l} active={[0, 1, 2, 3]} duck /></Stage>);
-export const S16E: ShotComp = (p) => (<Stage><Mixer l={p.l} active={[0, 1, 2, 3]} duck playAtL={testPlay(p)} /><Abs x={160} y={980}><Tag kind="info" size={22}>Voice stays loudest · checked with a loudness meter on the export</Tag></Abs></Stage>);
+export const S16E: ShotComp = (p) => (<Stage><Mixer l={p.l} active={[0, 1, 2, 3]} duck playAtL={testPlay(p)} /><Abs x={1220} y={500}><Tag kind="info" size={22}>Voice stays loudest</Tag></Abs></Stage>);
 
 // ---------- 17 ----------
 const DraftFrame: React.FC<{ legacy: boolean; w: number; crop?: boolean }> = ({ legacy, w, crop }) => (
   <Thumb w={w}>
-    <div style={{ width: 1920, height: 1080, ...(crop ? { scale: "2.2", transformOrigin: "1260px 1000px" } : {}) }}>
+    <div style={{ width: 1920, height: 1080, ...(crop ? { scale: "2.2", transformOrigin: "1300px 1080px" } : {}) }}>
       <Shot01C_MemoryReveal f={100} legacyLayering={legacy} />
     </div>
   </Thumb>
@@ -221,7 +225,7 @@ export const S17A: ShotComp = ({ l }) => (
     <ProgressStrip active={8} l={l} />
     <Abs x={260} y={130}><DraftFrame legacy w={1400} /></Abs>
     <Abs x={280} y={150}><Tag kind="draft" size={26}>Draft · shot 01C, frame 100</Tag></Abs>
-    <Abs x={260} y={940}><Tag kind="info" size={24}>Reproduced from the prototype's original draw order</Tag></Abs>
+    <Abs x={1000} y={150}><Tag kind="info" size={24}>Reproduced from the prototype's original draw order</Tag></Abs>
   </Stage>
 );
 export const S17B: ShotComp = ({ l, cue }) => {
@@ -229,8 +233,8 @@ export const S17B: ShotComp = ({ l, cue }) => {
   return (
     <Stage>
       <Abs x={260} y={130}><DraftFrame legacy crop w={1400} /></Abs>
-      <MarkerRing l={l} at={at} x={560} y={560} w={800} h={260} color={UI.amber} seed="legs" />
-      <Abs x={260} y={940} style={appear(l, at + 8, 10)}><Tag kind="fix" size={30}>Legs drawn in front of the table edge</Tag></Abs>
+      <MarkerRing l={l} at={at} x={1000} y={780} w={380} h={120} color={UI.amber} seed="legs" />
+      <Abs x={260} y={150} style={appear(l, at + 8, 10)}><Tag kind="fix" size={30}>Legs drawn in front of the table edge</Tag></Abs>
     </Stage>
   );
 };
@@ -262,7 +266,7 @@ export const S17E: ShotComp = ({ l }) => (
   <Stage>
     <Abs x={260} y={130}><DraftFrame legacy={false} w={1400} /></Abs>
     <Abs x={280} y={150}><Tag kind="done" size={26}>Revised · shot 01C, frame 100</Tag></Abs>
-    <Keyword l={l} at={30} text="Same shot · same timing" y={950} size={46} underline={false} />
+    <Abs x={760} y={150} style={appear(l, 30, 10)}><Tag kind="done" size={26}>Same shot · same timing</Tag></Abs>
   </Stage>
 );
 export const S17F: ShotComp = ({ l }) => (
@@ -273,6 +277,8 @@ export const S17F: ShotComp = ({ l }) => (
         <div style={{ marginTop: 18 }}><Tag kind={lg ? "fix" : "done"} size={30}>{lg ? "Draft" : "Fixed"}</Tag></div>
       </Abs>
     ))}
+    <MarkerRing l={l} at={14} x={558} y={591} w={209} h={76} color={UI.amber} seed="d17" />
+    <MarkerRing l={l} at={20} x={1428} y={591} w={209} h={76} color={UI.mint} seed="f17" />
     <Keyword l={l} at={20} text="Fix the component, every shot improves" y={820} size={48} underline={false} />
   </Stage>
 );

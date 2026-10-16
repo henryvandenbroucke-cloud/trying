@@ -29,7 +29,7 @@ export const S18A: ShotComp = ({ l }) => {
       <ProgressStrip active={9} l={l} />
       <CaptureFrame src="captures/studio-excerpt_2026-10-16.png" imgW={IMG.w} imgH={IMG.h} box={STUDIO_BOX} from={{ x: 0, y: 0, w: 2400, h: 1200 }} to={STUDIO_TO} l={l} t0={6} t1={30} caption="Remotion Studio · this project · composition Film-Excerpt-Monday · real capture" />
       <MarkerRing l={l} at={40} x={r.x} y={r.y} w={r.w} h={r.h} seed="dims" />
-      <Abs x={160} y={960} style={appear(l, 46, 10)}><Tag kind="done" size={28}>{fileInfo.width} × {fileInfo.height} · {fileInfo.fps} fps — the settings actually used</Tag></Abs>
+      <Abs x={190} y={135} style={appear(l, 46, 10)}><Tag kind="done" size={28}>{fileInfo.width} × {fileInfo.height} · {fileInfo.fps} fps — the settings actually used</Tag></Abs>
     </Stage>
   );
 };
@@ -67,17 +67,12 @@ export const S18D: ShotComp = ({ l, d }) => {
     </Stage>
   );
 };
-export const S18E: ShotComp = ({ l, d }) => {
-  const t = prog(l, d - 26, d - 2, MOVE);
-  return (
-    <Stage>
-      <div style={{ position: "absolute", left: lerp(300, 0, t), top: lerp(110, 0, t), width: lerp(1320, 1920, t), height: lerp(742, 1080, t), borderRadius: lerp(18, 0, t), overflow: "hidden" }}>
-        <OffthreadVideo src={staticFile(VID)} volume={0} style={{ width: "100%", height: "100%" }} />
-      </div>
-      <Abs x={300} y={880} style={{ opacity: 1 - t }}><Tag kind="done" size={28}>Export checked · picture and timing</Tag></Abs>
-    </Stage>
-  );
-};
+export const S18E: ShotComp = ({ l }) => (
+  <Stage>
+    <Player x={300} y={110} w={1320} startFrom={Math.round(fileInfo.duration_s * 30) - 120} />
+    <Abs x={300} y={880} style={appear(l, 4, 10)}><Tag kind="done" size={28}>Export checked · picture and timing</Tag></Abs>
+  </Stage>
+);
 
 // ---------- 19 ----------
 const Iris: React.FC<{ r: number; children: React.ReactNode }> = ({ r, children }) => (
