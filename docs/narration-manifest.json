@@ -1,0 +1,46 @@
+{
+  "updated": "2026-10-16",
+  "tracks": {
+    "tutorial": {
+      "voice": { "name": "Maya - Clean Female Voice for Tutorials, Courses", "voice_id": "VM3xGK2y98ElLwxtAj6e", "source": "ElevenLabs voice library (creative_list_voices)" },
+      "model": "eleven_multilingual_v2",
+      "settings": "connector defaults (stability/similarity/speed not exposed by the connector; not changed)",
+      "segments": [
+        {
+          "id": "TUT-01",
+          "take": 1,
+          "status": "generated",
+          "text": "This little film started as a plain script. In this video, we'll take one original idea, shape it into a story with one clear rule, turn that story into scenes that actually make sense, and finish with a real video file. Claude plans and codes it, Remotion renders it, and ElevenLabs gives it a voice.",
+          "files": {
+            "original": "my-video/public/audio/tutorial/TUT-01_take1.mp3",
+            "normalized": "my-video/public/audio/tutorial/TUT-01_take1_norm.wav",
+            "words": "my-video/public/audio/tutorial/TUT-01_take1.words.json"
+          },
+          "measured": {
+            "duration_s": 23.771,
+            "words": 54,
+            "wpm": 136,
+            "source_peak_dbfs": -7.0,
+            "source_mean_db": -27.7,
+            "normalized_integrated_lufs": -16.4,
+            "normalized_true_peak_dbfs": -1.5,
+            "pauses_s": [[2.32, 3.06], [6.03, 6.50], [9.31, 9.93], [13.15, 13.65], [15.63, 16.43], [18.51, 18.84], [20.61, 21.24], [23.41, 23.73]]
+          },
+          "word_timing_method": "Local Vosk small-en-us 0.15 ASR on the actual file (approximate, ±~50 ms). Not an ElevenLabs timing response. Pauses from ffmpeg silencedetect (-40 dB, 0.18 s).",
+          "asr_transcript": "this little film started as a plane script in this video will take one original idea shape it into a story with one clear rule turn that story into scenes that actually makes sense and finish with a real video file claude plans and codes it remote shun renders it and eleven laps gives it a voice",
+          "listening_check": "NOT performed by a human. ASR suggests 'Remotion' was spoken as re-MO-shun (heard as 'remote shun'). Please listen before locking.",
+          "used_in": "Prototype f363–f553 (first two sentences, cut in the 6.03–6.50 s pause)"
+        }
+      ],
+      "pending": ["TUT-02 … TUT-16 (text in docs/production-plan.md §5; paste-ready in docs/elevenlabs-handoff.md)"]
+    },
+    "example_film": {
+      "voice": { "recommended": "Chris - Warm, Thoughtful (vrZ1gMhrsD9LI0gRKrLh)", "alternative": "C. Jonathan (evRwgJsNor2dUBnqeWEo)", "chosen": null, "note": "Chosen from library descriptions only; not auditioned." },
+      "segments": [],
+      "pending": ["EFN lines for 01C, 10C, 19B–E once the example-film script is approved"]
+    }
+  },
+  "generation_log": [
+    { "date": "2026-10-16", "flow": "ElevenLabs flow 4zrxzP7R4ZbCDH25hXFG", "request": "TUT-01, 4 variations", "result": "1 completed (301 credits); 3 failed: 'Unusual activity has been detected on your account, so Free Tier access has been disabled … upgrade to a paid subscription.' Not retried." }
+  ]
+}
