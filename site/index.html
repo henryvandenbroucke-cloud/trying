@@ -1,0 +1,1327 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vroeglicht Parfum</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Vroeglicht maakt parfum in Gent, gedistilleerd in het uur voor de dageraad. Drie geuren, met de hand gevuld in batches van 300.">
+<meta name="theme-color" content="#070b24">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Jost:wght@300..600&display=swap">
+<style>
+/* Layout: one night-to-dawn scroll. A fixed WebGL flacon floats over a scrubbed sky through the hero and the pinned
+   "hours" story, then pearl editorial sections slide over it: collection list, atelier timeline, visit form, night footer. */
+:root {
+  --night: #070b24;
+  --dusk: #2a2f6e;
+  --dawn: #d9d3e8;
+  --pearl: #f1ecef;
+  --mist: #e7e1ea;
+  --ink: #1d1a33;
+  --ink-soft: #57536b;
+  --moon: #ece7f3;
+  --moon-soft: #b9b4cf;
+  --ember: #e9a466;
+  --juice-night: #b8692e;
+  --juice-blue: #9c93c9;
+  --juice-light: #e6c27a;
+  --line-dark: color-mix(in srgb, var(--moon) 18%, transparent);
+  --line-light: color-mix(in srgb, var(--ink) 14%, transparent);
+  --error: #9b2c3a;
+
+  --font-display: "Bodoni Moda", "Didot", "Bodoni 72", "Bodoni MT", Georgia, serif;
+  --font-body: "Jost", "Futura", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+
+  --step--1: 0.875rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.333rem;
+  --step-2: clamp(1.55rem, 1.25rem + 1vw, 1.95rem);
+  --step-3: clamp(1.95rem, 1.35rem + 2.2vw, 3rem);
+  --step-4: clamp(2.5rem, 1.5rem + 3.8vw, 4.75rem);
+  --step-mark: clamp(4.25rem, 17vw, 17rem);
+
+  --gutter: clamp(20px, 5vw, 72px);
+  /* side gutter: at least 20px, clears phone side insets, and keeps content in a 1320px column on wide screens */
+  --edge-l: max(var(--gutter), env(safe-area-inset-left, 0px), calc((100% - 1320px) / 2));
+  --edge-r: max(var(--gutter), env(safe-area-inset-right, 0px), calc((100% - 1320px) / 2));
+  --nav-h: 72px;
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+
+  --sky-top: #070b24;
+  --sky-bot: #151a44;
+  --glow: rgba(233, 164, 102, 0.26);
+  --glow-x: 50%;
+
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+body {
+  margin: 0;
+  background: var(--night);
+  color: var(--moon);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+h1, h2, h3, p, ol, ul, dl, dd, blockquote, figure { margin: 0; }
+ol, ul { padding: 0; list-style: none; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 1.05; text-wrap: balance; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+img { max-width: 100%; }
+
+:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+
+.wrap {
+  width: 100%;
+  padding-left: var(--edge-l);
+  padding-right: var(--edge-r);
+}
+
+.skip {
+  position: absolute; left: 1rem; top: -100px; z-index: 50;
+  background: var(--moon); color: var(--night);
+  padding: .75rem 1.25rem; border-radius: 999px; text-decoration: none;
+}
+.skip:focus { top: calc(1rem + env(safe-area-inset-top, 0px)); }
+
+/* ---------- Sky + stage (fixed layers) ---------- */
+.sky {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(55% 45% at var(--glow-x) 52%, var(--glow), transparent 72%),
+    linear-gradient(180deg, var(--sky-top), var(--sky-bot));
+}
+.stage {
+  position: fixed; left: 0; top: 0; z-index: 2;
+  width: 100%; height: 100vh; height: 100lvh;
+  pointer-events: none; display: block;
+  opacity: 0; transition: opacity 1.2s ease;
+}
+.stage-ready .stage { opacity: 1; }
+
+/* ---------- Nav ---------- */
+.nav {
+  position: absolute; left: 0; right: 0; top: 0; z-index: 10;
+  display: flex; align-items: center; gap: 2rem;
+  height: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-left: var(--edge-l);
+  padding-right: var(--edge-r);
+  color: var(--moon);
+  transition: color .5s ease, background-color .5s ease, transform .6s var(--ease-out);
+}
+.js .nav { position: fixed; }
+.nav--ink { color: var(--ink); }
+.nav--solid { background-color: color-mix(in srgb, var(--night) 72%, transparent); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); }
+.nav--solid.nav--ink { background-color: color-mix(in srgb, var(--pearl) 86%, transparent); }
+.nav--hidden { transform: translateY(-100%); }
+.nav--hidden:focus-within, .nav--menu { transform: none; }
+.nav--menu { background-color: transparent; -webkit-backdrop-filter: none; backdrop-filter: none; }
+.nav__brand {
+  font-family: var(--font-display); font-style: italic; font-size: 1.5rem;
+  text-decoration: none; letter-spacing: -.01em; margin-right: auto;
+}
+.nav__links { display: flex; gap: 2rem; }
+.nav__links a, .menu__links a { text-decoration: none; }
+.nav__links a {
+  font-size: var(--step--1); letter-spacing: .04em;
+  background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
+  transition: background-size .4s var(--ease-out);
+  padding-block: .35rem;
+}
+.nav__links a:hover { background-size: 100% 1px; }
+.lang { display: flex; gap: .15rem; }
+.lang button {
+  min-width: 44px; min-height: 44px; padding: 0 .5rem;
+  background: none; border: 0; cursor: pointer;
+  font-size: var(--step--1); letter-spacing: .06em; opacity: .55;
+  transition: opacity .3s;
+}
+.lang button[aria-pressed="true"] { opacity: 1; text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; }
+.lang button:hover { opacity: 1; }
+.nav__menu {
+  display: none; min-height: 44px; padding: 0 .25rem;
+  background: none; border: 0; cursor: pointer;
+  font-size: var(--step--1); letter-spacing: .06em;
+}
+
+.menu {
+  position: fixed; inset: 0; z-index: 9;
+  background: var(--night); color: var(--moon);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding-block: calc(var(--nav-h) + 2rem + env(safe-area-inset-top, 0px)) calc(3rem + env(safe-area-inset-bottom, 0px));
+  padding-left: var(--edge-l);
+  padding-right: var(--edge-r);
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path .7s var(--ease-out);
+}
+.menu.is-open { clip-path: inset(0 0 0 0); }
+.menu__links { display: grid; gap: .5rem; }
+.menu__links a { font-family: var(--font-display); font-style: italic; font-size: clamp(2.75rem, 12vw, 4rem); line-height: 1.1; }
+.menu .nav__brand { display: none; }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 52px; padding: 0 1.75rem;
+  border-radius: 999px; border: 1px solid transparent;
+  font-family: var(--font-body); font-size: var(--step--1); font-weight: 500; letter-spacing: .05em;
+  text-decoration: none; cursor: pointer; white-space: nowrap;
+  transition: background-color .35s ease, color .35s ease, border-color .35s ease;
+}
+.btn--moon { color: var(--moon); border-color: color-mix(in srgb, var(--moon) 45%, transparent); background: transparent; }
+.btn--moon:hover { background: var(--moon); color: var(--night); border-color: var(--moon); }
+.btn--ink { color: var(--pearl); background: var(--ink); border-color: var(--ink); }
+.btn--ink:hover { background: transparent; color: var(--ink); }
+
+/* ---------- Hero ---------- */
+/* .hero deliberately has no z-index: the wordmark sits under the WebGL flacon, the copy above it. */
+.hero {
+  position: relative;
+  min-height: 100vh; min-height: 100svh;
+  display: grid; grid-template-rows: 1fr auto;
+  padding-block: calc(var(--nav-h) + env(safe-area-inset-top, 0px)) clamp(1.75rem, 4vw, 3.25rem);
+  padding-left: var(--edge-l);
+  padding-right: var(--edge-r);
+}
+.hero__mark {
+  position: absolute; left: 0; right: 0; top: 43%; z-index: 1;
+  translate: 0 -50%;
+  text-align: center;
+  font-family: var(--font-display); font-style: italic; font-weight: 400;
+  font-size: var(--step-mark); line-height: .9; letter-spacing: -.035em;
+  color: var(--moon);
+  white-space: nowrap; user-select: none;
+}
+.hero__mark .ch { display: inline-block; overflow: hidden; padding: 0 .07em .12em; margin: 0 -.07em -.12em; vertical-align: top; }
+.hero__mark .ch__in { display: inline-block; will-change: transform; }
+
+.hero__fallback {
+  position: absolute; left: 50%; top: 47%; z-index: 2;
+  width: min(30vw, 15rem); aspect-ratio: .74;
+  transform: translate(-50%, -50%);
+  border-radius: 16% / 11%;
+  background:
+    linear-gradient(180deg, transparent 38%, color-mix(in srgb, var(--ember) 70%, transparent) 40%, color-mix(in srgb, var(--juice-night) 85%, transparent) 100%) padding-box,
+    linear-gradient(160deg, color-mix(in srgb, var(--moon) 30%, transparent), color-mix(in srgb, var(--moon) 4%, transparent));
+  border: 1px solid color-mix(in srgb, var(--moon) 30%, transparent);
+  box-shadow: 0 0 120px color-mix(in srgb, var(--ember) 35%, transparent);
+  transition: opacity 1s ease;
+}
+.hero__fallback::before {
+  content: ""; position: absolute; left: 50%; bottom: 100%;
+  width: 42%; aspect-ratio: 1.15; transform: translate(-50%, -12%);
+  border-radius: 10%; background: linear-gradient(160deg, #3a3556, #120f22);
+}
+.stage-ready .hero__fallback { opacity: 0; }
+
+.hero__foot {
+  grid-row: 2;
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 2rem 3rem;
+  position: relative; z-index: 3;
+}
+.hero__title { font-size: clamp(2rem, 1.25rem + 2.4vw, 3.4rem); max-width: 15ch; line-height: 1.04; letter-spacing: -.01em; }
+.hero__aside { display: grid; gap: 1.5rem; justify-items: end; text-align: right; max-width: 22rem; }
+.hero__lede { color: var(--moon-soft); font-size: var(--step-0); line-height: 1.55; font-weight: 300; }
+
+/* ---------- Hours (static by default, pinned in .motion) ---------- */
+.hours { position: relative; z-index: 4; color: var(--moon); }
+.hours__stage {
+  padding-left: var(--edge-l);
+  padding-right: var(--edge-r);
+}
+.hours__intro { font-size: var(--step-2); max-width: 22ch; line-height: 1.2; }
+.hour { display: grid; gap: .75rem; max-width: 30rem; }
+.hour__time { font-family: var(--font-display); font-size: var(--step-4); line-height: 1; font-variant-numeric: lining-nums tabular-nums; letter-spacing: -.02em; }
+.hour__name { font-family: var(--font-display); font-style: italic; font-size: var(--step-2); }
+.hour__notes { font-size: var(--step--1); letter-spacing: .03em; color: var(--moon-soft); }
+.hour__body { font-weight: 300; line-height: 1.6; max-width: 34ch; }
+.hour--light { color: var(--ink); }
+.hour--light .hour__notes { color: var(--ink-soft); }
+.hours__clock { display: none; }
+
+html:not(.motion) .hours { background: var(--night); }
+html:not(.motion) .hours__stage { padding-block: clamp(4rem, 10vw, 8rem) 0; }
+html:not(.motion) .hours__intro { padding-bottom: clamp(3rem, 7vw, 5rem); }
+html:not(.motion) .hours__stage { padding-left: 0; padding-right: 0; }
+html:not(.motion) .hours__intro { padding-left: var(--edge-l); padding-right: var(--edge-r); max-width: calc(24ch + var(--edge-l) + var(--edge-r)); }
+html:not(.motion) .hour {
+  max-width: none;
+  padding-block: clamp(3rem, 8vw, 6rem);
+  padding-left: var(--edge-l);
+  padding-right: var(--edge-r);
+}
+html:not(.motion) .hour--night { background: var(--night); border-top: 1px solid var(--line-dark); }
+html:not(.motion) .hour--blue { background: var(--dusk); }
+html:not(.motion) .hour--light { background: var(--dawn); }
+
+.motion .hours { z-index: 3; height: 100vh; height: 100svh; }
+.motion .hours__stage {
+  height: 100%;
+  display: grid; grid-template-columns: minmax(0, 30rem) 1fr; grid-template-rows: auto 1fr auto;
+  padding-block: calc(var(--nav-h) + env(safe-area-inset-top, 0px) + 1.5rem) clamp(1.75rem, 4vw, 3rem);
+}
+.motion .hours__intro { grid-column: 1 / -1; transition: none; }
+.motion .hours__list { grid-row: 2; grid-column: 1; display: grid; align-self: center; }
+.motion .hour { grid-area: 1 / 1; align-self: center; }
+.motion .hours__clock {
+  grid-row: 3; grid-column: 1;
+  display: grid; grid-template-columns: repeat(3, auto); justify-content: start; gap: 2.25rem;
+  position: relative; padding-top: 1rem;
+  font-size: var(--step--1); font-variant-numeric: tabular-nums; letter-spacing: .04em;
+}
+.hours__clock::before, .hours__clock::after {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 1px;
+  background: currentColor; opacity: .25; transform-origin: 0 50%;
+}
+.hours__clock::after { opacity: 1; transform: scaleX(var(--progress, 0)); }
+.hours__clock span { opacity: .45; transition: opacity .4s ease; }
+.hours__clock span.is-on { opacity: 1; }
+
+/* ---------- Light sections ---------- */
+.collection, .atelier, .visit { position: relative; z-index: 4; color: var(--ink); }
+.collection { background: var(--pearl); padding-block: clamp(5rem, 11vw, 9rem) clamp(4rem, 9vw, 7rem); }
+.collection::before {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 100%; height: 30vh;
+  background: linear-gradient(180deg, transparent, var(--pearl));
+  pointer-events: none;
+}
+.section-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 26rem); align-items: end; gap: 1.5rem 3rem; padding-bottom: clamp(2.5rem, 6vw, 4.5rem); }
+.section-title { font-size: var(--step-4); letter-spacing: -.02em; }
+.section-lede { color: var(--ink-soft); font-weight: 300; max-width: 38ch; }
+
+.scents { border-bottom: 1px solid var(--line-light); }
+.scent { border-top: 1px solid var(--line-light); transition: background-color .5s ease; }
+.scent:hover, .scent:focus-within { background: color-mix(in srgb, var(--juice) 9%, transparent); }
+.scent__row {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr) minmax(0, 15rem) 8.5rem auto;
+  align-items: center; gap: 1rem 2rem;
+  padding-block: clamp(1.5rem, 3vw, 2.25rem);
+}
+.scent__drop {
+  width: 1.5rem; aspect-ratio: .72; justify-self: center;
+  border-radius: 30% 30% 22% 22% / 16% 16% 12% 12%;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--juice) 35%, var(--pearl)) 0 30%, var(--juice) 30% 100%);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 18%, transparent);
+  transition: transform .6s var(--ease-out);
+}
+.scent:hover .scent__drop, .scent:focus-within .scent__drop { transform: scale(1.45) rotate(-6deg); }
+.scent__name { font-style: italic; font-size: var(--step-4); letter-spacing: -.02em; line-height: 1; }
+.scent__meta { display: grid; gap: .1rem; font-size: var(--step--1); color: var(--ink-soft); letter-spacing: .02em; }
+.scent__price { display: grid; gap: .1rem; font-size: var(--step--1); font-variant-numeric: tabular-nums; }
+.scent__price span { display: flex; justify-content: space-between; gap: 1rem; }
+.scent__toggle {
+  min-height: 44px; padding: 0 0 0 .5rem; background: none; border: 0; cursor: pointer;
+  font-size: var(--step--1); letter-spacing: .04em;
+  display: inline-flex; align-items: center; gap: .6rem; white-space: nowrap;
+}
+.scent__toggle svg { width: 14px; height: 14px; transition: transform .5s var(--ease-out); }
+.scent__toggle[aria-expanded="true"] svg { transform: rotate(45deg); }
+.scent__notes { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .6s var(--ease-out); }
+.scent__notes > div { overflow: hidden; min-height: 0; }
+.scent.is-open .scent__notes { grid-template-rows: 1fr; }
+.notes {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem 2rem;
+  padding: 0 0 2.25rem calc(3rem + 2rem);
+}
+.notes dt { font-size: var(--step--1); color: var(--ink-soft); letter-spacing: .03em; }
+.notes dd { font-family: var(--font-display); font-size: var(--step-1); line-height: 1.3; }
+
+.sampler {
+  margin-top: clamp(3rem, 7vw, 5rem);
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 1.5rem 3rem;
+}
+.sampler__title { font-family: var(--font-display); font-style: italic; font-size: var(--step-2); }
+.sampler__body { color: var(--ink-soft); font-weight: 300; max-width: 46ch; }
+
+.atelier { background: var(--mist); padding-block: clamp(5rem, 11vw, 9rem); }
+.atelier__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 3rem clamp(3rem, 8vw, 8rem); align-items: start; }
+.atelier__head { display: grid; gap: 1.75rem; position: sticky; top: calc(var(--nav-h) + 2rem); }
+.quote { margin-top: 1.5rem; display: grid; gap: .75rem; }
+.quote p { font-family: var(--font-display); font-style: italic; font-size: var(--step-3); line-height: 1.12; max-width: 16ch; }
+.quote footer { font-size: var(--step--1); color: var(--ink-soft); letter-spacing: .03em; }
+.steps { display: grid; }
+.step {
+  display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: .5rem 2rem;
+  padding-block: 2rem; border-top: 1px solid var(--line-light);
+}
+.step:last-child { border-bottom: 1px solid var(--line-light); }
+.step__when { font-size: var(--step--1); color: var(--ink-soft); letter-spacing: .03em; padding-top: .45rem; font-variant-numeric: tabular-nums; }
+.step__title { font-size: var(--step-2); margin-bottom: .5rem; }
+.step__body { font-weight: 300; max-width: 40ch; }
+
+.visit { background: var(--pearl); padding-block: clamp(5rem, 11vw, 9rem); }
+.visit__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 3.5rem clamp(3rem, 8vw, 8rem); }
+.visit__intro { display: grid; gap: 1.75rem; align-content: start; }
+.info { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 2rem; margin-top: 1rem; }
+.info dt { font-size: var(--step--1); color: var(--ink-soft); letter-spacing: .03em; margin-bottom: .35rem; }
+.info dd { font-family: var(--font-display); font-size: var(--step-1); line-height: 1.35; }
+.info dd span { display: block; }
+
+.form { display: grid; gap: 1.75rem; align-content: start; }
+.form__title { font-size: var(--step-2); }
+.field { display: grid; gap: .4rem; }
+.field label, .choice legend { font-size: var(--step--1); letter-spacing: .03em; color: var(--ink-soft); }
+.field input {
+  min-height: 52px; width: 100%;
+  padding: .5rem 0; border: 0; border-bottom: 1px solid color-mix(in srgb, var(--ink) 35%, transparent); border-radius: 0;
+  background: transparent; color: var(--ink);
+  font: 400 var(--step-1)/1.3 var(--font-display);
+  transition: border-color .3s ease;
+}
+.field input:focus { outline: none; border-bottom-color: var(--ink); box-shadow: 0 1px 0 0 var(--ink); }
+.field input[aria-invalid="true"] { border-bottom-color: var(--error); }
+.field__error { color: var(--error); font-size: var(--step--1); }
+.choice { border: 0; padding: 0; margin: 0; display: grid; gap: .5rem; }
+.choice legend { padding: 0; margin-bottom: .5rem; }
+.choice label { display: flex; align-items: center; gap: .85rem; min-height: 44px; cursor: pointer; font-size: var(--step-0); }
+.choice input { width: 1.15rem; height: 1.15rem; accent-color: var(--ink); margin: 0; }
+.form__status { min-height: 1.6em; font-size: var(--step-0); }
+.form__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; }
+
+.foot { position: relative; z-index: 4; background: var(--night); color: var(--moon); padding-block: clamp(4rem, 9vw, 6rem) calc(2.5rem + env(safe-area-inset-bottom, 0px)); }
+.foot__mark { font-family: var(--font-display); font-style: italic; font-size: clamp(3.5rem, 13vw, 11rem); line-height: .9; letter-spacing: -.035em; }
+.foot__row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem 2rem; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line-dark); font-size: var(--step--1); color: var(--moon-soft); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 960px) {
+  .scent__row { grid-template-columns: 2.5rem minmax(0, 1fr) auto; }
+  .scent__name { grid-column: 2 / -1; }
+  .scent__meta { grid-column: 2 / -1; grid-row: 2; }
+  .scent__price { grid-column: 2; grid-row: 3; max-width: 12rem; }
+  .scent__toggle { grid-column: 3; grid-row: 3; align-self: end; }
+  .notes { grid-template-columns: minmax(0, 1fr); padding-left: calc(2.5rem + 2rem); gap: .75rem; }
+  .atelier__grid, .visit__grid { grid-template-columns: minmax(0, 1fr); }
+  .atelier__head { position: static; }
+  .section-head { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 760px) {
+  :root { --nav-h: 64px; }
+  .nav__links { display: none; }
+  .nav__menu { display: inline-flex; align-items: center; }
+  .nav { gap: .75rem; }
+  .hero__mark { top: 40%; }
+  .hero__foot { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+  .hero__aside { justify-items: start; text-align: left; }
+  .motion .hours__stage { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr auto; }
+  .motion .hours__intro { font-size: var(--step-1); max-width: 26ch; }
+  .motion .hours__list { grid-row: 3; align-self: end; }
+  .motion .hour { align-self: end; gap: .4rem; }
+  .motion .hour__time { font-size: 2.6rem; }
+  .motion .hour__body { font-size: 1rem; }
+  .motion .hours__clock { display: none; }
+  .sampler { grid-template-columns: minmax(0, 1fr); }
+  .step { grid-template-columns: minmax(0, 1fr); padding-block: 1.6rem; }
+  .step__when { padding-top: 0; }
+  .info { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 760px) and (max-height: 700px) {
+  .motion .hours__intro { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Naar de inhoud</a>
+
+<div class="sky" aria-hidden="true"></div>
+<canvas class="stage" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top">Vroeglicht</a>
+  <nav class="nav__links" aria-label="Hoofdmenu" data-i18n-attr="aria-label:nav.label">
+    <a href="#collectie" data-i18n="nav.collection">Collectie</a>
+    <a href="#atelier" data-i18n="nav.atelier">Atelier</a>
+    <a href="#bezoek" data-i18n="nav.visit">Bezoek</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Taal / Language">
+    <button type="button" data-lang="nl" aria-pressed="true" lang="nl">NL</button>
+    <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+  </div>
+  <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu" data-i18n="nav.menu">Menu</button>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav class="menu__links" aria-label="Hoofdmenu" data-i18n-attr="aria-label:nav.label">
+    <a href="#collectie" data-i18n="nav.collection">Collectie</a>
+    <a href="#atelier" data-i18n="nav.atelier">Atelier</a>
+    <a href="#bezoek" data-i18n="nav.visit">Bezoek</a>
+  </nav>
+</div>
+
+<main id="main" tabindex="-1">
+  <section class="hero" id="top">
+    <div class="hero__mark" aria-hidden="true">Vroeglicht</div>
+    <div class="hero__fallback" aria-hidden="true"></div>
+    <div class="hero__foot">
+      <h1 class="hero__title" data-i18n="hero.title">Parfum, gedistilleerd in het uur voor de dageraad.</h1>
+      <div class="hero__aside">
+        <p class="hero__lede" data-i18n="hero.lede">Drie geuren, met de hand gevuld in Gent, in batches van 300.</p>
+        <a class="btn btn--moon" href="#collectie" data-i18n="hero.cta">Ontdek de collectie</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="hours" id="uur" aria-labelledby="hours-title">
+    <div class="hours__stage">
+      <h2 class="hours__intro" id="hours-title" data-i18n="hours.title">We bouwen elke geur op van onder naar boven, zoals de nacht overgaat in de ochtend.</h2>
+      <ol class="hours__list">
+        <li class="hour hour--night">
+          <p class="hour__time"><time datetime="04:12">04:12</time></p>
+          <h3 class="hour__name" data-i18n="h1.name">Nacht</h3>
+          <p class="hour__notes" data-i18n="h1.notes">Basisnoten: labdanum en Haïtiaanse vetiver</p>
+          <p class="hour__body" data-i18n="h1.body">We beginnen waar de geur eindigt. De basis blijft tot twaalf uur op je huid.</p>
+        </li>
+        <li class="hour hour--blue">
+          <p class="hour__time"><time datetime="04:47">04:47</time></p>
+          <h3 class="hour__name" data-i18n="h2.name">Blauw uur</h3>
+          <p class="hour__notes" data-i18n="h2.notes">Hartnoten: irisboter en viooltjesblad</p>
+          <p class="hour__body" data-i18n="h2.body">Iriswortels drogen drie jaar voor we ze distilleren. Een ton wortels levert ongeveer twee kilo irisboter op.</p>
+        </li>
+        <li class="hour hour--light">
+          <p class="hour__time"><time datetime="05:21">05:21</time></p>
+          <h3 class="hour__name" data-i18n="h3.name">Eerste licht</h3>
+          <p class="hour__notes" data-i18n="h3.notes">Topnoten: bergamot en roze peper</p>
+          <p class="hour__body" data-i18n="h3.body">Bergamot uit Calabrië opent de geur. Je ruikt hem als eerste, en hij vervaagt als eerste.</p>
+        </li>
+      </ol>
+      <div class="hours__clock" aria-hidden="true"><span class="is-on">04:12</span><span>04:47</span><span>05:21</span></div>
+    </div>
+  </section>
+
+  <section class="collection" id="collectie" aria-labelledby="col-title">
+    <div class="wrap">
+      <header class="section-head">
+        <h2 class="section-title" id="col-title" tabindex="-1" data-i18n="col.title">De collectie</h2>
+        <p class="section-lede" data-i18n="col.lede">Drie geuren die samen één nacht beschrijven. Elke flacon is genummerd.</p>
+      </header>
+      <ul class="scents">
+        <li class="scent" style="--juice: var(--juice-night)">
+          <div class="scent__row">
+            <span class="scent__drop" aria-hidden="true"></span>
+            <h3 class="scent__name">Nachtwake</h3>
+            <p class="scent__meta"><span data-i18n="s1.family">Amber, houtig</span><span>Extrait de parfum, 25%</span></p>
+            <p class="scent__price"><span><span>50 ml</span><span>€165</span></span><span><span>100 ml</span><span>€240</span></span></p>
+            <button class="scent__toggle" type="button" aria-expanded="false" aria-controls="notes-1"><span data-i18n="notes.show">Bekijk de noten</span><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0v14M0 7h14" stroke="currentColor" fill="none" stroke-width="1.2"/></svg></button>
+          </div>
+          <div class="scent__notes" id="notes-1"><div>
+            <dl class="notes">
+              <div><dt data-i18n="note.top">Top</dt><dd data-i18n="s1.top">Zwarte peper, ambrette</dd></div>
+              <div><dt data-i18n="note.heart">Hart</dt><dd data-i18n="s1.heart">Gerookte berk, wierook</dd></div>
+              <div><dt data-i18n="note.base">Basis</dt><dd data-i18n="s1.base">Labdanum, Haïtiaanse vetiver</dd></div>
+            </dl>
+          </div></div>
+        </li>
+        <li class="scent" style="--juice: var(--juice-blue)">
+          <div class="scent__row">
+            <span class="scent__drop" aria-hidden="true"></span>
+            <h3 class="scent__name">Blauw Uur</h3>
+            <p class="scent__meta"><span data-i18n="s2.family">Poederig, bloemig</span><span>Eau de parfum, 20%</span></p>
+            <p class="scent__price"><span><span>50 ml</span><span>€185</span></span><span><span>100 ml</span><span>€265</span></span></p>
+            <button class="scent__toggle" type="button" aria-expanded="false" aria-controls="notes-2"><span data-i18n="notes.show">Bekijk de noten</span><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0v14M0 7h14" stroke="currentColor" fill="none" stroke-width="1.2"/></svg></button>
+          </div>
+          <div class="scent__notes" id="notes-2"><div>
+            <dl class="notes">
+              <div><dt data-i18n="note.top">Top</dt><dd data-i18n="s2.top">Viooltjesblad, kardemom</dd></div>
+              <div><dt data-i18n="note.heart">Hart</dt><dd data-i18n="s2.heart">Irisboter, mimosa</dd></div>
+              <div><dt data-i18n="note.base">Basis</dt><dd data-i18n="s2.base">Witte musk, kasjmierhout</dd></div>
+            </dl>
+          </div></div>
+        </li>
+        <li class="scent" style="--juice: var(--juice-light)">
+          <div class="scent__row">
+            <span class="scent__drop" aria-hidden="true"></span>
+            <h3 class="scent__name">Eerste Licht</h3>
+            <p class="scent__meta"><span data-i18n="s3.family">Citrus, aromatisch</span><span>Eau de parfum, 18%</span></p>
+            <p class="scent__price"><span><span>50 ml</span><span>€145</span></span><span><span>100 ml</span><span>€210</span></span></p>
+            <button class="scent__toggle" type="button" aria-expanded="false" aria-controls="notes-3"><span data-i18n="notes.show">Bekijk de noten</span><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0v14M0 7h14" stroke="currentColor" fill="none" stroke-width="1.2"/></svg></button>
+          </div>
+          <div class="scent__notes" id="notes-3"><div>
+            <dl class="notes">
+              <div><dt data-i18n="note.top">Top</dt><dd data-i18n="s3.top">Bergamot, roze peper</dd></div>
+              <div><dt data-i18n="note.heart">Hart</dt><dd data-i18n="s3.heart">Neroli, vijgenblad</dd></div>
+              <div><dt data-i18n="note.base">Basis</dt><dd data-i18n="s3.base">Huidmusk, ambrox</dd></div>
+            </dl>
+          </div></div>
+        </li>
+      </ul>
+      <aside class="sampler" aria-labelledby="sampler-title">
+        <div>
+          <p class="sampler__title" id="sampler-title" data-i18n="sampler.title">Proefset</p>
+          <p class="sampler__body" data-i18n="sampler.body">Drie flesjes van 2 ml voor €18. We trekken het bedrag af van je eerste flacon.</p>
+        </div>
+        <a class="btn btn--ink" href="#bezoek" data-i18n="sampler.cta">Vraag een proefset aan</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="atelier" id="atelier" aria-labelledby="atelier-title">
+    <div class="wrap atelier__grid">
+      <div class="atelier__head">
+        <h2 class="section-title" id="atelier-title" tabindex="-1" data-i18n="atelier.title">Het atelier</h2>
+        <p class="section-lede" data-i18n="atelier.lede">We werken in Gent, in batches van 300 flacons. Van de eerste afweging tot het vullen duurt tien weken.</p>
+        <blockquote class="quote">
+          <p data-i18n="quote">Iris heeft geduld nodig. Wij ook.</p>
+          <footer data-i18n="quote.by">Hélène, parfumeur</footer>
+        </blockquote>
+      </div>
+      <ol class="steps">
+        <li class="step"><p class="step__when" data-i18n="st1.when">Dag 1</p><div><h3 class="step__title" data-i18n="st1.title">Afwegen</h3><p class="step__body" data-i18n="st1.body">Elke grondstof wordt tot op een honderdste gram afgewogen.</p></div></li>
+        <li class="step"><p class="step__when" data-i18n="st2.when">Week 1 tot 8</p><div><h3 class="step__title" data-i18n="st2.title">Rijpen</h3><p class="step__body" data-i18n="st2.body">Het concentraat rust acht weken in staal, bij 14 °C.</p></div></li>
+        <li class="step"><p class="step__when" data-i18n="st3.when">Week 9</p><div><h3 class="step__title" data-i18n="st3.title">Koelen en filteren</h3><p class="step__body" data-i18n="st3.body">We koelen tot −5 °C en filteren, zodat de geur helder blijft.</p></div></li>
+        <li class="step"><p class="step__when" data-i18n="st4.when">Week 10</p><div><h3 class="step__title" data-i18n="st4.title">Vullen</h3><p class="step__body" data-i18n="st4.body">Elke flacon wordt met de hand gevuld en genummerd.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="visit" id="bezoek" aria-labelledby="visit-title">
+    <div class="wrap visit__grid">
+      <div class="visit__intro">
+        <h2 class="section-title" id="visit-title" tabindex="-1" data-i18n="visit.title">Kom ruiken in Gent</h2>
+        <p class="section-lede" data-i18n="visit.lede">In het atelier nemen we 45 minuten de tijd om samen jouw geur te vinden. Het consult is gratis bij aankoop van een flacon.</p>
+        <dl class="info">
+          <div><dt data-i18n="visit.addressLabel">Adres</dt><dd><span>Voorbeeldstraat 12</span><span data-i18n="visit.city">9000 Gent</span></dd></div>
+          <div><dt data-i18n="visit.hoursLabel">Open</dt><dd><span data-i18n="visit.days">Donderdag tot zaterdag</span><span data-i18n="visit.time">11:00 tot 18:00</span></dd></div>
+        </dl>
+      </div>
+      <form class="form" id="request-form" novalidate>
+        <h3 class="form__title" data-i18n="form.title">Vraag een proefset of consult aan</h3>
+        <div class="field">
+          <label for="f-name" data-i18n="form.name">Naam</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+          <p class="field__error" id="f-name-err" hidden></p>
+        </div>
+        <div class="field">
+          <label for="f-email" data-i18n="form.email">E-mail</label>
+          <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" required aria-describedby="f-email-err">
+          <p class="field__error" id="f-email-err" hidden></p>
+        </div>
+        <fieldset class="choice">
+          <legend data-i18n="form.what">Wat wil je aanvragen?</legend>
+          <label><input id="f-kind-set" type="radio" name="kind" value="set" checked><span data-i18n="form.opt1">Proefset, 3 × 2 ml</span></label>
+          <label><input id="f-kind-visit" type="radio" name="kind" value="visit"><span data-i18n="form.opt2">Geurconsult in het atelier</span></label>
+        </fieldset>
+        <div class="form__actions">
+          <button class="btn btn--ink" type="submit" data-i18n="form.submit">Aanvraag versturen</button>
+        </div>
+        <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot__mark" aria-hidden="true">Vroeglicht</p>
+    <div class="foot__row">
+      <p>© 2026 Vroeglicht</p>
+      <p data-i18n="foot.note">Conceptontwerp. Vroeglicht is een fictief merk.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function () {
+  "use strict";
+  var root = document.documentElement;
+  root.classList.add("js");
+
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var finePointer = window.matchMedia("(pointer: fine)").matches;
+  var hasGsap = !!(window.gsap && window.ScrollTrigger);
+  var motion = hasGsap && !reduceMotion;
+  if (motion) root.classList.add("motion");
+
+  var $ = function (s, c) { return (c || document).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+
+  /* ---------------- Language ---------------- */
+  var dict = {
+    nl: {
+      "doc.title": "Vroeglicht Parfum",
+      "doc.desc": "Vroeglicht maakt parfum in Gent, gedistilleerd in het uur voor de dageraad. Drie geuren, met de hand gevuld in batches van 300.",
+      "skip": "Naar de inhoud",
+      "nav.label": "Hoofdmenu",
+      "nav.collection": "Collectie", "nav.atelier": "Atelier", "nav.visit": "Bezoek",
+      "nav.menu": "Menu", "nav.close": "Sluiten",
+      "hero.title": "Parfum, gedistilleerd in het uur voor de dageraad.",
+      "hero.lede": "Drie geuren, met de hand gevuld in Gent, in batches van 300.",
+      "hero.cta": "Ontdek de collectie",
+      "hours.title": "We bouwen elke geur op van onder naar boven, zoals de nacht overgaat in de ochtend.",
+      "h1.name": "Nacht", "h1.notes": "Basisnoten: labdanum en Haïtiaanse vetiver",
+      "h1.body": "We beginnen waar de geur eindigt. De basis blijft tot twaalf uur op je huid.",
+      "h2.name": "Blauw uur", "h2.notes": "Hartnoten: irisboter en viooltjesblad",
+      "h2.body": "Iriswortels drogen drie jaar voor we ze distilleren. Een ton wortels levert ongeveer twee kilo irisboter op.",
+      "h3.name": "Eerste licht", "h3.notes": "Topnoten: bergamot en roze peper",
+      "h3.body": "Bergamot uit Calabrië opent de geur. Je ruikt hem als eerste, en hij vervaagt als eerste.",
+      "col.title": "De collectie",
+      "col.lede": "Drie geuren die samen één nacht beschrijven. Elke flacon is genummerd.",
+      "s1.family": "Amber, houtig", "s2.family": "Poederig, bloemig", "s3.family": "Citrus, aromatisch",
+      "notes.show": "Bekijk de noten", "notes.hide": "Verberg de noten",
+      "note.top": "Top", "note.heart": "Hart", "note.base": "Basis",
+      "s1.top": "Zwarte peper, ambrette", "s1.heart": "Gerookte berk, wierook", "s1.base": "Labdanum, Haïtiaanse vetiver",
+      "s2.top": "Viooltjesblad, kardemom", "s2.heart": "Irisboter, mimosa", "s2.base": "Witte musk, kasjmierhout",
+      "s3.top": "Bergamot, roze peper", "s3.heart": "Neroli, vijgenblad", "s3.base": "Huidmusk, ambrox",
+      "sampler.title": "Proefset",
+      "sampler.body": "Drie flesjes van 2 ml voor €18. We trekken het bedrag af van je eerste flacon.",
+      "sampler.cta": "Vraag een proefset aan",
+      "atelier.title": "Het atelier",
+      "atelier.lede": "We werken in Gent, in batches van 300 flacons. Van de eerste afweging tot het vullen duurt tien weken.",
+      "quote": "Iris heeft geduld nodig. Wij ook.", "quote.by": "Hélène, parfumeur",
+      "st1.when": "Dag 1", "st1.title": "Afwegen", "st1.body": "Elke grondstof wordt tot op een honderdste gram afgewogen.",
+      "st2.when": "Week 1 tot 8", "st2.title": "Rijpen", "st2.body": "Het concentraat rust acht weken in staal, bij 14 °C.",
+      "st3.when": "Week 9", "st3.title": "Koelen en filteren", "st3.body": "We koelen tot −5 °C en filteren, zodat de geur helder blijft.",
+      "st4.when": "Week 10", "st4.title": "Vullen", "st4.body": "Elke flacon wordt met de hand gevuld en genummerd.",
+      "visit.title": "Kom ruiken in Gent",
+      "visit.lede": "In het atelier nemen we 45 minuten de tijd om samen jouw geur te vinden. Het consult is gratis bij aankoop van een flacon.",
+      "visit.addressLabel": "Adres", "visit.city": "9000 Gent",
+      "visit.hoursLabel": "Open", "visit.days": "Donderdag tot zaterdag", "visit.time": "11:00 tot 18:00",
+      "form.title": "Vraag een proefset of consult aan",
+      "form.name": "Naam", "form.email": "E-mail", "form.what": "Wat wil je aanvragen?",
+      "form.opt1": "Proefset, 3 × 2 ml", "form.opt2": "Geurconsult in het atelier",
+      "form.submit": "Aanvraag versturen",
+      "err.name": "Vul je naam in.",
+      "err.email": "Vul een geldig e-mailadres in, zoals naam@voorbeeld.be.",
+      "form.ok": "Bedankt, {name}. Dit is een ontwerpvoorbeeld, dus er is niets verstuurd.",
+      "foot.note": "Conceptontwerp. Vroeglicht is een fictief merk."
+    },
+    en: {
+      "doc.title": "Vroeglicht Parfum",
+      "doc.desc": "Vroeglicht makes perfume in Ghent, distilled in the hour before dawn. Three perfumes, filled by hand in batches of 300.",
+      "skip": "Skip to content",
+      "nav.label": "Main menu",
+      "nav.collection": "Collection", "nav.atelier": "Atelier", "nav.visit": "Visit",
+      "nav.menu": "Menu", "nav.close": "Close",
+      "hero.title": "Perfume distilled in the hour before dawn.",
+      "hero.lede": "Vroeglicht is Dutch for early light. Three perfumes, filled by hand in Ghent in batches of 300.",
+      "hero.cta": "Discover the collection",
+      "hours.title": "We build every perfume from the base up, the way night turns into morning.",
+      "h1.name": "Night", "h1.notes": "Base notes: labdanum and Haitian vetiver",
+      "h1.body": "We start where the scent ends. The base stays on your skin for up to twelve hours.",
+      "h2.name": "Blue hour", "h2.notes": "Heart notes: orris butter and violet leaf",
+      "h2.body": "Iris roots dry for three years before we distil them. A tonne of roots gives about two kilos of orris butter.",
+      "h3.name": "First light", "h3.notes": "Top notes: bergamot and pink pepper",
+      "h3.body": "Calabrian bergamot opens the scent. It is the first thing you smell, and the first to fade.",
+      "col.title": "The collection",
+      "col.lede": "Three perfumes that together describe one night. Every bottle is numbered.",
+      "s1.family": "Amber, woody", "s2.family": "Powdery, floral", "s3.family": "Citrus, aromatic",
+      "notes.show": "See the notes", "notes.hide": "Hide the notes",
+      "note.top": "Top", "note.heart": "Heart", "note.base": "Base",
+      "s1.top": "Black pepper, ambrette", "s1.heart": "Smoked birch, frankincense", "s1.base": "Labdanum, Haitian vetiver",
+      "s2.top": "Violet leaf, cardamom", "s2.heart": "Orris butter, mimosa", "s2.base": "White musk, cashmere wood",
+      "s3.top": "Bergamot, pink pepper", "s3.heart": "Neroli, fig leaf", "s3.base": "Skin musk, ambrox",
+      "sampler.title": "Discovery set",
+      "sampler.body": "Three 2 ml vials for €18. We deduct it from your first full bottle.",
+      "sampler.cta": "Request a discovery set",
+      "atelier.title": "The atelier",
+      "atelier.lede": "We work in Ghent, in batches of 300 bottles. From the first weighing to filling takes ten weeks.",
+      "quote": "Iris needs patience. So do we.", "quote.by": "Hélène, perfumer",
+      "st1.when": "Day 1", "st1.title": "Weigh", "st1.body": "Every raw material is weighed to a hundredth of a gram.",
+      "st2.when": "Weeks 1 to 8", "st2.title": "Mature", "st2.body": "The concentrate rests for eight weeks in steel, at 14 °C.",
+      "st3.when": "Week 9", "st3.title": "Chill and filter", "st3.body": "We chill it to −5 °C and filter it, so the perfume stays clear.",
+      "st4.when": "Week 10", "st4.title": "Fill", "st4.body": "Every bottle is filled and numbered by hand.",
+      "visit.title": "Come and smell them in Ghent",
+      "visit.lede": "In the atelier we take 45 minutes to find your scent together. The consultation is free with any full bottle.",
+      "visit.addressLabel": "Address", "visit.city": "9000 Ghent",
+      "visit.hoursLabel": "Open", "visit.days": "Thursday to Saturday", "visit.time": "11:00 to 18:00",
+      "form.title": "Request a discovery set or consultation",
+      "form.name": "Name", "form.email": "Email", "form.what": "What would you like?",
+      "form.opt1": "Discovery set, 3 × 2 ml", "form.opt2": "Consultation in the atelier",
+      "form.submit": "Send request",
+      "err.name": "Enter your name.",
+      "err.email": "Enter a valid email address, like name@example.com.",
+      "form.ok": "Thanks, {name}. This is a design preview, so nothing was sent.",
+      "foot.note": "Concept design. Vroeglicht is a fictional brand."
+    }
+  };
+
+  var lang = "nl";
+  try { var saved = localStorage.getItem("vroeglicht-lang"); if (saved === "nl" || saved === "en") lang = saved; else lang = /^nl/i.test(navigator.language || "") ? "nl" : "en"; }
+  catch (e) { lang = /^nl/i.test(navigator.language || "") ? "nl" : "en"; }
+
+  function t(key) { return (dict[lang] && dict[lang][key]) || dict.nl[key] || key; }
+
+  function applyLang(next) {
+    lang = next;
+    root.lang = lang;
+    document.title = t("doc.title");
+    var md = $('meta[name="description"]'); if (md) md.setAttribute("content", t("doc.desc"));
+    $$("[data-i18n]").forEach(function (el) { el.textContent = t(el.getAttribute("data-i18n")); });
+    $$("[data-i18n-attr]").forEach(function (el) {
+      var parts = el.getAttribute("data-i18n-attr").split(":");
+      el.setAttribute(parts[0], t(parts[1]));
+    });
+    $$(".scent").forEach(function (s) {
+      var label = $(".scent__toggle span", s);
+      label.textContent = t(s.classList.contains("is-open") ? "notes.hide" : "notes.show");
+    });
+    var menuBtn = $(".nav__menu");
+    menuBtn.textContent = t(menuBtn.getAttribute("aria-expanded") === "true" ? "nav.close" : "nav.menu");
+    $$(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.lang === lang)); });
+    clearErrors();
+    var status = $("#form-status"); if (status) status.textContent = "";
+    try { localStorage.setItem("vroeglicht-lang", lang); } catch (e) {}
+    if (hasGsap) window.ScrollTrigger.refresh();
+  }
+  $$(".lang button").forEach(function (b) {
+    b.addEventListener("click", function () { if (b.dataset.lang !== lang) applyLang(b.dataset.lang); });
+  });
+
+  /* ---------------- Mobile menu ---------------- */
+  var menu = $("#menu"), menuBtn = $(".nav__menu"), nav = $("#nav");
+  function setMenu(open) {
+    menuBtn.setAttribute("aria-expanded", String(open));
+    menuBtn.textContent = t(open ? "nav.close" : "nav.menu");
+    if (open) {
+      menu.hidden = false;
+      nav.classList.add("nav--menu");
+      requestAnimationFrame(function () { requestAnimationFrame(function () { menu.classList.add("is-open"); }); });
+      if (lenis) lenis.stop();
+      var first = $("a", menu); if (first) first.focus({ preventScroll: true });
+    } else {
+      menu.classList.remove("is-open");
+      nav.classList.remove("nav--menu");
+      if (lenis) lenis.start();
+      setTimeout(function () { if (menuBtn.getAttribute("aria-expanded") === "false") menu.hidden = true; }, reduceMotion ? 0 : 700);
+    }
+    syncNavColor();
+  }
+  menuBtn.addEventListener("click", function () { setMenu(menuBtn.getAttribute("aria-expanded") !== "true"); });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && menuBtn.getAttribute("aria-expanded") === "true") { setMenu(false); menuBtn.focus(); }
+  });
+
+  /* ---------------- Collection notes ---------------- */
+  $$(".scent").forEach(function (s) {
+    var btn = $(".scent__toggle", s);
+    btn.addEventListener("click", function () {
+      var open = !s.classList.contains("is-open");
+      s.classList.toggle("is-open", open);
+      btn.setAttribute("aria-expanded", String(open));
+      $("span", btn).textContent = t(open ? "notes.hide" : "notes.show");
+      if (hasGsap) setTimeout(function () { window.ScrollTrigger.refresh(); }, 650);
+    });
+  });
+
+  /* ---------------- Form ---------------- */
+  var form = $("#request-form");
+  function showError(input, key) {
+    var err = $("#" + input.id + "-err");
+    input.setAttribute("aria-invalid", "true");
+    err.textContent = t(key); err.hidden = false;
+  }
+  function clearErrors() {
+    $$(".field input", form).forEach(function (i) { i.removeAttribute("aria-invalid"); });
+    $$(".field__error", form).forEach(function (e) { e.hidden = true; e.textContent = ""; });
+  }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    clearErrors();
+    var name = $("#f-name"), email = $("#f-email"), invalid = [];
+    if (!name.value.trim()) { showError(name, "err.name"); invalid.push(name); }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) { showError(email, "err.email"); invalid.push(email); }
+    var status = $("#form-status");
+    if (invalid.length) { status.textContent = ""; invalid[0].focus(); return; }
+    status.textContent = t("form.ok").replace("{name}", name.value.trim().split(/\s+/)[0]);
+  });
+  $$(".field input", form).forEach(function (i) {
+    i.addEventListener("input", function () {
+      if (i.getAttribute("aria-invalid") === "true") { i.removeAttribute("aria-invalid"); var er = $("#" + i.id + "-err"); er.hidden = true; }
+    });
+  });
+
+  /* ---------------- Smooth scroll + anchors ---------------- */
+  var lenis = null;
+  function scrollToTarget(target) {
+    if (lenis) lenis.scrollTo(target, { duration: 1.6 });
+    else target.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth" });
+    var focusEl = target.matches("[tabindex]") ? target : $("[tabindex='-1']", target);
+    if (focusEl) setTimeout(function () { focusEl.focus({ preventScroll: true }); }, lenis ? 900 : 400);
+  }
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute("href").slice(1);
+    var target = id ? document.getElementById(id) : null;
+    if (!target) return;
+    e.preventDefault();
+    if (menuBtn.getAttribute("aria-expanded") === "true") setMenu(false);
+    if (id === "top") {
+      if (lenis) lenis.scrollTo(0, { duration: 1.6 });
+      else window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+      return;
+    }
+    scrollToTarget(target);
+  });
+
+  /* ---------------- Nav colour ---------------- */
+  // Regions say whether the ground under the nav is light (ink text) or dark (moon text).
+  // The last active region in page order wins; the pinned story sets its own value while it runs.
+  var navInk = false, navRegions = [];
+  function syncNavColor() {
+    var menuOpen = nav.classList.contains("nav--menu");
+    nav.classList.toggle("nav--ink", navInk && !menuOpen);
+  }
+  function recomputeNav() {
+    var hit = null;
+    navRegions.forEach(function (r) { if (r.st.isActive) hit = r; });
+    if (hit) { navInk = hit.ink; syncNavColor(); }
+  }
+  // Hide the bar while reading down, bring it back (frosted) on the way up.
+  var lastY = window.scrollY, navTick = false;
+  function onNavScroll() {
+    navTick = false;
+    var y = window.scrollY;
+    if (y < 80) { nav.classList.remove("nav--hidden", "nav--solid"); }
+    else {
+      if (y > lastY + 6) nav.classList.add("nav--hidden");
+      else if (y < lastY - 6) nav.classList.remove("nav--hidden");
+      nav.classList.add("nav--solid");
+    }
+    lastY = y;
+  }
+  window.addEventListener("scroll", function () {
+    if (!navTick) { navTick = true; requestAnimationFrame(onNavScroll); }
+  }, { passive: true });
+
+  function navRegion(selector, ink) {
+    $$(selector).forEach(function (el) {
+      var st = window.ScrollTrigger.create({ trigger: el, start: "top 36px", end: "bottom 36px", onToggle: recomputeNav });
+      navRegions.push({ st: st, ink: ink });
+    });
+  }
+
+  /* ---------------- Hero wordmark split ---------------- */
+  var mark = $(".hero__mark");
+  if (motion) {
+    var word = mark.textContent.trim();
+    mark.textContent = "";
+    word.split("").forEach(function (c) {
+      var o = document.createElement("span"); o.className = "ch";
+      var i = document.createElement("span"); i.className = "ch__in"; i.textContent = c;
+      o.appendChild(i); mark.appendChild(o);
+    });
+  }
+
+  /* ---------------- WebGL stage ---------------- */
+  var state = { x: 0, y: 0, scale: 1, rotY: 0, colorT: 0, intro: motion ? 0 : 1 };
+  var stage = null;
+
+  function createStage(canvas) {
+    var THREE = window.THREE;
+    var small = Math.min(window.innerWidth, window.innerHeight) < 700;
+    var lowPower = small || (navigator.hardwareConcurrency || 8) <= 4;
+    var renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: !lowPower, powerPreference: "high-performance" });
+    var pixelRatio = Math.min(window.devicePixelRatio || 1, lowPower ? 1.5 : 2);
+    renderer.setPixelRatio(pixelRatio);
+    renderer.setClearColor(0x000000, 0);
+    renderer.outputEncoding = THREE.sRGBEncoding;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.05;
+
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(30, 1, 0.1, 60);
+    camera.position.set(0, 0, 9);
+
+    // Studio environment built from emissive softboxes, so the glass has something to reflect.
+    var pmrem = new THREE.PMREMGenerator(renderer);
+    var envScene = new THREE.Scene();
+    envScene.add(new THREE.Mesh(new THREE.BoxGeometry(14, 14, 14), new THREE.MeshBasicMaterial({ color: 0x0b0f2a, side: THREE.BackSide })));
+    function softbox(w, h, hex, k, x, y, z) {
+      var m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({ color: new THREE.Color(hex).multiplyScalar(k), side: THREE.DoubleSide }));
+      m.position.set(x, y, z); m.lookAt(0, 0, 0); envScene.add(m);
+    }
+    softbox(9, 2.2, 0xffffff, 4.5, 0, 6, 1);
+    softbox(1.3, 8, 0xffd2a6, 6, -5.5, 0.5, 3);
+    softbox(1.1, 7, 0xc9c2ff, 3.5, 5.5, 0.2, 2.5);
+    softbox(5, 1.4, 0xffffff, 1.4, 0, -3, 6);
+    softbox(4, 4, 0xe9a466, 1.6, 0, 0.5, -6);
+    scene.environment = pmrem.fromScene(envScene, 0.03).texture;
+
+    function roundedRect(w, h, r) {
+      var s = new THREE.Shape(), x = -w / 2, y = -h / 2;
+      s.moveTo(x + r, y); s.lineTo(x + w - r, y); s.quadraticCurveTo(x + w, y, x + w, y + r);
+      s.lineTo(x + w, y + h - r); s.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+      s.lineTo(x + r, y + h); s.quadraticCurveTo(x, y + h, x, y + h - r);
+      s.lineTo(x, y + r); s.quadraticCurveTo(x, y, x + r, y);
+      return s;
+    }
+    function block(w, h, r, depth, bevel, segs) {
+      var g = new THREE.ExtrudeGeometry(roundedRect(w, h, r), {
+        depth: depth, bevelEnabled: true, bevelThickness: bevel, bevelSize: bevel * 0.85,
+        bevelSegments: segs, curveSegments: lowPower ? 8 : 14
+      });
+      g.center(); return g;
+    }
+
+    var flacon = new THREE.Group();
+    var inner = new THREE.Group();
+    flacon.add(inner);
+    scene.add(flacon);
+
+    var glassMat = new THREE.MeshPhysicalMaterial({
+      color: 0xffffff, metalness: 0, roughness: 0.035,
+      transmission: 1, thickness: 1.1, ior: 1.5,
+      specularIntensity: 1, envMapIntensity: 1.5,
+      clearcoat: 1, clearcoatRoughness: 0.04,
+      attenuationColor: new THREE.Color(0xf1ecf8), attenuationDistance: 3.5
+    });
+    var glass = new THREE.Mesh(block(1.5, 1.9, 0.2, 0.8, 0.14, lowPower ? 4 : 7), glassMat);
+    inner.add(glass);
+
+    var juice = {
+      night: new THREE.Color(0xb8692e).convertSRGBToLinear(),
+      blue: new THREE.Color(0x9c93c9).convertSRGBToLinear(),
+      light: new THREE.Color(0xe6c27a).convertSRGBToLinear()
+    };
+    var liquidMat = new THREE.ShaderMaterial({
+      uniforms: { uColor: { value: juice.night.clone() }, uTime: { value: 0 }, uGlow: { value: 0 } },
+      vertexShader: [
+        "varying vec3 vPos; varying vec3 vN; varying vec3 vV;",
+        "void main(){ vPos = position; vec4 mv = modelViewMatrix * vec4(position, 1.0);",
+        "vN = normalize(normalMatrix * normal); vV = normalize(-mv.xyz); gl_Position = projectionMatrix * mv; }"
+      ].join("\n"),
+      fragmentShader: [
+        "uniform vec3 uColor; uniform float uTime; uniform float uGlow;",
+        "varying vec3 vPos; varying vec3 vN; varying vec3 vV;",
+        "float hash(vec3 p){ p = fract(p * 0.3183099 + 0.1); p *= 17.0; return fract(p.x * p.y * p.z * (p.x + p.y + p.z)); }",
+        "float noise(vec3 x){ vec3 i = floor(x); vec3 f = fract(x); f = f * f * (3.0 - 2.0 * f);",
+        " return mix(mix(mix(hash(i), hash(i + vec3(1,0,0)), f.x), mix(hash(i + vec3(0,1,0)), hash(i + vec3(1,1,0)), f.x), f.y),",
+        "            mix(mix(hash(i + vec3(0,0,1)), hash(i + vec3(1,0,1)), f.x), mix(hash(i + vec3(0,1,1)), hash(i + vec3(1,1,1)), f.x), f.y), f.z); }",
+        "void main(){",
+        " vec3 p = vPos * 1.8 + vec3(0.0, -uTime * 0.18, uTime * 0.05);",
+        " float n = noise(p) * 0.6 + noise(p * 2.3 + 3.1) * 0.4;",
+        " float fres = pow(1.0 - clamp(abs(dot(vN, vV)), 0.0, 1.0), 2.0);",
+        " float lift = smoothstep(-0.7, 0.45, vPos.y);",
+        " vec3 col = uColor * (0.5 + 0.55 * n) * mix(0.5, 1.4, lift);",
+        " col += uColor * fres * 0.8 + vec3(1.0, 0.93, 0.82) * pow(fres, 5.0) * 0.35;",
+        " gl_FragColor = vec4(col * uGlow, 1.0);",
+        " #include <tonemapping_fragment>",
+        " #include <encodings_fragment>",
+        "}"
+      ].join("\n")
+    });
+    var liquid = new THREE.Mesh(block(1.1, 1.05, 0.12, 0.42, 0.07, 3), liquidMat);
+    liquid.position.y = -0.24;
+    inner.add(liquid);
+
+    var neck = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.23, 0.24, lowPower ? 20 : 36), glassMat);
+    neck.position.y = 1.19;
+    inner.add(neck);
+
+    var capMat = new THREE.MeshPhysicalMaterial({ color: 0x17142a, metalness: 0.1, roughness: 0.32, clearcoat: 1, clearcoatRoughness: 0.08, envMapIntensity: 1.2 });
+    var cap = new THREE.Mesh(block(0.82, 0.66, 0.1, 0.62, 0.05, 3), capMat);
+    cap.position.y = 1.66;
+    inner.add(cap);
+
+    // Frosted print on the front face
+    var labelCanvas = document.createElement("canvas");
+    labelCanvas.width = 512; labelCanvas.height = 256;
+    var labelTex = new THREE.CanvasTexture(labelCanvas);
+    labelTex.encoding = THREE.sRGBEncoding;
+    labelTex.anisotropy = Math.min(4, renderer.capabilities.getMaxAnisotropy());
+    function drawLabel() {
+      var c = labelCanvas.getContext("2d");
+      c.clearRect(0, 0, 512, 256);
+      c.fillStyle = "rgba(255,255,255,0.92)";
+      c.textAlign = "center"; c.textBaseline = "middle";
+      c.font = 'italic 400 92px "Bodoni Moda", Didot, Georgia, serif';
+      c.fillText("Vroeglicht", 256, 108);
+      c.font = '400 26px "Jost", Futura, sans-serif';
+      c.fillStyle = "rgba(255,255,255,0.75)";
+      c.fillText("Gent       100 ml", 256, 186);
+      labelTex.needsUpdate = true;
+    }
+    drawLabel();
+    if (document.fonts && document.fonts.load) {
+      Promise.all([
+        document.fonts.load('italic 400 92px "Bodoni Moda"'),
+        document.fonts.load('400 26px "Jost"')
+      ]).then(function () { drawLabel(); if (!running) renderOnce(); }).catch(function () {});
+    }
+    var label = new THREE.Mesh(new THREE.PlaneGeometry(1.05, 0.525), new THREE.MeshBasicMaterial({ map: labelTex, transparent: true, depthWrite: false, toneMapped: false }));
+    label.position.set(0, -0.12, 0.545);
+    inner.add(label);
+
+    inner.position.y = -0.48;
+
+    // Drifting glints
+    var COUNT = lowPower ? 320 : 900;
+    var pos = new Float32Array(COUNT * 3), seed = new Float32Array(COUNT);
+    for (var i = 0; i < COUNT; i++) {
+      pos[i * 3] = (Math.random() - 0.5) * 9;
+      pos[i * 3 + 1] = (Math.random() - 0.5) * 6;
+      pos[i * 3 + 2] = -2.5 + Math.random() * 3.5;
+      seed[i] = Math.random();
+    }
+    var pGeo = new THREE.BufferGeometry();
+    pGeo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+    pGeo.setAttribute("aSeed", new THREE.BufferAttribute(seed, 1));
+    var pMat = new THREE.ShaderMaterial({
+      transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+      uniforms: { uTime: { value: 0 }, uPR: { value: pixelRatio }, uAlpha: { value: 0 }, uColor: { value: new THREE.Color(0xffd9b0) } },
+      vertexShader: [
+        "attribute float aSeed; uniform float uTime; uniform float uPR; varying float vA;",
+        "void main(){ vec3 p = position; float sp = 0.04 + aSeed * 0.08;",
+        " p.y = mod(p.y + uTime * sp + 3.0, 6.0) - 3.0; p.x += sin(uTime * 0.3 + aSeed * 20.0) * 0.12;",
+        " vec4 mv = modelViewMatrix * vec4(p, 1.0);",
+        " gl_PointSize = (1.4 + aSeed * 3.0) * uPR * (8.0 / -mv.z);",
+        " gl_Position = projectionMatrix * mv;",
+        " vA = (0.25 + 0.75 * abs(sin(uTime * 0.8 + aSeed * 40.0))) * smoothstep(3.0, 1.6, abs(p.y)); }"
+      ].join("\n"),
+      fragmentShader: [
+        "uniform vec3 uColor; uniform float uAlpha; varying float vA;",
+        "void main(){ float d = length(gl_PointCoord - 0.5); float a = smoothstep(0.5, 0.0, d);",
+        " gl_FragColor = vec4(uColor, a * vA * uAlpha); }"
+      ].join("\n")
+    });
+    scene.add(new THREE.Points(pGeo, pMat));
+
+    // Pointer tilt (mouse only, so touch scrolling stays untouched)
+    var pointer = { x: 0, y: 0 }, tilt = { x: 0, y: 0 };
+    if (finePointer && !reduceMotion) {
+      window.addEventListener("pointermove", function (e) {
+        pointer.x = (e.clientX / window.innerWidth) * 2 - 1;
+        pointer.y = (e.clientY / window.innerHeight) * 2 - 1;
+      }, { passive: true });
+    }
+
+    function viewSize() {
+      var h = 2 * camera.position.z * Math.tan((camera.fov * Math.PI) / 360);
+      return { h: h, w: h * camera.aspect };
+    }
+    function layout() {
+      var v = viewSize();
+      if (camera.aspect >= 1) return { hero: { x: 0, y: -0.1, s: 1 }, story: { x: Math.min(v.w * 0.22, 2.3), y: -0.05, s: 0.92 } };
+      return { hero: { x: 0, y: 0.55, s: Math.min(0.62, v.w / 3.2) }, story: { x: 0, y: 0.6, s: Math.min(0.5, v.w / 3.6) } };
+    }
+    function glowX(x) { return 50 + (x / viewSize().w) * 100; }
+
+    var lastW = 0, lastH = 0;
+    function resize(force) {
+      var w = canvas.clientWidth, h = canvas.clientHeight;
+      if (!force && w === lastW && Math.abs(h - lastH) < 120 && !finePointer) return;
+      lastW = w; lastH = h;
+      renderer.setSize(w, h, false);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+      if (!running) renderOnce();
+    }
+
+    var colA = new THREE.Color(), tmp = new THREE.Color();
+    function juiceAt(tt) {
+      if (tt <= 1) return colA.copy(juice.night).lerp(juice.blue, tt);
+      return colA.copy(juice.blue).lerp(tmp.copy(juice.light), Math.min(tt - 1, 1));
+    }
+
+    var running = false, active = true, raf = 0, last = 0, clock = 0;
+    var frames = 0, slowTime = 0, warm = 0, downgrade = 0;
+    function draw(time) {
+      var s = state.scale * (0.86 + 0.14 * state.intro);
+      tilt.x += (pointer.x - tilt.x) * 0.05;
+      tilt.y += (pointer.y - tilt.y) * 0.05;
+      var spin = reduceMotion ? 0.35 : time * 0.14;
+      flacon.position.set(state.x, state.y + (reduceMotion ? 0 : Math.sin(time * 0.8) * 0.04), 0);
+      flacon.scale.setScalar(s);
+      flacon.rotation.set(tilt.y * 0.12 + (reduceMotion ? 0 : Math.sin(time * 0.6) * 0.03), state.rotY + spin + tilt.x * 0.3, 0);
+      liquidMat.uniforms.uColor.value.copy(juiceAt(state.colorT));
+      liquidMat.uniforms.uTime.value = time;
+      liquidMat.uniforms.uGlow.value = 0.2 + 0.8 * state.intro;
+      pMat.uniforms.uTime.value = time;
+      pMat.uniforms.uAlpha.value = state.intro * Math.max(0, 1 - Math.max(0, state.colorT - 1.4));
+      renderer.render(scene, camera);
+    }
+    function loop(now) {
+      if (!running) return;
+      raf = requestAnimationFrame(loop);
+      var dt = last ? Math.min((now - last) / 1000, 0.1) : 0.016;
+      last = now; clock += dt;
+      draw(clock);
+      // Adaptive quality: step down once if the device can't hold ~40fps.
+      warm += dt;
+      if (warm > 2 && downgrade < 2) {
+        frames++; slowTime += dt;
+        if (frames >= 90) {
+          if (slowTime / frames > 0.026) {
+            downgrade++;
+            if (downgrade === 1 && renderer.getPixelRatio() > 1) { renderer.setPixelRatio(1); pMat.uniforms.uPR.value = 1; resize(true); }
+            else { downgrade = 2; glassMat.transmission = 0; glassMat.transparent = true; glassMat.opacity = 0.32; glassMat.needsUpdate = true; liquidMat.uniforms.uGlow.value = 1; }
+          }
+          frames = 0; slowTime = 0;
+        }
+      }
+    }
+    function start() { if (running || !active || reduceMotion) return; running = true; last = 0; raf = requestAnimationFrame(loop); }
+    function stop() { running = false; cancelAnimationFrame(raf); }
+    function renderOnce() { draw(clock); }
+
+    window.addEventListener("resize", function () { resize(false); });
+    resize(true);
+    if (!motion) {
+      var L0 = layout();
+      state.x = L0.hero.x; state.y = L0.hero.y; state.scale = L0.hero.s;
+    }
+    renderOnce();
+    start();
+
+    return {
+      layout: layout, glowX: glowX, renderOnce: renderOnce,
+      setActive: function (on) { active = on; if (on) start(); else stop(); if (reduceMotion && on) renderOnce(); }
+    };
+  }
+
+  function bootStage() {
+    try {
+      stage = createStage($(".stage"));
+      root.classList.add("stage-ready");
+    } catch (err) {
+      root.classList.add("no-webgl");
+      if (window.console) console.warn("WebGL unavailable, showing the still flacon.", err);
+      return;
+    }
+    if (hasGsap) window.ScrollTrigger.refresh();
+    if (coveredByContent) stage.setActive(false);
+  }
+
+  // Before the stage exists (or without WebGL) the choreography still needs positions.
+  function lay() {
+    return stage ? stage.layout() : { hero: { x: 0, y: 0, s: 1 }, story: { x: 0, y: 0, s: 1 } };
+  }
+  function glowFor(x) { return stage ? stage.glowX(x) : 50; }
+  var coveredByContent = false;
+  function setCovered(on) { coveredByContent = on; if (stage) stage.setActive(!on); }
+
+  /* ---------------- Scroll choreography ---------------- */
+  var sky = $(".sky");
+  var SKY = {
+    night: { "--sky-top": "#070b24", "--sky-bot": "#151a44", "--glow": "rgba(233,164,102,0.26)" },
+    blue: { "--sky-top": "#1c2260", "--sky-bot": "#5a5ca2", "--glow": "rgba(156,147,201,0.38)" },
+    dawn: { "--sky-top": "#d9d3e8", "--sky-bot": "#f1ecef", "--glow": "rgba(240,196,150,0.55)" }
+  };
+
+  function setupStatic() {
+    var ST = window.ScrollTrigger;
+    window.gsap.registerPlugin(ST);
+    navRegion(".hero", false);
+    navRegion(".hours", false);
+    navRegion(".hour--light", true);
+    navRegion(".collection, .atelier, .visit", true);
+    navRegion(".foot", false);
+    // The stage is only visible behind the hero; stop drawing once the story covers it.
+    ST.create({ trigger: ".hours", start: "top top", end: "max", onToggle: function (self) { setCovered(self.isActive); } });
+  }
+
+  function initLenis() {
+    if (!window.Lenis || lenis) return;
+    lenis = new window.Lenis({ duration: 1.15, smoothWheel: true });
+    lenis.on("scroll", window.ScrollTrigger.update);
+    window.gsap.ticker.add(function (time) { lenis.raf(time * 1000); });
+    window.gsap.ticker.lagSmoothing(0);
+  }
+
+  function setupScroll() {
+    var gsap = window.gsap, ST = window.ScrollTrigger;
+    gsap.registerPlugin(ST);
+    ST.config({ ignoreMobileResize: true });
+
+    // Hero: flacon glides from centre stage to its place beside the story.
+    var heroScrub = { trigger: ".hero", start: "top top", end: "bottom top", scrub: 1, invalidateOnRefresh: true };
+    gsap.fromTo(state,
+      { x: function () { return lay().hero.x; }, y: function () { return lay().hero.y; }, scale: function () { return lay().hero.s; } },
+      { x: function () { return lay().story.x; }, y: function () { return lay().story.y; }, scale: function () { return lay().story.s; }, ease: "none", scrollTrigger: heroScrub });
+    gsap.fromTo(sky,
+      { "--glow-x": "50%" },
+      { "--glow-x": function () { return glowFor(lay().story.x) + "%"; }, ease: "none", scrollTrigger: Object.assign({}, heroScrub) });
+    gsap.to(mark, { yPercent: -40, opacity: 0.25, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true } });
+
+    // Hours: one pinned sequence from 04:12 to 05:21.
+    var hours = $$(".hour");
+    var clockEl = $(".hours__clock");
+    var clockSpans = $$("span", clockEl);
+    gsap.set(hours.slice(1), { autoAlpha: 0, y: 28 });
+    var tl = gsap.timeline({
+      defaults: { ease: "none" },
+      scrollTrigger: {
+        trigger: ".hours", start: "top top",
+        end: function () { return "+=" + Math.round(window.innerHeight * 3); },
+        pin: true, scrub: 1, invalidateOnRefresh: true, anticipatePin: 1,
+        onUpdate: function (self) {
+          var p = self.progress;
+          clockEl.style.setProperty("--progress", p.toFixed(4));
+          var idx = p < 0.36 ? 0 : p < 0.7 ? 1 : 2;
+          clockSpans.forEach(function (s, i) { s.classList.toggle("is-on", i === idx); });
+          var ink = p > 0.72;
+          if (ink !== navInk) { navInk = ink; syncNavColor(); }
+        }
+      }
+    });
+    tl.to(state, { rotY: Math.PI * 1.5, duration: 3 }, 0)
+      .to(state, { colorT: 1, duration: 0.5 }, 0.95)
+      .to(state, { colorT: 2, duration: 0.5 }, 1.95)
+      .to(sky, Object.assign({ duration: 0.6 }, SKY.blue), 0.9)
+      .to(sky, Object.assign({ duration: 0.6 }, SKY.dawn), 1.9)
+      .to(hours[0], { autoAlpha: 0, y: -28, duration: 0.25, ease: "power1.in" }, 0.85)
+      .to(hours[1], { autoAlpha: 1, y: 0, duration: 0.3, ease: "power2.out" }, 1.1)
+      .to(hours[1], { autoAlpha: 0, y: -28, duration: 0.25, ease: "power1.in" }, 1.85)
+      .to(hours[2], { autoAlpha: 1, y: 0, duration: 0.3, ease: "power2.out" }, 2.1)
+      .to(".hours__intro", { color: getComputedStyle(root).getPropertyValue("--ink").trim(), duration: 0.4 }, 1.95)
+      .to(".hours__clock", { color: getComputedStyle(root).getPropertyValue("--ink").trim(), duration: 0.4 }, 1.95)
+      .to({}, { duration: 0.35 }, 2.65);
+
+    navRegion(".collection, .atelier, .visit", true);
+    navRegion(".foot", false);
+    // Once the light sections fully cover the stage, stop drawing it.
+    ST.create({ trigger: ".collection", start: "top top", end: "max", onToggle: function (self) { setCovered(self.isActive); } });
+
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { ST.refresh(); });
+    window.addEventListener("load", function () { ST.refresh(); });
+  }
+
+  function intro() {
+    var gsap = window.gsap;
+    gsap.from(".hero__mark .ch__in", { yPercent: 115, duration: 1.5, ease: "expo.out", stagger: 0.05, delay: 0.15 });
+    gsap.to(state, { intro: 1, duration: 2.4, ease: "power3.out", delay: 0.35 });
+    gsap.from([".hero__title", ".hero__aside"], { autoAlpha: 0, y: 18, duration: 1.1, ease: "power2.out", stagger: 0.12, delay: 0.95 });
+    gsap.from(".nav", { autoAlpha: 0, duration: 1, ease: "power1.out", delay: 1.1 });
+  }
+
+  /* ---------------- Boot ---------------- */
+  function loadScript(src, onload, onerror) {
+    var s = document.createElement("script");
+    s.src = src; s.async = true; s.onload = onload; s.onerror = onerror || function () {};
+    document.head.appendChild(s);
+  }
+
+  applyLang(lang);
+  if (motion) { setupScroll(); intro(); }
+  else if (hasGsap) setupStatic();
+
+  // Heavy libraries load after first paint; the CSS flacon holds the hero until WebGL is ready.
+  if (motion && finePointer) loadScript("https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js", initLenis);
+  if (window.THREE) bootStage();
+  else loadScript("https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js", bootStage, function () { root.classList.add("no-webgl"); });
+})();
+</script>
+</body>
+</html>
