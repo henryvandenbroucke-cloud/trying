@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="meta.home.title">Vroeglicht, handgemaakt parfum uit Gent</title>
+<meta name="description" content="Drie handgemaakte geuren uit Gent, geïnspireerd op het uur voor zonsopgang. Probeer ze thuis met de proefset van €18." data-i18n-attr="content:meta.home.desc">
+<meta name="theme-color" content="#070b24">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vroeglicht, handgemaakt parfum uit Gent">
+<meta property="og:description" content="Drie handgemaakte geuren, geïnspireerd op het uur voor zonsopgang.">
+<meta property="og:image" content="assets/img/og.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Jost:wght@400..600&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="is-home">
+<a class="skip" href="#main" data-i18n="skip">Naar de inhoud</a>
+
+<header class="nav" id="nav">
+  <a class="brand" href="index.html"><svg viewBox="0 0 18 28" aria-hidden="true"><rect x="5" y="1" width="8" height="6" rx="1.5" fill="currentColor"/><rect x="7.5" y="7" width="3" height="2.2" fill="currentColor"/><rect x="1.2" y="9.2" width="15.6" height="17.6" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="15.5" width="10" height="8.5" rx="2" fill="#eaa86a"/></svg>Vroeglicht</a>
+  <nav class="nav__links" aria-label="Hoofdmenu" data-i18n-attr="aria-label:nav.label">
+    <a href="collection.html" data-i18n="nav.collection">Collectie</a>
+    <a href="scent-finder.html" data-i18n="nav.finder">Geurtest</a>
+    <a href="atelier.html" data-i18n="nav.atelier">Atelier</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Taal / Language">
+    <button type="button" data-lang="nl" aria-pressed="true" lang="nl">NL</button>
+    <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+  </div>
+  <a class="btn btn--ember nav__cta" href="collection.html#proefset" data-i18n="nav.cta">Proefset €18</a>
+  <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu"><span class="nav__menu-label">Menu</span></button>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav class="menu__links" aria-label="Hoofdmenu" data-i18n-attr="aria-label:nav.label">
+    <a href="index.html" aria-current="page" data-i18n="nav.home">Home</a>
+    <a href="collection.html" data-i18n="nav.collection">Collectie</a>
+    <a href="scent-finder.html" data-i18n="nav.finder">Geurtest</a>
+    <a href="atelier.html" data-i18n="nav.atelier">Atelier</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <a class="btn btn--ember" href="collection.html#proefset" data-i18n="menu.cta">Bestel de proefset, €18</a>
+    <p data-i18n="menu.visit">Atelier in Gent, donderdag tot zaterdag van 11:00 tot 18:00</p>
+  </div>
+</div>
+
+<div class="sky" aria-hidden="true"></div>
+<canvas class="stage" aria-hidden="true"></canvas>
+
+<main id="main" tabindex="-1">
+  <section class="hero" data-nav="dark" aria-labelledby="hero-title">
+    <div class="hero__head">
+      <p class="kicker kicker--dark hero__kicker" data-i18n="home.kicker">Parfumhuis uit Gent</p>
+      <h1 class="hero__title" id="hero-title" data-i18n="home.title">Handgemaakt parfum voor het uur voor zonsopgang</h1>
+      <p class="hero__lede" data-i18n="home.lede">Drie geuren, gemaakt en genummerd in ons atelier. Probeer ze eerst thuis met de proefset van €18.</p>
+    </div>
+    <div class="hero__visual" aria-hidden="true"></div>
+    <div class="hero__bottom">
+      <div class="hero__actions">
+        <a class="btn btn--ember" href="collection.html#proefset" data-i18n="home.cta1">Bestel de proefset</a>
+        <a class="btn btn--ghost" href="scent-finder.html" data-i18n="home.cta2">Doe de geurtest</a>
+      </div>
+      <ul class="hero__trust">
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="trust.ship">Gratis verzending vanaf €60</span></li>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="trust.credit">Proefset verrekend bij je flacon</span></li>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="trust.fast">Verzonden binnen 2 werkdagen</span></li>
+      </ul>
+    </div>
+    <div class="hero__fallback" aria-hidden="true"></div>
+  </section>
+
+  <section class="hours" id="uur" data-nav="dark" aria-labelledby="hours-title">
+    <div class="hours__stage">
+      <div class="hours__intro">
+        <p class="kicker kicker--dark" data-i18n="hours.kicker">Hoe een geur ontstaat</p>
+        <h2 id="hours-title" data-i18n="hours.title">We bouwen elke geur op van onder naar boven, zoals de nacht overgaat in de ochtend.</h2>
+      </div>
+      <div class="hours__visual" aria-hidden="true"></div>
+      <ol class="hours__list">
+        <li class="hour hour--night">
+          <p class="hour__time"><time datetime="04:12">04:12</time></p>
+          <h3 class="hour__name" data-i18n="h1.name">Nacht</h3>
+          <p class="hour__notes" data-i18n="h1.notes">Basisnoten: labdanum en Haïtiaanse vetiver</p>
+          <p class="hour__body" data-i18n="h1.body">We beginnen waar de geur eindigt. De basis blijft tot twaalf uur op je huid.</p>
+        </li>
+        <li class="hour hour--blue">
+          <p class="hour__time"><time datetime="04:47">04:47</time></p>
+          <h3 class="hour__name" data-i18n="h2.name">Blauw uur</h3>
+          <p class="hour__notes" data-i18n="h2.notes">Hartnoten: irisboter en viooltjesblad</p>
+          <p class="hour__body" data-i18n="h2.body">Iriswortels drogen drie jaar voor we ze distilleren. Een ton wortels levert ongeveer twee kilo irisboter op.</p>
+        </li>
+        <li class="hour hour--light">
+          <p class="hour__time"><time datetime="05:21">05:21</time></p>
+          <h3 class="hour__name" data-i18n="h3.name">Eerste licht</h3>
+          <p class="hour__notes" data-i18n="h3.notes">Topnoten: bergamot en roze peper</p>
+          <p class="hour__body" data-i18n="h3.body">Bergamot uit Calabrië opent de geur. Je ruikt hem als eerste, en hij vervaagt als eerste.</p>
+        </li>
+      </ol>
+      <div class="hours__clock" aria-hidden="true"><span class="is-on">04:12</span><span>04:47</span><span>05:21</span></div>
+    </div>
+  </section>
+
+  <div class="home-light" data-nav="light">
+    <section class="section section--pearl" aria-labelledby="col-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker" data-i18n="home.col.kicker">De collectie</p>
+            <h2 class="title-lg" id="col-title" data-i18n="home.col.title">Drie geuren, één nacht</h2>
+          </div>
+          <p class="lede" data-i18n="home.col.lede">Elke geur hoort bij een uur van de nacht. Van rokerig en warm tot fris en licht.</p>
+        </div>
+        <div class="cards">
+          <a class="card" href="collection.html#nachtwake">
+            <div class="card__media"><img src="assets/img/nachtwake.webp" width="960" height="1200" loading="lazy" alt="Flacon Nachtwake met amberkleurig parfum, op een nachtblauwe achtergrond" data-i18n-attr="alt:img.nachtwake"></div>
+            <div class="card__body">
+              <div class="card__top"><h3 class="card__name">Nachtwake</h3><p class="card__price"><span data-i18n="from">vanaf</span> <span data-price="165">€165</span></p></div>
+              <p class="card__meta" data-i18n="s1.meta">Amber en houtig. Voor de avond.</p>
+            </div>
+            <span class="link-arrow card__go" data-i18n="card.go">Bekijk de geur</span>
+          </a>
+          <a class="card" href="collection.html#blauw-uur">
+            <div class="card__media"><img src="assets/img/blauw-uur.webp" width="960" height="1200" loading="lazy" alt="Flacon Blauw Uur met lila parfum, op een schemerblauwe achtergrond" data-i18n-attr="alt:img.blauw"></div>
+            <div class="card__body">
+              <div class="card__top"><h3 class="card__name">Blauw Uur</h3><p class="card__price"><span data-i18n="from">vanaf</span> <span data-price="185">€185</span></p></div>
+              <p class="card__meta" data-i18n="s2.meta">Poederig en bloemig. Voor elke dag.</p>
+            </div>
+            <span class="link-arrow card__go" data-i18n="card.go">Bekijk de geur</span>
+          </a>
+          <a class="card" href="collection.html#eerste-licht">
+            <div class="card__media"><img src="assets/img/eerste-licht.webp" width="960" height="1200" loading="lazy" alt="Flacon Eerste Licht met goudkleurig parfum, op een lichte dageraadachtergrond" data-i18n-attr="alt:img.licht"></div>
+            <div class="card__body">
+              <div class="card__top"><h3 class="card__name">Eerste Licht</h3><p class="card__price"><span data-i18n="from">vanaf</span> <span data-price="145">€145</span></p></div>
+              <p class="card__meta" data-i18n="s3.meta">Fris citrus. Voor de ochtend.</p>
+            </div>
+            <span class="link-arrow card__go" data-i18n="card.go">Bekijk de geur</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--mist" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker" data-i18n="how.kicker">Zo werkt het</p>
+            <h2 class="title-lg" id="how-title" data-i18n="how.title">Eerst proeven, dan kiezen</h2>
+          </div>
+          <p class="lede" data-i18n="how.lede">Parfum kies je op je huid, niet op een scherm. Daarom begin je bij ons met drie kleine flesjes.</p>
+        </div>
+        <ol class="steps-row">
+          <li class="step-card">
+            <p class="step-card__n" aria-hidden="true">1</p>
+            <h3 data-i18n="how.1.t">Bestel de proefset</h3>
+            <p data-i18n="how.1.b">Drie flesjes van 2 ml voor €18, in je brievenbus binnen twee werkdagen.</p>
+          </li>
+          <li class="step-card">
+            <p class="step-card__n" aria-hidden="true">2</p>
+            <h3 data-i18n="how.2.t">Draag elke geur een dag</h3>
+            <p data-i18n="how.2.b">Een geur verandert in de loop van de dag. Zo ruik je hoe hij op jouw huid uitvalt.</p>
+          </li>
+          <li class="step-card">
+            <p class="step-card__n" aria-hidden="true">3</p>
+            <h3 data-i18n="how.3.t">Kies je flacon</h3>
+            <p data-i18n="how.3.b">Bestel 50 of 100 ml. We trekken de €18 van de proefset af van je eerste flacon.</p>
+          </li>
+        </ol>
+        <div class="hero__actions" style="margin-top: clamp(2.5rem, 5vw, 3.5rem)">
+          <a class="btn btn--ink" href="collection.html#proefset" data-i18n="home.cta1">Bestel de proefset</a>
+          <a class="btn btn--line" href="scent-finder.html" data-i18n="how.finder">Nog twijfels? Doe de geurtest</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--pearl" aria-labelledby="ing-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker" data-i18n="ing.kicker">Grondstoffen</p>
+            <h2 class="title-lg" id="ing-title" data-i18n="ing.title">Waar onze geuren vandaan komen</h2>
+          </div>
+          <p class="lede" data-i18n="ing.lede">We werken met een klein aantal grondstoffen en kopen ze rechtstreeks bij telers die we kennen.</p>
+        </div>
+        <ul class="ingredients">
+          <li class="ingredient" style="--sw: #b8692e">
+            <span class="ingredient__swatch" aria-hidden="true"></span>
+            <p class="ingredient__origin" data-i18n="ing.1.o">Haïti</p>
+            <h3 data-i18n="ing.1.t">Vetiver</h3>
+            <p data-i18n="ing.1.b">De wortels van dit gras geven Nachtwake zijn droge, rokerige basis.</p>
+          </li>
+          <li class="ingredient" style="--sw: #9c93c9">
+            <span class="ingredient__swatch" aria-hidden="true"></span>
+            <p class="ingredient__origin" data-i18n="ing.2.o">Toscane, Italië</p>
+            <h3 data-i18n="ing.2.t">Irisboter</h3>
+            <p data-i18n="ing.2.b">Iriswortels drogen drie jaar voor ze gedistilleerd worden. Het hart van Blauw Uur.</p>
+          </li>
+          <li class="ingredient" style="--sw: #e6c27a">
+            <span class="ingredient__swatch" aria-hidden="true"></span>
+            <p class="ingredient__origin" data-i18n="ing.3.o">Calabrië, Italië</p>
+            <h3 data-i18n="ing.3.t">Bergamot</h3>
+            <p data-i18n="ing.3.b">Koudgeperst in januari. Geeft Eerste Licht zijn heldere, zonnige opening.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band" data-nav="dark" aria-labelledby="visit-title">
+      <div class="wrap band__inner">
+        <div>
+          <p class="kicker kicker--dark" data-i18n="band.kicker">Atelier in Gent</p>
+          <h2 class="title-md" id="visit-title" data-i18n="band.title">Kom ruiken in ons atelier</h2>
+          <p class="lede" data-i18n="band.lede">Neem 45 minuten de tijd om samen jouw geur te vinden. Het consult is gratis bij aankoop van een flacon.</p>
+        </div>
+        <div class="band__actions">
+          <a class="btn btn--ember" href="contact.html?type=consult#aanvraag" data-i18n="band.cta1">Plan een geurconsult</a>
+          <a class="btn btn--ghost" href="atelier.html" data-i18n="band.cta2">Bekijk het atelier</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="foot" data-nav="dark">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <a class="brand" href="index.html"><svg viewBox="0 0 18 28" aria-hidden="true"><rect x="5" y="1" width="8" height="6" rx="1.5" fill="currentColor"/><rect x="7.5" y="7" width="3" height="2.2" fill="currentColor"/><rect x="1.2" y="9.2" width="15.6" height="17.6" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="15.5" width="10" height="8.5" rx="2" fill="#eaa86a"/></svg>Vroeglicht</a>
+        <p data-i18n="foot.about">Parfum uit Gent, met de hand gevuld en genummerd in batches van 300.</p>
+        <form class="news" id="news-form" name="nieuwsbrief" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+          <input type="hidden" name="form-name" value="nieuwsbrief">
+          <p hidden><label>Laat dit veld leeg <input name="bot-field"></label></p>
+          <label for="news-email" data-i18n="news.label">Hoor als eerste wanneer een nieuwe batch klaar is</label>
+          <div class="news__row">
+            <input id="news-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="jij@voorbeeld.be" data-i18n-attr="placeholder:news.placeholder">
+            <button class="btn btn--ember" type="submit" data-i18n="news.submit">Inschrijven</button>
+          </div>
+          <p class="news__msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div>
+        <h2 data-i18n="foot.shop">Shop</h2>
+        <ul>
+          <li><a href="collection.html" data-i18n="nav.collection">Collectie</a></li>
+          <li><a href="collection.html#proefset" data-i18n="foot.set">Proefset</a></li>
+          <li><a href="scent-finder.html" data-i18n="nav.finder">Geurtest</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="foot.house">Het huis</h2>
+        <ul>
+          <li><a href="atelier.html" data-i18n="nav.atelier">Atelier</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="contact.html#faq" data-i18n="foot.faq">Veelgestelde vragen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="foot.visit">Bezoek</h2>
+        <ul>
+          <li>Voorbeeldstraat 12</li>
+          <li data-i18n="addr.city">9000 Gent</li>
+          <li data-i18n="foot.hours">Do tot za, 11:00 tot 18:00</li>
+        </ul>
+      </div>
+    </div>
+    <p class="foot__mark" aria-hidden="true">Vroeglicht</p>
+    <div class="foot__row">
+      <p>© <span data-year>2026</span> Vroeglicht</p>
+      <p data-i18n="foot.note">Conceptontwerp. Vroeglicht is een fictief merk.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/vendor/three.min.js" defer></script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/flacon.js" defer></script>
+<script src="assets/js/home.js" defer></script>
+</body>
+</html>

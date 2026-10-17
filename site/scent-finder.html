@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="meta.finder.title">Geurtest, Vroeglicht parfum</title>
+<meta name="description" content="Vier korte vragen en je weet welke Vroeglicht-geur bij je past." data-i18n-attr="content:meta.finder.desc">
+<meta name="theme-color" content="#070b24">
+<meta property="og:title" content="Welke Vroeglicht-geur past bij jou?">
+<meta property="og:image" content="assets/img/og.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Jost:wght@400..600&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Naar de inhoud</a>
+
+<header class="nav" id="nav">
+  <a class="brand" href="index.html"><svg viewBox="0 0 18 28" aria-hidden="true"><rect x="5" y="1" width="8" height="6" rx="1.5" fill="currentColor"/><rect x="7.5" y="7" width="3" height="2.2" fill="currentColor"/><rect x="1.2" y="9.2" width="15.6" height="17.6" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="15.5" width="10" height="8.5" rx="2" fill="#eaa86a"/></svg>Vroeglicht</a>
+  <nav class="nav__links" aria-label="Hoofdmenu" data-i18n-attr="aria-label:nav.label">
+    <a href="collection.html" data-i18n="nav.collection">Collectie</a>
+    <a href="scent-finder.html" aria-current="page" data-i18n="nav.finder">Geurtest</a>
+    <a href="atelier.html" data-i18n="nav.atelier">Atelier</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Taal / Language">
+    <button type="button" data-lang="nl" aria-pressed="true" lang="nl">NL</button>
+    <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+  </div>
+  <a class="btn btn--ember nav__cta" href="collection.html#proefset" data-i18n="nav.cta">Proefset €18</a>
+  <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu"><span class="nav__menu-label">Menu</span></button>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav class="menu__links" aria-label="Hoofdmenu" data-i18n-attr="aria-label:nav.label">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="collection.html" data-i18n="nav.collection">Collectie</a>
+    <a href="scent-finder.html" aria-current="page" data-i18n="nav.finder">Geurtest</a>
+    <a href="atelier.html" data-i18n="nav.atelier">Atelier</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <a class="btn btn--ember" href="collection.html#proefset" data-i18n="menu.cta">Bestel de proefset, €18</a>
+    <p data-i18n="menu.visit">Atelier in Gent, donderdag tot zaterdag van 11:00 tot 18:00</p>
+  </div>
+</div>
+
+
+<main id="main" tabindex="-1">
+  <header class="page-head" data-nav="dark">
+    <div class="wrap">
+      <div class="page-head__inner">
+        <nav class="crumbs" aria-label="Kruimelpad" data-i18n-attr="aria-label:crumbs"><a href="index.html" data-i18n="nav.home">Home</a><span aria-hidden="true">/</span><span aria-current="page" data-i18n="nav.finder">Geurtest</span></nav>
+        <h1 class="title-xl" data-i18n="finder.title">Welke geur past bij jou?</h1>
+        <p class="lede" data-i18n="finder.lede">Vier korte vragen, één aanbeveling. Het duurt minder dan een minuut.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="section section--mist" id="finder" data-nav="light" aria-label="Geurtest" data-i18n-attr="aria-label:nav.finder" tabindex="-1">
+    <div class="wrap finder">
+      <aside class="finder__aside">
+        <div class="finder__progress">
+          <p class="finder__progress-text" aria-live="polite">Vraag 1 van 4</p>
+          <div class="finder__progress-bar"><span></span></div>
+        </div>
+        <div class="finder__help">
+        <p class="lede" data-i18n="finder.aside">Twijfel je na de test nog? De proefset bevat alle drie de geuren, zodat je ze thuis rustig kunt proberen.</p>
+        <a class="link-arrow" href="collection.html#proefset" data-i18n="finder.aside.link">Bekijk de proefset</a>
+        </div>
+      </aside>
+
+      <div>
+        <form id="finder-form" novalidate>
+          <fieldset class="question finder__step">
+            <legend data-i18n="q1">Wanneer draag je parfum het liefst?</legend>
+            <label class="option"><input type="radio" name="q1" value="night"><span><strong data-i18n="q1.a">'s Avonds en 's nachts</strong><small data-i18n="q1.a.s">Diners, concerten, lange gesprekken</small></span></label>
+            <label class="option"><input type="radio" name="q1" value="blue"><span><strong data-i18n="q1.b">Overdag, elke dag</strong><small data-i18n="q1.b.s">Op het werk, onderweg, thuis</small></span></label>
+            <label class="option"><input type="radio" name="q1" value="light"><span><strong data-i18n="q1.c">'s Ochtends en in het weekend</strong><small data-i18n="q1.c.s">Ontbijt buiten, een wandeling, de markt</small></span></label>
+          </fieldset>
+          <fieldset class="question finder__step" hidden>
+            <legend data-i18n="q2">Welke geur spreekt je het meest aan?</legend>
+            <label class="option"><input type="radio" name="q2" value="night"><span><strong data-i18n="q2.a">Rook, hout en hars</strong><small data-i18n="q2.a.s">Een houtvuur, een oude bibliotheek</small></span></label>
+            <label class="option"><input type="radio" name="q2" value="blue"><span><strong data-i18n="q2.b">Bloemen en poeder</strong><small data-i18n="q2.b.s">Viooltjes, schone was, zachte zeep</small></span></label>
+            <label class="option"><input type="radio" name="q2" value="light"><span><strong data-i18n="q2.c">Citrus en frisse kruiden</strong><small data-i18n="q2.c.s">Een sinaasappel pellen, verse munt</small></span></label>
+          </fieldset>
+          <fieldset class="question finder__step" hidden>
+            <legend data-i18n="q3">Hoe sterk mag je parfum zijn?</legend>
+            <label class="option"><input type="radio" name="q3" value="night"><span><strong data-i18n="q3.a">Uitgesproken</strong><small data-i18n="q3.a.s">Mensen mogen het merken als je binnenkomt</small></span></label>
+            <label class="option"><input type="radio" name="q3" value="blue"><span><strong data-i18n="q3.b">Dicht op de huid</strong><small data-i18n="q3.b.s">Alleen wie dichtbij komt, ruikt het</small></span></label>
+            <label class="option"><input type="radio" name="q3" value="light"><span><strong data-i18n="q3.c">Licht en luchtig</strong><small data-i18n="q3.c.s">Een frisse indruk die snel opgaat</small></span></label>
+          </fieldset>
+          <fieldset class="question finder__step" hidden>
+            <legend data-i18n="q4">Welk seizoen voelt het meest als jij?</legend>
+            <label class="option"><input type="radio" name="q4" value="night"><span><strong data-i18n="q4.a">Herfst en winter</strong><small data-i18n="q4.a.s">Dikke truien, vroeg donker</small></span></label>
+            <label class="option"><input type="radio" name="q4" value="blue"><span><strong data-i18n="q4.b">Lente</strong><small data-i18n="q4.b.s">Alles komt weer tot leven</small></span></label>
+            <label class="option"><input type="radio" name="q4" value="light"><span><strong data-i18n="q4.c">Zomer</strong><small data-i18n="q4.c.s">Lange dagen, warme avonden</small></span></label>
+          </fieldset>
+          <div class="finder__nav">
+            <button type="button" class="btn btn--line" id="finder-back" data-i18n="finder.back">Vorige vraag</button>
+            <button type="button" class="btn btn--ink" id="finder-next" disabled><span class="finder__next-label">Volgende vraag</span></button>
+          </div>
+        </form>
+
+        <div class="result-block finder__step" data-scent="night" hidden>
+          <div class="result">
+            <div class="result__media"><img src="assets/img/nachtwake.webp" width="960" height="1200" loading="lazy" alt="Flacon Nachtwake met amberkleurig parfum, op een nachtblauwe achtergrond" data-i18n-attr="alt:img.nachtwake"></div>
+            <div class="result__info">
+              <p class="kicker" data-i18n="result.kicker">Jouw geur</p>
+              <h2 class="result__name" tabindex="-1">Nachtwake</h2>
+              <p class="lede" data-i18n="result.night">Je houdt van warmte en diepte. Nachtwake is rokerig en amberachtig, en blijft de hele avond op je huid.</p>
+              <div class="result__actions">
+                <a class="btn btn--ink" href="collection.html#nachtwake" data-i18n="result.view.night">Bekijk Nachtwake</a>
+                <a class="btn btn--line" href="collection.html#proefset" data-i18n="home.cta1">Bestel de proefset</a>
+              </div>
+              <p class="result__also"><button type="button" class="link-arrow link-btn" data-finder-restart data-i18n="finder.restart">Doe de test opnieuw</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="result-block finder__step" data-scent="blue" hidden>
+          <div class="result">
+            <div class="result__media"><img src="assets/img/blauw-uur.webp" width="960" height="1200" loading="lazy" alt="Flacon Blauw Uur met lila parfum, op een schemerblauwe achtergrond" data-i18n-attr="alt:img.blauw"></div>
+            <div class="result__info">
+              <p class="kicker" data-i18n="result.kicker">Jouw geur</p>
+              <h2 class="result__name" tabindex="-1">Blauw Uur</h2>
+              <p class="lede" data-i18n="result.blue">Je zoekt iets zachts dat bij je past, elke dag. Blauw Uur is poederig en helder, met iris en viooltjesblad.</p>
+              <div class="result__actions">
+                <a class="btn btn--ink" href="collection.html#blauw-uur" data-i18n="result.view.blue">Bekijk Blauw Uur</a>
+                <a class="btn btn--line" href="collection.html#proefset" data-i18n="home.cta1">Bestel de proefset</a>
+              </div>
+              <p class="result__also"><button type="button" class="link-arrow link-btn" data-finder-restart data-i18n="finder.restart">Doe de test opnieuw</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="result-block finder__step" data-scent="light" hidden>
+          <div class="result">
+            <div class="result__media"><img src="assets/img/eerste-licht.webp" width="960" height="1200" loading="lazy" alt="Flacon Eerste Licht met goudkleurig parfum, op een lichte dageraadachtergrond" data-i18n-attr="alt:img.licht"></div>
+            <div class="result__info">
+              <p class="kicker" data-i18n="result.kicker">Jouw geur</p>
+              <h2 class="result__name" tabindex="-1">Eerste Licht</h2>
+              <p class="lede" data-i18n="result.light">Je houdt van frisse, lichte geuren. Eerste Licht opent met bergamot en roze peper, en voelt als de eerste zon.</p>
+              <div class="result__actions">
+                <a class="btn btn--ink" href="collection.html#eerste-licht" data-i18n="result.view.light">Bekijk Eerste Licht</a>
+                <a class="btn btn--line" href="collection.html#proefset" data-i18n="home.cta1">Bestel de proefset</a>
+              </div>
+              <p class="result__also"><button type="button" class="link-arrow link-btn" data-finder-restart data-i18n="finder.restart">Doe de test opnieuw</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" data-nav="dark">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <a class="brand" href="index.html"><svg viewBox="0 0 18 28" aria-hidden="true"><rect x="5" y="1" width="8" height="6" rx="1.5" fill="currentColor"/><rect x="7.5" y="7" width="3" height="2.2" fill="currentColor"/><rect x="1.2" y="9.2" width="15.6" height="17.6" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="15.5" width="10" height="8.5" rx="2" fill="#eaa86a"/></svg>Vroeglicht</a>
+        <p data-i18n="foot.about">Parfum uit Gent, met de hand gevuld en genummerd in batches van 300.</p>
+        <form class="news" id="news-form" name="nieuwsbrief" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+          <input type="hidden" name="form-name" value="nieuwsbrief">
+          <p hidden><label>Laat dit veld leeg <input name="bot-field"></label></p>
+          <label for="news-email" data-i18n="news.label">Hoor als eerste wanneer een nieuwe batch klaar is</label>
+          <div class="news__row">
+            <input id="news-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="jij@voorbeeld.be" data-i18n-attr="placeholder:news.placeholder">
+            <button class="btn btn--ember" type="submit" data-i18n="news.submit">Inschrijven</button>
+          </div>
+          <p class="news__msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div>
+        <h2 data-i18n="foot.shop">Shop</h2>
+        <ul>
+          <li><a href="collection.html" data-i18n="nav.collection">Collectie</a></li>
+          <li><a href="collection.html#proefset" data-i18n="foot.set">Proefset</a></li>
+          <li><a href="scent-finder.html" data-i18n="nav.finder">Geurtest</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="foot.house">Het huis</h2>
+        <ul>
+          <li><a href="atelier.html" data-i18n="nav.atelier">Atelier</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="contact.html#faq" data-i18n="foot.faq">Veelgestelde vragen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="foot.visit">Bezoek</h2>
+        <ul>
+          <li>Voorbeeldstraat 12</li>
+          <li data-i18n="addr.city">9000 Gent</li>
+          <li data-i18n="foot.hours">Do tot za, 11:00 tot 18:00</li>
+        </ul>
+      </div>
+    </div>
+    <p class="foot__mark" aria-hidden="true">Vroeglicht</p>
+    <div class="foot__row">
+      <p>© <span data-year>2026</span> Vroeglicht</p>
+      <p data-i18n="foot.note">Conceptontwerp. Vroeglicht is een fictief merk.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/finder.js" defer></script>
+</body>
+</html>
